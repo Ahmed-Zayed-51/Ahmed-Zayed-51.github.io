@@ -1,501 +1,478 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ahmed Fathy Zayed | Data Analyst & BI</title>
-  <meta name="description" content="Ahmed Fathy Zayed — Data Analyst & BI. Turning data into actionable insights with dashboards and analytics." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <!-- Background -->
-  <div class="bg">
-    <img class="bg__img" src="assets/bg.jpg" alt="Background" />
-    <div class="bg__overlay"></div>
-    <div class="bg__grid"></div>
-  </div>
+  <div class="bg"></div>
+  <div class="bgOverlay"></div>
 
-  <!-- Navbar -->
+  <!-- NAV -->
   <header class="nav">
-    <div class="container nav__inner">
+    <div class="container navInner">
       <a class="brand" href="#top">
-        <span class="brand__dot"></span>
+        <span class="brandDot"></span>
         Ahmed Zayed
       </a>
 
-      <nav class="nav__links">
+      <nav class="navLinks">
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#certs">Certificates</a>
-        <a class="btn btn--ghost" href="#contact">Contact</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <button class="nav__menu" id="menuBtn" aria-label="Open menu">☰</button>
-    </div>
-
-    <div class="nav__mobile" id="mobileMenu">
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#certs">Certificates</a>
-      <a href="#contact">Contact</a>
+      <a class="btn btnGhost" href="#contact">Hire Me</a>
     </div>
   </header>
 
-  <main id="top">
-    <!-- HERO -->
+  <!-- HERO -->
+  <main id="top" class="container">
     <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__left">
-          <div class="pill">Data Analyst & BI • Cairo, Egypt</div>
+      <div class="heroLeft">
+        <div class="chip">Data Analyst & BI • Cairo, Egypt</div>
 
-          <h1 class="hero__title">
-            Data Analyst | <span class="accent">Actionable Insights</span><br/>
-            Drive Strategic Business Decisions
-          </h1>
+        <h1 class="heroTitle">
+          Data Analyst <span class="accent">|</span> Actionable Insights Drive Strategic Business Decisions
+        </h1>
+        <p class="heroSubtitle">
+          Passionate about turning raw data into meaningful insights — building end-to-end BI solutions using
+          <b>Python</b>, <b>SQL</b>, and <b>Power BI</b> to deliver measurable impact.
+        </p>
 
-          <p class="hero__sub">
-            Passionate about turning raw data into meaningful insights through clean analytics,
-            interactive dashboards, and data storytelling that supports confident decisions.
-          </p>
+        <div class="heroCtas">
+          <a class="btn btnPrimary" href="#projects">View Projects</a>
+          <a class="btn btnSoft" href="https://drive.google.com/file/d/1DMW789q5l_jV8HK0Q6FXxT8VlRbXf7rR/view" target="_blank" rel="noreferrer">
+            Resume (PDF)
+          </a>
+        </div>
 
-          <div class="hero__cta">
-            <a class="btn btn--primary" href="#projects">View Projects</a>
-            <!-- ضع لينك الـ CV هنا -->
-            <a class="btn btn--secondary" href="YOUR_RESUME_LINK_HERE" target="_blank" rel="noreferrer">
-              Resume (PDF)
-            </a>
+        <div class="iconRow">
+          <a class="iconBtn" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <!-- GitHub -->
+            <svg viewBox="0 0 24 24" class="ic"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.19-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.74 0 0 .84-.27 2.75 1.05.8-.23 1.65-.34 2.5-.34.85 0 1.7.12 2.5.34 1.9-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.48.1 2.74.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.83 0 .26.18.58.69.48A10.06 10.06 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+
+          <a class="iconBtn" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <!-- LinkedIn -->
+            <svg viewBox="0 0 24 24" class="ic"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.05c.53-1 1.83-2.1 3.77-2.1 4.03 0 4.78 2.66 4.78 6.12V24h-4v-7.95c0-1.9-.03-4.34-2.65-4.34-2.65 0-3.06 2.07-3.06 4.2V24h-4V8.5z"/></svg>
+          </a>
+
+          <a class="iconBtn" href="mailto:ahmedzayed551@outlook.com" aria-label="Email">
+            <!-- Mail -->
+            <svg viewBox="0 0 24 24" class="ic"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+
+          <a class="iconBtn" href="tel:+201017452037" aria-label="Phone">
+            <!-- Phone -->
+            <svg viewBox="0 0 24 24" class="ic"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.59a1 1 0 0 1-.25 1.01l-2.2 2.19z"/></svg>
+          </a>
+
+          <a class="iconBtn" href="https://wa.me/201017452037" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <!-- WhatsApp (simple bubble) -->
+            <svg viewBox="0 0 24 24" class="ic"><path d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.44 0 .06 5.38.06 12c0 2.11.55 4.17 1.6 6L0 24l6.2-1.62A11.95 11.95 0 0 0 24 12c0-3.2-1.25-6.2-3.48-8.52zM12 22.1c-1.9 0-3.76-.5-5.4-1.45l-.39-.23-3.68.96.98-3.59-.25-.37A10.08 10.08 0 0 1 1.9 12C1.9 6.43 6.43 1.9 12 1.9S22.1 6.43 22.1 12 17.57 22.1 12 22.1zm5.85-7.58c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.21.32-.85 1.05-1.04 1.27-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.6-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.56.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.74-1.78-1.01-2.44-.27-.65-.54-.56-.74-.57h-.63c-.21 0-.56.08-.85.4-.3.32-1.12 1.09-1.12 2.66s1.15 3.1 1.31 3.32c.16.21 2.26 3.46 5.48 4.86.77.33 1.37.53 1.84.68.77.24 1.47.2 2.02.12.62-.09 1.9-.77 2.17-1.51.27-.74.27-1.37.19-1.51-.08-.14-.3-.22-.62-.38z"/></svg>
+          </a>
+        </div>
+
+        <div class="heroStats">
+          <div class="stat">
+            <div class="statNum">8+</div>
+            <div class="statLabel">Years IS & Data Mgmt</div>
           </div>
-
-          <div class="social">
-            <a class="social__item" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer" title="GitHub">
-              <span class="ico">⌂</span> GitHub
-            </a>
-            <a class="social__item" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer" title="LinkedIn">
-              <span class="ico">in</span> LinkedIn
-            </a>
-            <a class="social__item" href="mailto:ahmedzayed551@outlook.com" title="Email">
-              <span class="ico">@</span> Email
-            </a>
-            <a class="social__item" href="tel:+201017452037" title="Phone">
-              <span class="ico">☎</span> Call
-            </a>
-            <a class="social__item" href="https://wa.me/201017452037" target="_blank" rel="noreferrer" title="WhatsApp">
-              <span class="ico">✆</span> WhatsApp
-            </a>
+          <div class="stat">
+            <div class="statNum">2+</div>
+            <div class="statLabel">Years BI & Analytics</div>
           </div>
+          <div class="stat">
+            <div class="statNum">20%</div>
+            <div class="statLabel">Reduction in reporting errors</div>
+          </div>
+        </div>
+      </div>
 
-          <div class="hero__stats">
-            <div class="stat">
-              <div class="stat__num">2</div>
-              <div class="stat__txt">GitHub Projects<br/><span class="muted">Featured</span></div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">5+</div>
-              <div class="stat__txt">BI Case Studies<br/><span class="muted">Coming soon</span></div>
-            </div>
-            <div class="stat">
-              <div class="stat__num">20%</div>
-              <div class="stat__txt">Reduction in reporting errors<br/><span class="muted">Impact</span></div>
+      <div class="heroRight">
+        <div class="profileCard">
+          <img class="profileImg" src="assets/profile.jpg" alt="Ahmed Fathy Zayed">
+          <div class="profileMeta">
+            <h3>Ahmed Fathy Zayed</h3>
+            <p>Data Analyst & BI • Power BI • SQL • Python</p>
+            <div class="miniRow">
+              <span class="pill">DAX</span>
+              <span class="pill">Power Query</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">Excel</span>
             </div>
           </div>
         </div>
 
-        <div class="hero__right">
-          <div class="profileCard">
-            <div class="profileCard__ring"></div>
-            <img class="profileCard__img" src="assets/profile.jpg" alt="Ahmed Fathy Zayed" />
-            <div class="profileCard__meta">
-              <h3>Ahmed Fathy Zayed</h3>
-              <p>Data Analyst & BI • Dashboards • SQL • Python</p>
-            </div>
-          </div>
+        <div class="noteCard">
+          <h4>What I deliver</h4>
+          <ul>
+            <li>Executive dashboards with KPIs & storytelling</li>
+            <li>Clean data pipelines (ETL) + data quality checks</li>
+            <li>Analytics that drives measurable business impact</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT (خانة واحدة) -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section__head">
-          <h2>About</h2>
-          <p class="section__sub">What I do & how I add value.</p>
-        </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="sectionHead">
+        <h2>Projects</h2>
+        <p>3-column showcase with thumbnails. Click any card to open GitHub.</p>
+      </div>
 
-        <div class="card aboutCard">
-  <p>
-    I’m <b>Ahmed Fathy Zayed</b>, a <b>Data Analyst & Business Intelligence (BI) Specialist</b> based in Cairo, Egypt,
-    with a strong <b>8-year foundation in Information Systems & Data Management</b> and a focused track record in
-    <b>end-to-end data solutions, advanced analytics, and visualization</b>.
-    I build reliable, executive-ready BI systems that convert complex, scattered data into <b>clear, actionable insights</b>
-    that drive measurable business impact.
-  </p>
+      <div class="projectsGrid">
+        <!-- 4 GitHub Projects (with images) -->
+        <article class="projectCard">
+          <a class="projectLink" href="https://github.com/Ahmed-Zayed-51/executive-credit-card-performance-dashboard" target="_blank" rel="noreferrer">
+            <div class="projectMedia">
+              <img src="assets/proj-exec-cover.jpg" alt="Executive Credit Card Performance Dashboard">
+            </div>
+            <div class="projectBody">
+              <h3>Executive Credit Card Performance Dashboard</h3>
+              <p>Executive BI dashboard analyzing portfolio performance, customer behavior, and revenue trends for decision-making.</p>
+              <div class="badges">
+                <span class="badge">Power BI</span><span class="badge">SQL</span><span class="badge">Python</span>
+              </div>
+              <div class="projectActions">
+                <span class="btnInline">View on GitHub →</span>
+              </div>
+            </div>
+          </a>
+        </article>
 
-  <p>
-    I work across the full BI lifecycle: <b>data extraction (SQL)</b>, <b>ETL & automation (Python / Power Query)</b>,
-    <b>data modeling</b>, and <b>dashboarding (Power BI + DAX)</b>.
-    I’m highly committed to data quality—my work achieved a <b>20% reduction in operational reporting errors</b>—and I’ve
-    delivered insights that helped identify <b>3+ strategic opportunities</b> with direct executive impact across
-    functions like <b>Sales, HR, and Procurement</b>.
-  </p>
+        <article class="projectCard">
+          <a class="projectLink" href="https://github.com/Ahmed-Zayed-51/Credit-Card-Analytics-Dashboard---Power-BI-Python" target="_blank" rel="noreferrer">
+            <div class="projectMedia">
+              <img src="assets/proj-credit-customer.jpg" alt="Credit Card Customer Report">
+            </div>
+            <div class="projectBody">
+              <h3>Credit Card Analytics Dashboard (Power BI & Python)</h3>
+              <p>End-to-end analytics solution combining Python processing with Power BI dashboards to analyze transactions and behavior.</p>
+              <div class="badges">
+                <span class="badge">Python</span><span class="badge">Power BI</span><span class="badge">SQL</span>
+              </div>
+              <div class="projectActions">
+                <span class="btnInline">View on GitHub →</span>
+              </div>
+            </div>
+          </a>
+        </article>
 
-  <div class="aboutBullets">
-    <div class="chip">✔ Python (Pandas, NumPy) • Automation • ETL</div>
-    <div class="chip">✔ SQL (PostgreSQL, SQL Server) • Data Modeling</div>
-    <div class="chip">✔ Power BI (DAX, Power Query) • KPI Dashboards</div>
-    <div class="chip">✔ Data Quality • Validation • Governance Mindset</div>
-    <div class="chip">✔ Executive Storytelling • Insights • Decision Support</div>
-  </div>
-</div>
+        <article class="projectCard">
+          <a class="projectLink" href="https://github.com/Ahmed-Zayed-51/Adidas-Sales-Performance-Dashboard" target="_blank" rel="noreferrer">
+            <div class="projectMedia">
+              <img src="assets/proj-adidas.jpg" alt="Adidas Sales Performance Dashboard">
+            </div>
+            <div class="projectBody">
+              <h3>Adidas Sales Performance Dashboard</h3>
+              <p>Interactive sales dashboard covering Sales, Products, Regional insights, and Time-based trend analysis.</p>
+              <div class="badges">
+                <span class="badge">Power BI</span><span class="badge">Dashboard</span>
+              </div>
+              <div class="projectActions">
+                <span class="btnInline">View on GitHub →</span>
+              </div>
+            </div>
+          </a>
+        </article>
 
+        <article class="projectCard">
+          <a class="projectLink" href="https://github.com/Ahmed-Zayed-51/Retail-Sales-Inventory-Dashboard" target="_blank" rel="noreferrer">
+            <div class="projectMedia">
+              <img src="assets/proj-retail.jpg" alt="Retail Sales & Inventory Dashboard">
+              <div class="imgHint">Add your Retail screenshot هنا</div>
+            </div>
+            <div class="projectBody">
+              <h3>Retail Sales & Inventory Dashboard</h3>
+              <p>Retail analytics dashboard focusing on sales performance and inventory optimization for operational planning.</p>
+              <div class="badges">
+                <span class="badge">Power BI</span><span class="badge">Excel</span><span class="badge">Retail</span>
+              </div>
+              <div class="projectActions">
+                <span class="btnInline">View on GitHub →</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- 9 Placeholders (Coming Soon) — total placeholders = 13 cards -->
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>HR Attrition Analysis</h3>
+            <p>Attrition drivers, segments, and retention levers with actionable HR insights.</p>
+            <div class="badges"><span class="badge">Python</span><span class="badge">Power BI</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>Superstore Analytics</h3>
+            <p>Product, customer, and regional performance analysis with KPI dashboard.</p>
+            <div class="badges"><span class="badge">SQL</span><span class="badge">Power BI</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>IMDb Insights</h3>
+            <p>Ratings trends, genre performance, and audience behavior exploration.</p>
+            <div class="badges"><span class="badge">SQL</span><span class="badge">Power BI</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>Executive Credit Card Performance (Excel)</h3>
+            <p>Executive reporting model with quality checks and automated refresh.</p>
+            <div class="badges"><span class="badge">Excel</span><span class="badge">Power Query</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>Retail Sales Performance BI</h3>
+            <p>Sales trends, KPIs, and performance insights for retail decision-making.</p>
+            <div class="badges"><span class="badge">Python</span><span class="badge">Power BI</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>Data Quality Audit Toolkit</h3>
+            <p>Reusable checks for duplicates, missing values, and anomaly detection.</p>
+            <div class="badges"><span class="badge">Python</span><span class="badge">SQL</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>Procurement Spend Analysis</h3>
+            <p>Supplier & category spend patterns with savings opportunities.</p>
+            <div class="badges"><span class="badge">Power BI</span><span class="badge">DAX</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>University Graduation Project</h3>
+            <p>College project showcasing software + database + reporting workflow.</p>
+            <div class="badges"><span class="badge">Java</span><span class="badge">DB</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+        <article class="projectCard isSoon">
+          <div class="tagSoon">Coming Soon</div>
+          <div class="projectMedia placeholder"><span>Project Image</span></div>
+          <div class="projectBody">
+            <h3>Inventory & Sales Ops Reporting</h3>
+            <p>Operational reporting templates with refresh-ready data models.</p>
+            <div class="badges"><span class="badge">Excel</span><span class="badge">Sheets</span></div>
+            <div class="projectActions"><span class="btnInline muted">Soon on GitHub</span></div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-  <!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="sectionHead">
-    <h2>Featured Projects</h2>
-    <p>Selected dashboards & analytics projects with real business impact.</p>
-  </div>
-
- <div class="projectsGrid">
-
-  <article class="projectCard">
-    <div class="projectThumb">
-      <img src="assets/p1.jpg" alt="Executive Credit Card Performance Dashboard">
-    </div>
-
-    <div class="projectBody">
-      <h3>Executive Credit Card Performance Dashboard</h3>
-      <p>Executive-level BI dashboard analyzing portfolio performance, customer behavior, and revenue trends.</p>
-
-      <div class="badges">
-        <span class="badge">Power BI</span>
-        <span class="badge">SQL</span>
-        <span class="badge">Python</span>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="sectionHead">
+        <h2>About</h2>
+        <p>One strong professional block (as you requested).</p>
       </div>
 
-      <a class="btnPrimary" href="https://github.com/Ahmed-Zayed-51/executive-credit-card-performance-dashboard" target="_blank" rel="noreferrer">
-        View on GitHub →
-      </a>
-    </div>
-  </article>
+      <div class="panel">
+        <p class="aboutText">
+          I’m <b>Ahmed Fathy Zayed</b>, a highly proficient <b>Data Analyst & Business Intelligence (BI) Expert</b>.
+          I bring an <b>8-year foundation</b> in Information Systems and Data Management, and over <b>2 years</b> focused on
+          end-to-end analytics solutions, advanced visualization, and BI delivery.
+          <br/><br/>
+          My core strength is building the full lifecycle of BI solutions — from <b>ETL</b> and <b>data quality</b> to
+          <b>data modeling</b> and <b>executive dashboards</b>. I leverage <b>Python (Pandas, NumPy)</b>,
+          <b>SQL (PostgreSQL, SQL Server)</b>, and <b>Power BI (DAX, Power Query)</b> to convert complex, scattered data into
+          clear, decision-ready insights.
+          <br/><br/>
+          I’m results-driven: I helped achieve a documented <b>20% reduction in operational reporting errors</b>, and I’ve led
+          analytics initiatives that identified <b>strategic opportunities</b> across sales, HR, and procurement.
+          My mission is to consistently deliver measurable business value through strong analytics, storytelling, and automation.
+        </p>
 
-  <article class="projectCard">
-    <div class="projectThumb">
-      <img src="assets/p2.jpg" alt="Credit Card Analytics Dashboard">
-    </div>
-
-    <div class="projectBody">
-      <h3>Credit Card Analytics Dashboard (Power BI & Python)</h3>
-      <p>Python + Power BI solution to analyze credit card transactions and customer behavior.</p>
-
-      <div class="badges">
-        <span class="badge">Python</span>
-        <span class="badge">Power BI</span>
-        <span class="badge">SQL</span>
-      </div>
-
-      <a class="btnPrimary" href="https://github.com/Ahmed-Zayed-51/Credit-Card-Analytics-Dashboard---Power-BI-Python" target="_blank" rel="noreferrer">
-        View on GitHub →
-      </a>
-    </div>
-  </article>
-
-  <article class="projectCard">
-    <div class="projectThumb">
-      <img src="assets/p3.jpg" alt="Adidas Sales Performance Dashboard">
-    </div>
-
-    <div class="projectBody">
-      <h3>Adidas Sales Performance Dashboard</h3>
-      <p>Interactive dashboard for regional, product, and time-based sales trends.</p>
-
-      <div class="badges">
-        <span class="badge">Power BI</span>
-        <span class="badge">Sales</span>
-      </div>
-
-      <a class="btnPrimary" href="https://github.com/Ahmed-Zayed-51/Adidas-Sales-Performance-Dashboard" target="_blank" rel="noreferrer">
-        View on GitHub →
-      </a>
-    </div>
-  </article>
-
-  <article class="projectCard">
-    <div class="projectThumb">
-      <img src="assets/p4.jpg" alt="Retail Sales & Inventory Dashboard">
-    </div>
-
-    <div class="projectBody">
-      <h3>Retail Sales & Inventory Dashboard</h3>
-      <p>Retail analytics dashboard focusing on sales performance and inventory optimization.</p>
-
-      <div class="badges">
-        <span class="badge">Power BI</span>
-        <span class="badge">Excel</span>
-        <span class="badge">Retail</span>
-      </div>
-
-      <a class="btnPrimary" href="https://github.com/Ahmed-Zayed-51/Retail-Sales-Inventory-Dashboard" target="_blank" rel="noreferrer">
-        View on GitHub →
-      </a>
-    </div>
-  </article>
-
-</div>
-
-  <!-- Case Studies -->
-  <h3 class="sectionMini">Case Studies (Coming Soon)</h3>
-  <div class="caseGrid" id="caseStudies">
-    <div class="caseCard">
-      <div class="tag">Coming soon</div>
-      <h4>Retail Sales Performance BI</h4>
-      <p>Python • Power BI — Sales trends, KPIs, and performance insights.</p>
-      <div class="badges">
-        <span class="badge">Python</span><span class="badge">Power BI</span>
-      </div>
-      <a class="btnGhost" href="#" aria-disabled="true">View Case Study →</a>
-    </div>
-
-    <div class="caseCard">
-      <div class="tag">Coming soon</div>
-      <h4>HR Attrition Analysis</h4>
-      <p>Python • Power BI — Attrition drivers, segments, and retention levers.</p>
-      <div class="badges">
-        <span class="badge">Python</span><span class="badge">Power BI</span>
-      </div>
-      <a class="btnGhost" href="#" aria-disabled="true">View Case Study →</a>
-    </div>
-
-    <div class="caseCard">
-      <div class="tag">Coming soon</div>
-      <h4>Superstore Analytics</h4>
-      <p>SQL • Power BI — Product, customer, and regional performance.</p>
-      <div class="badges">
-        <span class="badge">SQL</span><span class="badge">Power BI</span>
-      </div>
-      <a class="btnGhost" href="#" aria-disabled="true">View Case Study →</a>
-    </div>
-
-    <div class="caseCard">
-      <div class="tag">Coming soon</div>
-      <h4>IMDb Insights</h4>
-      <p>SQL • Power BI — Ratings, trends, genres, and audience behavior.</p>
-      <div class="badges">
-        <span class="badge">SQL</span><span class="badge">Power BI</span>
-      </div>
-      <a class="btnGhost" href="#" aria-disabled="true">View Case Study →</a>
-    </div>
-  </div>
-</section>
-
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section__head">
-          <h2>Skills</h2>
-          <p class="section__sub">Core analytics & BI capabilities.</p>
-        </div>
-
-        <div class="grid grid--skills">
-          <div class="card skillCard">
-            <div class="skillCard__head"><span class="icoLg">🐍</span><h4>Python</h4></div>
-            <p>Data cleaning, EDA, automation, ETL.</p>
-            <div class="badges"><span>Pandas</span><span>NumPy</span><span>Visualization</span></div>
+        <div class="aboutGrid">
+          <div class="miniCard">
+            <h4>Education</h4>
+            <p><b>Bachelor of Computer Science</b><br/>
+              Higher Technological Institute – 10th of Ramadan City<br/>
+              Graduation: 2014 • Grade: Good
+            </p>
           </div>
-
-          <div class="card skillCard">
-            <div class="skillCard__head"><span class="icoLg">🧠</span><h4>SQL</h4></div>
-            <p>Querying, joins, window functions, performance.</p>
-            <div class="badges"><span>CTEs</span><span>Window</span><span>Optimization</span></div>
+          <div class="miniCard">
+            <h4>Activities</h4>
+            <ul class="list">
+              <li>Programming competitions & coding challenges (Java / Python).</li>
+              <li>IT Students Club member & workshops organizer (DB, desktop apps, software development).</li>
+            </ul>
           </div>
-
-          <div class="card skillCard">
-            <div class="skillCard__head"><span class="icoLg">📊</span><h4>Power BI</h4></div>
-            <p>Dashboards, DAX, modeling, visuals.</p>
-            <div class="badges"><span>DAX</span><span>Modeling</span><span>KPIs</span></div>
-          </div>
-
-          <div class="card skillCard">
-            <div class="skillCard__head"><span class="icoLg">📈</span><h4>Excel</h4></div>
-            <p>Pivot tables, formulas, reporting.</p>
-            <div class="badges"><span>Pivot</span><span>Power Query</span><span>Charts</span></div>
-          </div>
-
-          <div class="card skillCard">
-            <div class="skillCard__head"><span class="icoLg">🧱</span><h4>Data Modeling</h4></div>
-            <p>Star schema, relationships, semantic layer.</p>
-            <div class="badges"><span>Star Schema</span><span>KPIs</span><span>Measures</span></div>
-          </div>
-
-          <div class="card skillCard">
-            <div class="skillCard__head"><span class="icoLg">🧼</span><h4>Data Quality</h4></div>
-            <p>Validation, reconciliation, error reduction.</p>
-            <div class="badges"><span>Checks</span><span>Consistency</span><span>Accuracy</span></div>
-          </div>
-
-          <div class="card skillCard">
-            <div class="skillCard__head"><span class="icoLg">🗣️</span><h4>Storytelling</h4></div>
-            <p>Executive summaries and clear narratives.</p>
-            <div class="badges"><span>Insights</span><span>Slides</span><span>Communication</span></div>
+          <div class="miniCard">
+            <h4>Core Skills</h4>
+            <div class="skillPills">
+              <span class="pill">Power BI (DAX)</span>
+              <span class="pill">Power Query</span>
+              <span class="pill">SQL</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">Python</span>
+              <span class="pill">ETL</span>
+              <span class="pill">Data Modeling</span>
+              <span class="pill">Storytelling</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section__head">
-          <h2>Experience</h2>
-          <p class="section__sub">Impact-focused timeline.</p>
+    <section id="experience" class="section">
+      <div class="sectionHead">
+        <h2>Experience</h2>
+        <p>Timeline with measurable impact.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tItem">
+          <div class="tDot"></div>
+          <div class="tBody">
+            <h3>Sunrise General Supplies Company</h3>
+            <div class="tMeta">Business Data Analyst • Nov 2024 – Jul 2025</div>
+            <ul class="list">
+              <li>Led end-to-end data projects using <b>PostgreSQL, SQL, Python</b> to identify <b>3+ strategic opportunities</b> with executive impact.</li>
+              <li>Built and maintained <b>high-impact Power BI dashboards</b> using advanced <b>DAX</b> and optimized data models for KPIs.</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="timeline">
-  <div class="timeline__item">
-    <div class="timeline__dot"></div>
-    <div class="card timeline__card">
-      <h4>Business Data Analyst — Sunrise General Supplies Company</h4>
-      <p class="muted">Nov 2024 – Jul 2025 • Cairo, Egypt</p>
-      <ul>
-        <li>Led end-to-end data projects using <b>PostgreSQL, SQL, and Python</b> to identify <b>3+ strategic opportunities</b> with direct executive impact.</li>
-        <li>Developed high-impact <b>Power BI dashboards</b> with advanced <b>DAX</b> and optimized data models to monitor key business KPIs.</li>
-        <li>Improved insight delivery by standardizing datasets and ensuring reporting logic consistency across stakeholders.</li>
-      </ul>
-    </div>
-  </div>
+        <div class="tItem">
+          <div class="tDot"></div>
+          <div class="tBody">
+            <h3>Swipe Technologies Egypt</h3>
+            <div class="tMeta">Information Systems & Operational Reporting Support • Jan 2020 – Oct 2024</div>
+            <ul class="list">
+              <li>Designed robust ETL processes and advanced reports using <b>Power Query</b> and <b>Advanced Excel</b>.</li>
+              <li>Delivered a documented <b>20% reduction in operational reporting errors</b> and ensured strong data integrity.</li>
+            </ul>
+          </div>
+        </div>
 
-  <div class="timeline__item">
-    <div class="timeline__dot"></div>
-    <div class="card timeline__card">
-      <h4>Information Systems & Operational Reporting Support — Swipe Technologies Egypt</h4>
-      <p class="muted">Jan 2020 – Oct 2024 • Egypt</p>
-      <ul>
-        <li>Designed and executed robust <b>ETL processes</b> and built advanced reporting using <b>Power Query</b> and <b>Advanced Excel</b>.</li>
-        <li>Achieved a documented <b>20% reduction in operational reporting errors</b> through validation rules, standardized templates, and process improvements.</li>
-        <li>Maintained strong <b>data quality & integrity</b> for BI reporting pipelines and operational dashboards.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline__item">
-    <div class="timeline__dot"></div>
-    <div class="card timeline__card">
-      <h4>Information Systems & Data Reporting Specialist — TecWave Solutions</h4>
-      <p class="muted">Apr 2016 – Nov 2019 • Egypt</p>
-      <ul>
-        <li>Managed data integrity and operational reporting across inventory and sales systems for time-sensitive planning.</li>
-        <li>Built analytical models and periodic reports using <b>Advanced Excel</b> and <b>Google Sheets</b> to support operational decision-making.</li>
-        <li>Ensured reliable reporting foundations by improving consistency in business data inputs and reconciliation workflows.</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-            <div class="section__miniRow">
-  <div class="card miniCard">
-    <h4>Education</h4>
-    <p><b>Bachelor of Computer Science</b> — Higher Technological Institute (10th of Ramadan City)</p>
-    <p class="muted">Graduation Year: 2014 • Overall Grade: Good</p>
-
-    <h4 style="margin-top:14px;">Activities</h4>
-    <ul>
-      <li><b>Programming Competitions & Coding Challenges:</b> Participated in university contests; strengthened problem-solving and algorithms using Java & Python.</li>
-      <li><b>IT Students Club Member & Workshops Organizer:</b> Organized/attended workshops on software development, databases, and desktop applications.</li>
-    </ul>
-  </div>
-</div>
-
+        <div class="tItem">
+          <div class="tDot"></div>
+          <div class="tBody">
+            <h3>TecWave Solutions</h3>
+            <div class="tMeta">Information Systems & Data Reporting Specialist • Apr 2016 – Nov 2019</div>
+            <ul class="list">
+              <li>Managed data integrity and operational reporting across inventory and sales systems.</li>
+              <li>Built analytical models and periodic reports using <b>Advanced Excel</b> and <b>Google Sheets</b> for time-sensitive planning.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CERTIFICATES -->
-    <section class="section" id="certs">
-      <div class="container">
-        <div class="section__head">
-          <h2>Certificates</h2>
-          <p class="section__sub">Add your certificate links (placeholders for now).</p>
-        </div>
+    <section id="certificates" class="section">
+      <div class="sectionHead">
+        <h2>Certificates</h2>
+        <p>Add certificate links later بسهولة (مكان اللينك جاهز).</p>
+      </div>
 
-        <div class="grid">
-          <div class="card certCard">
-            <div class="certTop"><span class="plat">🎓</span><h4>Google / Coursera</h4></div>
-            <p>Data Analytics Certificate</p>
-            <a class="link" href="#" aria-disabled="true">View Certificate →</a>
-          </div>
-
-          <div class="card certCard">
-            <div class="certTop"><span class="plat">📘</span><h4>DataCamp</h4></div>
-            <p>SQL / Python Track</p>
-            <a class="link" href="#" aria-disabled="true">View Certificate →</a>
-          </div>
-
-          <div class="card certCard">
-            <div class="certTop"><span class="plat">🧪</span><h4>Udemy</h4></div>
-            <p>Power BI / Excel Courses</p>
-            <a class="link" href="#" aria-disabled="true">View Certificate →</a>
-          </div>
-        </div>
+      <div class="certGrid">
+        <!-- Add/Remove cards بسهولة -->
+        <div class="certCard"><h3>Data Analysis Using TABLEAU</h3><p>The Data Street</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Python Programming Basics</h3><p>Mahara Tech</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Intermediate SQL</h3><p>DataCamp</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Intermediate Python</h3><p>DataCamp</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Data Analysis Using Power BI</h3><p>Microsoft Egypt & DEPI</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Data Analytics Essentials</h3><p>CISCO Networking Academy</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Dashboard Using Power BI</h3><p>Powerful Insights</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Database Fundamentals</h3><p>Mahara Tech</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Power BI Desktop</h3><p>Maven Analytics</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Data Analysis Using Power BI</h3><p>Eyouth</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Data Analysis Using Excel</h3><p>Eyouth</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Data Analysis Journey in Python</h3><p>Engineering Tracks</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Programming Diploma (Python)</h3><p>Egyption Scince House</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Programming Diploma (JAVA)</h3><p>Egyption Scince House</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
+        <div class="certCard"><h3>Data Analysis Diploma</h3><p>Egyption Scince House</p><a class="link" href="#" aria-disabled="true">View Certificate →</a></div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section__head">
-          <h2>Contact</h2>
-          <p class="section__sub">Let’s connect — I reply quickly.</p>
-        </div>
-
-        <div class="grid grid--contact">
-          <a class="card contactCard" href="mailto:ahmedzayed551@outlook.com">
-            <div class="contactCard__ico">✉</div>
-            <div>
-              <h4>Email</h4>
-              <p class="muted">ahmedzayed551@outlook.com</p>
-            </div>
-          </a>
-
-          <a class="card contactCard" href="tel:+201017452037">
-            <div class="contactCard__ico">☎</div>
-            <div>
-              <h4>Phone</h4>
-              <p class="muted">+20 101 745 2037</p>
-            </div>
-          </a>
-
-          <a class="card contactCard" href="https://wa.me/201017452037" target="_blank" rel="noreferrer">
-            <div class="contactCard__ico">✆</div>
-            <div>
-              <h4>WhatsApp</h4>
-              <p class="muted">Chat on WhatsApp</p>
-            </div>
-          </a>
-
-          <a class="card contactCard" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer">
-            <div class="contactCard__ico">in</div>
-            <div>
-              <h4>LinkedIn</h4>
-              <p class="muted">/ahmed-zayed-data-analyst</p>
-            </div>
-          </a>
-
-          <a class="card contactCard" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer">
-            <div class="contactCard__ico">⌂</div>
-            <div>
-              <h4>GitHub</h4>
-              <p class="muted">@Ahmed-Zayed-51</p>
-            </div>
-          </a>
-        </div>
-
-        <footer class="footer">
-          <p>© 2025 Ahmed Fathy Zayed</p>
-        </footer>
+    <section id="contact" class="section">
+      <div class="sectionHead">
+        <h2>Contact</h2>
+        <p>Let’s connect — available for BI dashboards, reporting automation, and analytics projects.</p>
       </div>
+
+      <div class="contactGrid">
+        <a class="contactCard" href="mailto:ahmedzayed551@outlook.com">
+          <div class="contactTitle">Email</div>
+          <div class="contactValue">ahmedzayed551@outlook.com</div>
+        </a>
+
+        <a class="contactCard" href="tel:+201017452037">
+          <div class="contactTitle">Phone</div>
+          <div class="contactValue">+20 101 745 2037</div>
+        </a>
+
+        <a class="contactCard" href="https://wa.me/201017452037" target="_blank" rel="noreferrer">
+          <div class="contactTitle">WhatsApp</div>
+          <div class="contactValue">Chat on WhatsApp</div>
+        </a>
+
+        <a class="contactCard" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer">
+          <div class="contactTitle">LinkedIn</div>
+          <div class="contactValue">/in/ahmed-zayed-data-analyst</div>
+        </a>
+
+        <a class="contactCard" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer">
+          <div class="contactTitle">GitHub</div>
+          <div class="contactValue">Ahmed-Zayed-51</div>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Ahmed Fathy Zayed</span>
+        <span class="footerSep">•</span>
+        <span>Built for GitHub Pages</span>
+      </footer>
     </section>
   </main>
 
