@@ -350,15 +350,15 @@ a{color:inherit;text-decoration:none}
 
 .sectionHead p{ opacity: .78; margin: 6px 0 0 0; }
 
+/* ===== Projects 3-in-row Square Cards ===== */
 .projectsGrid{
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 18px;
 }
 
 .projectCard{
-  grid-column: span 6;
   border-radius: 18px;
   overflow: hidden;
   background: rgba(255,255,255,0.06);
@@ -372,38 +372,35 @@ a{color:inherit;text-decoration:none}
   border-color: rgba(0,255,204,0.35);
 }
 
-.projectMedia{
+/* Square image area */
+.projectThumb{
   position: relative;
-  height: 200px;
+  width: 100%;
+  aspect-ratio: 1 / 1;      /* يخليها مربع */
   overflow: hidden;
+  background: rgba(0,0,0,0.25);
 }
 
-.projectMedia img{
+.projectThumb img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   transform: scale(1.02);
   transition: transform .35s ease;
-  filter: saturate(1.08) contrast(1.08);
+  filter: saturate(1.05) contrast(1.05);
 }
 
-.projectCard:hover .projectMedia img{
+.projectCard:hover .projectThumb img{
   transform: scale(1.08);
 }
 
-.projectOverlay{
-  position:absolute;
-  inset:0;
-  background: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,.15));
-}
-
 .projectBody{
-  padding: 16px 16px 18px 16px;
+  padding: 14px 14px 16px 14px;
 }
 
 .projectBody h3{
   margin: 0 0 8px 0;
-  font-size: 18px;
+  font-size: 16.5px;
   color: #eafffb;
 }
 
@@ -411,13 +408,14 @@ a{color:inherit;text-decoration:none}
   margin: 0 0 12px 0;
   line-height: 1.55;
   opacity: .8;
+  font-size: 14px;
 }
 
 .badges{
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .badge{
@@ -427,11 +425,6 @@ a{color:inherit;text-decoration:none}
   border: 1px solid rgba(0,255,204,0.22);
   background: rgba(0,255,204,0.08);
   color: #bffdf2;
-}
-
-.projectActions{
-  display: flex;
-  gap: 10px;
 }
 
 .btnPrimary{
@@ -452,55 +445,11 @@ a{color:inherit;text-decoration:none}
   filter: brightness(1.05);
 }
 
-/* Case Studies */
-.sectionMini{
-  margin-top: 28px;
-  margin-bottom: 12px;
-  opacity: .9;
-}
-
-.caseGrid{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 14px;
-}
-
-.caseCard{
-  grid-column: span 4;
-  border-radius: 16px;
-  padding: 14px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.10);
-  transition: transform .25s ease, border-color .25s ease;
-}
-
-.caseCard:hover{
-  transform: translateY(-6px);
-  border-color: rgba(0,255,204,0.25);
-}
-
-.tag{
-  display: inline-block;
-  font-size: 12px;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.12);
-  margin-bottom: 10px;
-  opacity: .85;
-}
-
-.btnGhost{
-  display: inline-flex;
-  margin-top: 10px;
-  text-decoration: none;
-  font-weight: 800;
-  color: #00ffcc;
-  opacity: .7;
-}
-
 /* Responsive */
-@media (max-width: 900px){
-  .projectCard{ grid-column: span 12; }
-  .caseCard{ grid-column: span 12; }
+@media (max-width: 1100px){
+  .projectsGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px){
+  .projectsGrid{ grid-template-columns: 1fr; }
 }
