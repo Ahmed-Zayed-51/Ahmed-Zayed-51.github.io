@@ -1,299 +1,380 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ahmed Fathy Zayed | Data Analyst & BI</title>
-  <meta name="description" content="Ahmed Fathy Zayed - Data Analyst & BI. Turning raw data into actionable insights using SQL, Python, and Power BI."/>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css"/>
+  <meta name="description" content="Ahmed Fathy Zayed — Data Analyst & BI. Turning data into actionable insights with dashboards and analytics." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="bg" aria-hidden="true"></div>
+  <!-- Background -->
+  <div class="bg">
+    <img class="bg__img" src="assets/bg.jpg" alt="Background" />
+    <div class="bg__overlay"></div>
+    <div class="bg__grid"></div>
+  </div>
 
+  <!-- Navbar -->
   <header class="nav">
-    <div class="wrap nav__inner">
-      <div class="brand">Ahmed Zayed</div>
+    <div class="container nav__inner">
+      <a class="brand" href="#top">
+        <span class="brand__dot"></span>
+        Ahmed Zayed
+      </a>
 
-      <nav class="links">
-        <a href="#about">About</a>
+      <nav class="nav__links">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
+        <a href="#certs">Certificates</a>
+        <a class="btn btn--ghost" href="#contact">Contact</a>
       </nav>
 
-      <a class="btn btn--primary" target="_blank"
-         href="https://drive.google.com/uc?export=download&id=1DMW789q5l_jV8HK0Q6FXxT8VlRbXf7rR">Resume (PDF)</a>
+      <button class="nav__menu" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certs">Certificates</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
 
-  <main class="wrap">
-
+  <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero__left">
-        <div class="pill">Data Analyst & BI • Cairo, Egypt</div>
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="pill">Data Analyst & BI • Cairo, Egypt</div>
 
-        <h1>
-          Data Analyst |
-          <span class="accent">Actionable Insights Drive Strategic Business Decisions</span>
-        </h1>
+          <h1 class="hero__title">
+            Data Analyst | <span class="accent">Actionable Insights</span><br/>
+            Drive Strategic Business Decisions
+          </h1>
 
-        <p class="lead">
-          Passionate about turning raw data into meaningful insights — building KPI dashboards, automated reporting,
-          and decision-ready analytics with SQL, Python, and Power BI.
-        </p>
+          <p class="hero__sub">
+            Passionate about turning raw data into meaningful insights through clean analytics,
+            interactive dashboards, and data storytelling that supports confident decisions.
+          </p>
 
-        <div class="cta">
-          <a class="btn btn--primary" href="#projects">View Projects</a>
-          <a class="btn btn--ghost" target="_blank"
-             href="https://drive.google.com/uc?export=download&id=1DMW789q5l_jV8HK0Q6FXxT8VlRbXf7rR">Resume (PDF)</a>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <!-- ضع لينك الـ CV هنا -->
+            <a class="btn btn--secondary" href="YOUR_RESUME_LINK_HERE" target="_blank" rel="noreferrer">
+              Resume (PDF)
+            </a>
+          </div>
+
+          <div class="social">
+            <a class="social__item" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer" title="GitHub">
+              <span class="ico">⌂</span> GitHub
+            </a>
+            <a class="social__item" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer" title="LinkedIn">
+              <span class="ico">in</span> LinkedIn
+            </a>
+            <a class="social__item" href="mailto:ahmedzayed551@outlook.com" title="Email">
+              <span class="ico">@</span> Email
+            </a>
+            <a class="social__item" href="tel:+201017452037" title="Phone">
+              <span class="ico">☎</span> Call
+            </a>
+            <a class="social__item" href="https://wa.me/201017452037" target="_blank" rel="noreferrer" title="WhatsApp">
+              <span class="ico">✆</span> WhatsApp
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">2</div>
+              <div class="stat__txt">GitHub Projects<br/><span class="muted">Featured</span></div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">5+</div>
+              <div class="stat__txt">BI Case Studies<br/><span class="muted">Coming soon</span></div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">20%</div>
+              <div class="stat__txt">Reduction in reporting errors<br/><span class="muted">Impact</span></div>
+            </div>
+          </div>
         </div>
 
-        <div class="icons">
-          <a class="iconlink" href="mailto:ahmedzayed551@outlook.com" title="Email">
-            <span class="ico" aria-hidden="true">✉️</span><span>Email</span>
-          </a>
-          <a class="iconlink" href="tel:+201017452037" title="Phone">
-            <span class="ico" aria-hidden="true">📞</span><span>Phone</span>
-          </a>
-          <a class="iconlink" target="_blank" href="https://wa.me/201017452037" title="WhatsApp">
-            <span class="ico" aria-hidden="true">💬</span><span>WhatsApp</span>
-          </a>
-          <a class="iconlink" target="_blank" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" title="LinkedIn">
-            <span class="ico" aria-hidden="true">in</span><span>LinkedIn</span>
-          </a>
-          <a class="iconlink" target="_blank" href="https://github.com/Ahmed-Zayed-51" title="GitHub">
-            <span class="ico" aria-hidden="true">⌂</span><span>GitHub</span>
-          </a>
-        </div>
-
-        <div class="kpis">
-          <div class="card mini">
-            <div class="muted">Impact</div>
-            <div class="big">20% ↓ errors</div>
-            <div class="muted2">Operational reporting quality uplift</div>
-          </div>
-          <div class="card mini">
-            <div class="muted">Tooling</div>
-            <div class="big">SQL · Python</div>
-            <div class="muted2">Wrangling + automation</div>
-          </div>
-          <div class="card mini">
-            <div class="muted">BI</div>
-            <div class="big">Power BI</div>
-            <div class="muted2">DAX · Modeling · Storytelling</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero__right">
-        <div class="card profile">
-          <div class="avatar">
-            <img src="assets/profile.jpg" alt="Ahmed Fathy Zayed photo" onerror="this.style.display='none'">
-            <div class="avatar__fallback">Upload assets/profile.jpg</div>
-          </div>
-
-          <div class="tags">
-            <span class="tag">KPI Dashboards</span>
-            <span class="tag">Analytics</span>
-            <span class="tag">Automation</span>
-          </div>
-
-          <div class="profile__box">
-            <div class="profile__title">What I deliver</div>
-            <ul>
-              <li>Executive reporting & KPI systems</li>
-              <li>Data cleaning, validation & ETL</li>
-              <li>Insight storytelling for decisions</li>
-            </ul>
+        <div class="hero__right">
+          <div class="profileCard">
+            <div class="profileCard__ring"></div>
+            <img class="profileCard__img" src="assets/profile.jpg" alt="Ahmed Fathy Zayed" />
+            <div class="profileCard__meta">
+              <h3>Ahmed Fathy Zayed</h3>
+              <p>Data Analyst & BI • Dashboards • SQL • Python</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="section__head">
-        <h2>About</h2>
-        <p class="muted3">Professional summary</p>
-      </div>
+    <!-- ABOUT (خانة واحدة) -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>About</h2>
+          <p class="section__sub">What I do & how I add value.</p>
+        </div>
 
-      <div class="card">
-        <p class="about">
-          I’m a Data Analyst & BI specialist with 8+ years in Information Systems and 2+ years delivering end-to-end analytics solutions.
-          I transform complex data into decision-ready insights using SQL and Python, then present it through executive-level Power BI dashboards
-          (DAX, Power Query) with strong storytelling and clean design. I’m impact-driven — including a documented 20% reduction in reporting errors —
-          and I enjoy building KPI systems, automating reporting, and enabling stakeholders to act faster with confidence.
-        </p>
+        <div class="card aboutCard">
+          <p>
+            I’m <b>Ahmed Fathy Zayed</b>, a <b>Data Analyst & BI</b> based in Cairo. I help teams make better decisions by
+            building <b>clean data models</b>, developing <b>interactive dashboards</b>, and delivering <b>clear insights</b>.
+            I care about data quality, reproducibility, and storytelling—so stakeholders understand the “why” behind the numbers.
+          </p>
+
+          <div class="aboutBullets">
+            <div class="chip">✔ KPI Dashboards (Power BI / Excel)</div>
+            <div class="chip">✔ SQL Analysis & Data Modeling</div>
+            <div class="chip">✔ Python for ETL & Automation</div>
+            <div class="chip">✔ Data Quality & Reporting Accuracy</div>
+            <div class="chip">✔ Storytelling & Executive Summaries</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section__head">
-        <h2>Projects</h2>
-        <p class="muted3">Featured repos load automatically from GitHub.</p>
-      </div>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p class="section__sub">Featured GitHub work + case studies (coming soon).</p>
+        </div>
 
-      <h3 class="subhead">Featured (GitHub)</h3>
-      <div id="gh-loading" class="muted3">Loading repositories…</div>
-      <div id="gh-error" class="muted3" style="display:none">Couldn’t load GitHub repos (rate limit). Try later.</div>
-      <div id="gh-grid" class="grid"></div>
+        <h3 class="section__mini">Featured (GitHub)</h3>
+        <div class="grid grid--featured" id="featuredProjects">
+          <!-- سيتم ملؤها من script.js -->
+          <div class="card skeleton"></div>
+          <div class="card skeleton"></div>
+        </div>
 
-      <h3 class="subhead">Case Studies (Drive)</h3>
-      <div class="grid">
-        <a class="card linkcard" href="#" target="_blank">
-          <div class="title">Retail Sales Performance BI</div>
-          <div class="chips"><span>Python</span><span>Power BI</span></div>
-          <div class="muted2">Coming soon to GitHub</div>
-        </a>
-        <a class="card linkcard" href="#" target="_blank">
-          <div class="title">Executive Credit Card Performance Dashboard</div>
-          <div class="chips"><span>Python</span><span>Excel</span></div>
-          <div class="muted2">Coming soon to GitHub</div>
-        </a>
-        <a class="card linkcard" href="#" target="_blank">
-          <div class="title">HR Attrition Analysis</div>
-          <div class="chips"><span>Python</span><span>Power BI</span></div>
-          <div class="muted2">Coming soon to GitHub</div>
-        </a>
-        <a class="card linkcard" href="#" target="_blank">
-          <div class="title">Superstore</div>
-          <div class="chips"><span>SQL</span><span>Power BI</span></div>
-          <div class="muted2">Coming soon to GitHub</div>
-        </a>
-        <a class="card linkcard" href="#" target="_blank">
-          <div class="title">IMDb</div>
-          <div class="chips"><span>SQL</span><span>Power BI</span></div>
-          <div class="muted2">Coming soon to GitHub</div>
-        </a>
+        <h3 class="section__mini">Case Studies (Coming Soon to GitHub)</h3>
+        <div class="grid" id="caseStudies">
+          <!-- Placeholder case studies -->
+          <div class="card projectCard">
+            <div class="tag">Coming soon</div>
+            <h4>Retail Sales Performance BI</h4>
+            <p>Python • Power BI — Sales trends, KPIs, and performance insights.</p>
+            <div class="badges"><span>Python</span><span>Power BI</span></div>
+            <a class="link" href="#" aria-disabled="true">View Case Study →</a>
+          </div>
+
+          <div class="card projectCard">
+            <div class="tag">Coming soon</div>
+            <h4>Executive Credit Card Performance Dashboard</h4>
+            <p>Python • Excel — Executive dashboard for card metrics and profitability.</p>
+            <div class="badges"><span>Python</span><span>Excel</span></div>
+            <a class="link" href="#" aria-disabled="true">View Case Study →</a>
+          </div>
+
+          <div class="card projectCard">
+            <div class="tag">Coming soon</div>
+            <h4>HR Attrition Analysis</h4>
+            <p>Python • Power BI — Attrition drivers, segments, and retention levers.</p>
+            <div class="badges"><span>Python</span><span>Power BI</span></div>
+            <a class="link" href="#" aria-disabled="true">View Case Study →</a>
+          </div>
+
+          <div class="card projectCard">
+            <div class="tag">Coming soon</div>
+            <h4>Superstore Analytics</h4>
+            <p>SQL • Power BI — Product, customer, and regional performance.</p>
+            <div class="badges"><span>SQL</span><span>Power BI</span></div>
+            <a class="link" href="#" aria-disabled="true">View Case Study →</a>
+          </div>
+
+          <div class="card projectCard">
+            <div class="tag">Coming soon</div>
+            <h4>IMDb Insights</h4>
+            <p>SQL • Power BI — Ratings, trends, genres, and audience behavior.</p>
+            <div class="badges"><span>SQL</span><span>Power BI</span></div>
+            <a class="link" href="#" aria-disabled="true">View Case Study →</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="section__head">
-        <h2>Skills</h2>
-        <p class="muted3">Grouped by capability</p>
-      </div>
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p class="section__sub">Core analytics & BI capabilities.</p>
+        </div>
 
-      <div class="grid">
-        <div class="card">
-          <div class="title">🗄️ SQL</div>
-          <ul class="list">
-            <li>PostgreSQL / SQL Server</li>
-            <li>Queries, joins, validation</li>
-            <li>Data quality checks</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="title">📈 Python</div>
-          <ul class="list">
-            <li>Pandas, NumPy</li>
-            <li>Automation scripts</li>
-            <li>Analytics workflows</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="title">📊 Power BI</div>
-          <ul class="list">
-            <li>DAX, Power Query</li>
-            <li>Data modeling</li>
-            <li>Dashboard storytelling</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="title">🧰 Excel</div>
-          <ul class="list">
-            <li>Advanced formulas</li>
-            <li>Power Query</li>
-            <li>Pivot tables</li>
-          </ul>
+        <div class="grid grid--skills">
+          <div class="card skillCard">
+            <div class="skillCard__head"><span class="icoLg">🐍</span><h4>Python</h4></div>
+            <p>Data cleaning, EDA, automation, ETL.</p>
+            <div class="badges"><span>Pandas</span><span>NumPy</span><span>Visualization</span></div>
+          </div>
+
+          <div class="card skillCard">
+            <div class="skillCard__head"><span class="icoLg">🧠</span><h4>SQL</h4></div>
+            <p>Querying, joins, window functions, performance.</p>
+            <div class="badges"><span>CTEs</span><span>Window</span><span>Optimization</span></div>
+          </div>
+
+          <div class="card skillCard">
+            <div class="skillCard__head"><span class="icoLg">📊</span><h4>Power BI</h4></div>
+            <p>Dashboards, DAX, modeling, visuals.</p>
+            <div class="badges"><span>DAX</span><span>Modeling</span><span>KPIs</span></div>
+          </div>
+
+          <div class="card skillCard">
+            <div class="skillCard__head"><span class="icoLg">📈</span><h4>Excel</h4></div>
+            <p>Pivot tables, formulas, reporting.</p>
+            <div class="badges"><span>Pivot</span><span>Power Query</span><span>Charts</span></div>
+          </div>
+
+          <div class="card skillCard">
+            <div class="skillCard__head"><span class="icoLg">🧱</span><h4>Data Modeling</h4></div>
+            <p>Star schema, relationships, semantic layer.</p>
+            <div class="badges"><span>Star Schema</span><span>KPIs</span><span>Measures</span></div>
+          </div>
+
+          <div class="card skillCard">
+            <div class="skillCard__head"><span class="icoLg">🧼</span><h4>Data Quality</h4></div>
+            <p>Validation, reconciliation, error reduction.</p>
+            <div class="badges"><span>Checks</span><span>Consistency</span><span>Accuracy</span></div>
+          </div>
+
+          <div class="card skillCard">
+            <div class="skillCard__head"><span class="icoLg">🗣️</span><h4>Storytelling</h4></div>
+            <p>Executive summaries and clear narratives.</p>
+            <div class="badges"><span>Insights</span><span>Slides</span><span>Communication</span></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="section__head">
-        <h2>Experience</h2>
-        <p class="muted3">Impact-focused achievements</p>
-      </div>
-
-      <div class="stack">
-        <div class="card">
-          <div class="row">
-            <div>
-              <div class="title">Sunrise General Supplies Company</div>
-              <div class="muted2">Business Data Analyst</div>
-            </div>
-            <div class="pill2">Nov 2024 – Jul 2025</div>
-          </div>
-          <ul class="list">
-            <li>Delivered end-to-end analytics using PostgreSQL, SQL, and Python to identify strategic opportunities.</li>
-            <li>Built Power BI dashboards with optimized models and advanced DAX for KPI tracking.</li>
-          </ul>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p class="section__sub">Impact-focused timeline.</p>
         </div>
 
-        <div class="card">
-          <div class="row">
-            <div>
-              <div class="title">Swipe Technologies Egypt</div>
-              <div class="muted2">IS & Operational Reporting Support</div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="card timeline__card">
+              <h4>Data Analyst & BI</h4>
+              <p class="muted">Cairo, Egypt • 2024 – Present</p>
+              <ul>
+                <li>Built interactive dashboards to track KPIs and business performance.</li>
+                <li>Improved reporting accuracy with validation checks and standardized logic, achieving <b>~20% reduction in reporting errors</b>.</li>
+                <li>Automated recurring reporting steps using Python to reduce manual work.</li>
+              </ul>
             </div>
-            <div class="pill2">Jan 2020 – Oct 2024</div>
           </div>
-          <ul class="list">
-            <li>Designed ETL & reporting workflows using Power Query and Advanced Excel.</li>
-            <li><b>Achieved a documented 20% reduction in reporting errors</b> via validation and process improvements.</li>
-          </ul>
+        </div>
+
+        <div class="section__miniRow">
+          <div class="card miniCard">
+            <h4>Education</h4>
+            <p class="muted">Add your degree details here (University, Faculty, Year).</p>
+            <p>Include graduation project / college projects under “Projects” as case studies.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CERTIFICATES -->
-    <section id="certificates" class="section">
-      <div class="section__head">
-        <h2>Certificates</h2>
-        <p class="muted3">Replace links later</p>
-      </div>
+    <section class="section" id="certs">
+      <div class="container">
+        <div class="section__head">
+          <h2>Certificates</h2>
+          <p class="section__sub">Add your certificate links (placeholders for now).</p>
+        </div>
 
-      <div class="grid">
-        <a class="card linkcard" href="#" target="_blank"><div class="title">📘 Intermediate SQL</div><div class="muted2">DataCamp</div></a>
-        <a class="card linkcard" href="#" target="_blank"><div class="title">📘 Intermediate Python</div><div class="muted2">DataCamp</div></a>
-        <a class="card linkcard" href="#" target="_blank"><div class="title">🧾 Data Analytics Essentials</div><div class="muted2">CISCO Networking Academy</div></a>
-        <a class="card linkcard" href="#" target="_blank"><div class="title">🛠️ Python Programming Basics</div><div class="muted2">Mahara Tech</div></a>
-        <a class="card linkcard" href="#" target="_blank"><div class="title">📊 Power BI Desktop</div><div class="muted2">Maven Analytics</div></a>
-        <a class="card linkcard" href="#" target="_blank"><div class="title">🎓 Data Analysis Using Power BI</div><div class="muted2">Eyouth</div></a>
+        <div class="grid">
+          <div class="card certCard">
+            <div class="certTop"><span class="plat">🎓</span><h4>Google / Coursera</h4></div>
+            <p>Data Analytics Certificate</p>
+            <a class="link" href="#" aria-disabled="true">View Certificate →</a>
+          </div>
+
+          <div class="card certCard">
+            <div class="certTop"><span class="plat">📘</span><h4>DataCamp</h4></div>
+            <p>SQL / Python Track</p>
+            <a class="link" href="#" aria-disabled="true">View Certificate →</a>
+          </div>
+
+          <div class="card certCard">
+            <div class="certTop"><span class="plat">🧪</span><h4>Udemy</h4></div>
+            <p>Power BI / Excel Courses</p>
+            <a class="link" href="#" aria-disabled="true">View Certificate →</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="section__head">
-        <h2>Contact</h2>
-        <p class="muted3">One-click reach</p>
-      </div>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="section__sub">Let’s connect — I reply quickly.</p>
+        </div>
 
-      <div class="grid">
-        <a class="card linkcard" href="mailto:ahmedzayed551@outlook.com"><div class="title">✉️ Email</div><div class="muted2">ahmedzayed551@outlook.com</div></a>
-        <a class="card linkcard" href="tel:+201017452037"><div class="title">📞 Phone</div><div class="muted2">+201017452037</div></a>
-        <a class="card linkcard" target="_blank" href="https://wa.me/201017452037"><div class="title">💬 WhatsApp</div><div class="muted2">Chat on WhatsApp</div></a>
-        <a class="card linkcard" target="_blank" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst"><div class="title">in LinkedIn</div><div class="muted2">/in/ahmed-zayed-data-analyst</div></a>
-        <a class="card linkcard" target="_blank" href="https://github.com/Ahmed-Zayed-51"><div class="title">⌂ GitHub</div><div class="muted2">Ahmed-Zayed-51</div></a>
-      </div>
+        <div class="grid grid--contact">
+          <a class="card contactCard" href="mailto:ahmedzayed551@outlook.com">
+            <div class="contactCard__ico">✉</div>
+            <div>
+              <h4>Email</h4>
+              <p class="muted">ahmedzayed551@outlook.com</p>
+            </div>
+          </a>
 
-      <footer class="footer">© 2025 Ahmed Fathy Zayed</footer>
+          <a class="card contactCard" href="tel:+201017452037">
+            <div class="contactCard__ico">☎</div>
+            <div>
+              <h4>Phone</h4>
+              <p class="muted">+20 101 745 2037</p>
+            </div>
+          </a>
+
+          <a class="card contactCard" href="https://wa.me/201017452037" target="_blank" rel="noreferrer">
+            <div class="contactCard__ico">✆</div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p class="muted">Chat on WhatsApp</p>
+            </div>
+          </a>
+
+          <a class="card contactCard" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer">
+            <div class="contactCard__ico">in</div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p class="muted">/ahmed-zayed-data-analyst</p>
+            </div>
+          </a>
+
+          <a class="card contactCard" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer">
+            <div class="contactCard__ico">⌂</div>
+            <div>
+              <h4>GitHub</h4>
+              <p class="muted">@Ahmed-Zayed-51</p>
+            </div>
+          </a>
+        </div>
+
+        <footer class="footer">
+          <p>© 2025 Ahmed Fathy Zayed</p>
+        </footer>
+      </div>
     </section>
-
   </main>
 
   <script src="script.js"></script>
