@@ -1,63 +1,28 @@
-// Mobile menu
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
+// Footer year
+document.getElementById("year").textContent = new Date().getFullYear();
 
-menuBtn?.addEventListener("click", () => {
-  const isOpen = mobileMenu.style.display === "block";
-  mobileMenu.style.display = isOpen ? "none" : "block";
-});
+// Active nav on scroll (simple)
+const sections = [...document.querySelectorAll("section, main.hero")];
+const navLinks = [...document.querySelectorAll(".nav a")];
 
-// Featured GitHub Projects
-async function loadFeatured() {
-  const container = document.getElementById("featuredProjects");
-  if (!container) return;
+function setActive() {
+  const y = window.scrollY + 120;
+  let currentId = "home";
 
-  try {
-    const res = await fetch("https://api.github.com/users/Ahmed-Zayed-51/repos?sort=updated&per_page=100");
-    if (!res.ok) throw new Error("GitHub API error");
-    const repos = await res.json();
-
-    // Filter out forks and empty descriptions, take top 2
-    const featured = repos
-      .filter(r => !r.fork)
-      .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
-      .slice(0, 2);
-
-    container.innerHTML = "";
-
-    featured.forEach(repo => {
-      const tech = [];
-      if (repo.language) tech.push(repo.language);
-      // Add a couple of smart badges based on common keywords
-      const nameDesc = `${repo.name} ${repo.description || ""}`.toLowerCase();
-      if (nameDesc.includes("power bi")) tech.push("Power BI");
-      if (nameDesc.includes("sql")) tech.push("SQL");
-      if (nameDesc.includes("python")) tech.push("Python");
-      if (nameDesc.includes("excel")) tech.push("Excel");
-
-      const badges = [...new Set(tech)].slice(0, 4)
-        .map(t => `<span>${t}</span>`).join("");
-
-      container.insertAdjacentHTML("beforeend", `
-        <div class="card projectCard">
-          <div class="tag">Featured</div>
-          <h4>${repo.name}</h4>
-          <p>${repo.description ? repo.description : "A data project showcasing analysis, insights, and reporting."}</p>
-          <div class="badges">${badges}</div>
-          <a class="link" href="${repo.html_url}" target="_blank" rel="noreferrer">GitHub Repo →</a>
-        </div>
-      `);
-    });
-
-    if (featured.length === 0) {
-      container.innerHTML = `<div class="card">No public repos found yet. Add your projects to GitHub and they’ll appear here automatically.</div>`;
+  for (const s of sections) {
+    const top = s.offsetTop;
+    const bottom = top + s.offsetHeight;
+    if (y >= top && y < bottom) {
+      currentId = s.id || "home";
+      break;
     }
-  } catch (e) {
-    container.innerHTML = `
-      <div class="card">
-        Couldn't load GitHub repos right now (rate limit). Refresh later.
-      </div>`;
   }
-}
 
-loadFeatured();
+  navLinks.forEach(a => {
+    const href = a.getAttribute("href")?.replace("#", "");
+    if (href === currentId) a.classList.add("isActive");
+    else a.classList.remove("isActive");
+  });
+}
+window.addEventListener("scroll", setActive);
+setActive();
