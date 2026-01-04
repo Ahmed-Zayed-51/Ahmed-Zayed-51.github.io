@@ -177,7 +177,7 @@ body{
   height:100%;
   object-fit: cover;
   object-position: 50% 12%;   /* ✅ بيطلع الكادر لفوق (يركز على الوجه) */
-  transform: scale(1.35);     /* ✅ زووم على الوجه */
+  transform: scale(1.55);     /* ✅ زووم على الوجه */
   display:block;
 }
 
