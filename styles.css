@@ -173,13 +173,14 @@ body{
 }
 
 .avatarWrap img{
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: 50% 5%;   /* ✅ بيطلع الكادر لفوق (يركز على الوجه) */
-  transform: scale(1.55);     /* ✅ زووم على الوجه */
-  display:block;
+  object-position: 50% 8%;   /* يرفع الكادر لفوق للوجه */
+  transform: scale(1.45);    /* Zoom على الوجه */
+  display: block;
 }
+
 
 
 /* Stats */
