@@ -448,3 +448,21 @@ body{
   filter: drop-shadow(0 10px 18px rgba(0,0,0,.35));
 }
 
+/* Education Logo */
+.eduLogoLink{
+  display:inline-flex;
+  align-items:center;
+  margin-top:6px;
+}
+
+.eduLogo{
+  height:38px;
+  width:auto;
+  filter: brightness(1.1);
+  transition: transform .25s ease, filter .25s ease;
+}
+
+.eduLogoLink:hover .eduLogo{
+  transform: scale(1.05);
+  filter: brightness(1.25);
+}
