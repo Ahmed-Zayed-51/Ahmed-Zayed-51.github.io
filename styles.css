@@ -196,8 +196,8 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 8%;   /* يرفع الكادر لفوق للوجه */
-  transform: scale(1.45);    /* Zoom على الوجه */
+  object-position: 50% 5%;   /* يرفع الكادر لفوق للوجه */
+  transform: scale(1.25);    /* Zoom على الوجه */
   display: block;
 }
 
