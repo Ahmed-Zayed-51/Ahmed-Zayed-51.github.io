@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ahmed Fathy Zayed | Data Analyst & BI Specialist</title>
-  <meta name="description" content="Ahmed Fathy Zayed - Data Analyst & Business Intelligence Specialist. SQL, Python, Power BI. Dashboards and analytics projects." />
+  <meta name="description" content="Ahmed Fathy Zayed - Data Analyst & BI Specialist. SQL, Python, Power BI, Dashboards, Analytics Projects." />
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,47 +15,45 @@
 </head>
 
 <body>
-  <a class="skipLink" href="#main">Skip to content</a>
-
   <!-- Top Nav -->
   <header class="topbar">
     <div class="container topbar__inner">
-
       <a class="brand" href="#home" aria-label="Go to Home">
         <span class="brandName">Ahmed Fathy Zayed</span>
-        <span class="brandRole">Data Analyst • BI Specialist</span>
+        <span class="brandRole">Data Analyst &amp; BI Specialist</span>
       </a>
 
-      <button id="navToggle" class="navToggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav">
+      <button class="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav id="nav" class="nav" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav">
+        <a href="#home" class="navLink">Home</a>
+        <a href="#about" class="navLink">About</a>
+        <a href="#skills" class="navLink">Skills</a>
+        <a href="#experience" class="navLink">Experience</a>
+        <a href="#education" class="navLink">Education</a>
+        <a href="#projects" class="navLink">Projects</a>
+        <a href="#certificates" class="navLink">Certificates</a>
+        <a href="#contact" class="navLink">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <main id="home" class="hero" aria-label="Hero">
+  <main id="home" class="hero">
     <div class="hero__bg"></div>
 
-    <div class="container hero__grid" id="main">
+    <div class="container hero__grid">
+      <!-- Left -->
       <div class="hero__left">
-        <div class="heroPill">
+        <div class="pill">
           <span class="dot"></span>
-          Available for Data Analytics & BI Projects
+          Available for Data Analytics &amp; BI Projects
         </div>
 
         <h1 class="hero__title">
-          Ahmed <span>Fathy Zayed</span>
+          Ahmed <span>Fathy</span> Zayed
         </h1>
 
         <p class="hero__subtitle">
@@ -67,9 +65,25 @@
         <div class="hero__cta">
           <a class="btn btnPrimary" href="#projects">Explore Projects</a>
           <a class="btn btnGhost" href="#certificates">View Certificates</a>
+          <a class="btn btnGhost" href="#services">Services</a>
           <a class="btn btnGhost" href="#contact">Contact Me</a>
         </div>
 
+        <div class="hero__cta hero__cta--cv">
+          <!-- ⬇️ ضع لينك Google Drive الخاص بالـ CV هنا (Preview) -->
+          <a class="btn btnSmall btnGlass" target="_blank" rel="noreferrer"
+             href="PASTE_CV_PREVIEW_LINK_HERE">
+            Preview CV
+          </a>
+
+          <!-- ⬇️ ضع لينك Google Drive للتحميل المباشر هنا (Download) -->
+          <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
+             href="PASTE_CV_DOWNLOAD_LINK_HERE">
+            Download CV
+          </a>
+        </div>
+
+        <!-- Social (GitHub هنا فقط) -->
         <div class="socialRow">
           <a class="iconBtn" href="mailto:ahmedzayed551@outlook.com" aria-label="Email">
             <svg viewBox="0 0 24 24" class="icon"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
@@ -92,18 +106,19 @@
           </a>
         </div>
 
-        <div class="heroHighlights">
+        <div class="heroBadges">
           <div class="miniCard">
-            <div class="miniTop">SQL • Python • Power BI</div>
+            <div class="miniTitle">SQL • Python • Power BI</div>
             <div class="miniSub">Analytics • Modeling • Dashboards</div>
           </div>
           <div class="miniCard">
-            <div class="miniTop">Business Impact</div>
+            <div class="miniTitle">Business Impact</div>
             <div class="miniSub">KPI Tracking • Automation • Insights</div>
           </div>
         </div>
       </div>
 
+      <!-- Right -->
       <div class="hero__right">
         <div class="avatarWrap">
           <img src="assets/profile.jpg" alt="Ahmed Fathy Zayed" />
@@ -124,40 +139,38 @@
           </div>
         </div>
       </div>
-
     </div>
   </main>
 
   <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container">
-
       <div class="sectionHead">
         <h2>About</h2>
         <p>Who I am and how I create value with data</p>
       </div>
 
-      <div class="card glass aboutCard">
+      <div class="card glass aboutCard aboutCard--pro">
         <p>
-          My name is <b>Ahmed Fathy Zayed</b>. I am a <b>Data Analyst & Business Intelligence Specialist</b> with strong
-          experience in <b>information systems</b>, operational reporting, and building analytics solutions that connect
-          business goals to measurable outcomes.
+          My name is <b>Ahmed Fathy Zayed</b>. I’m a <b>Data Analyst & Business Intelligence Specialist</b> with strong experience in
+          information systems, operational reporting, and building analytics solutions that connect business goals to measurable outcomes.
+          I help teams move from <b>“data noise”</b> to <b>clarity</b> by designing structured datasets, defining KPIs, and creating dashboards
+          that are accurate, fast, and easy to understand.
         </p>
 
         <p>
-          I help organizations move from “data noise” to <b>clarity</b> by designing structured datasets, defining KPIs,
-          and creating dashboards that are accurate, fast, and easy to understand. I work end-to-end—starting from data
-          extraction with <b>SQL</b>, cleaning and transforming data using <b>Python</b> and Power Query, building strong
-          models, then delivering executive dashboards with <b>Power BI</b> and data storytelling.
+          I work end-to-end: starting from data extraction with <b>SQL</b>, cleaning and transforming data using <b>Python</b> and <b>Power Query</b>,
+          building strong models, then delivering executive-ready dashboards with <b>Power BI</b> and data storytelling.
+          I care about quality: clean logic, consistent definitions, and performance optimization. My work usually includes automation and validation checks
+          to reduce manual errors, improve refresh reliability, and ensure stakeholders can trust every number in the report.
         </p>
 
         <p>
-          I care about quality: clean logic, consistent definitions, and performance optimization. My work usually includes
-          automation and validation checks to reduce manual errors, improve refresh reliability, and ensure stakeholders
-          can trust every number in the report.
+          If you need KPI tracking, operational reporting, or modern BI dashboards, I can help you design a clean analytics workflow and deliver
+          a practical solution that your team can actually use—daily.
         </p>
 
-        <div class="chips">
+        <div class="chips chips--pro">
           <span class="chip">KPI Dashboards</span>
           <span class="chip">Data Modeling</span>
           <span class="chip">ETL & Automation</span>
@@ -165,24 +178,21 @@
           <span class="chip">Stakeholder Communication</span>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
-
       <div class="sectionHead">
         <h2>Skills</h2>
         <p>Tools & technologies used to build analytics solutions</p>
       </div>
 
       <div class="skillsGrid">
-
         <div class="skill">
           <div class="skillIcon">
-            <img class="skillLogo" src="assets/icons/sql-logo.jpg" alt="SQL">
+            <img src="assets/icons/sql-logo.jpg" alt="SQL" class="skillImg">
           </div>
           <div>
             <div class="skillName">SQL (PostgreSQL, SQL Server)</div>
@@ -192,7 +202,7 @@
 
         <div class="skill">
           <div class="skillIcon">
-            <img class="skillLogo" src="assets/icons/python-logo.png" alt="Python">
+            <img src="assets/icons/python-logo.png" alt="Python" class="skillImg">
           </div>
           <div>
             <div class="skillName">Python (Pandas, NumPy)</div>
@@ -202,7 +212,7 @@
 
         <div class="skill">
           <div class="skillIcon">
-            <img class="skillLogo" src="assets/icons/Power-Bi-logo.png" alt="Power BI">
+            <img src="assets/icons/Power-Bi-logo.png" alt="Power BI" class="skillImg">
           </div>
           <div>
             <div class="skillName">Power BI</div>
@@ -212,7 +222,7 @@
 
         <div class="skill">
           <div class="skillIcon">
-            <img class="skillLogo" src="assets/icons/excel-logo.png" alt="Excel">
+            <img src="assets/icons/excel-logo.png" alt="Excel" class="skillImg">
           </div>
           <div>
             <div class="skillName">Advanced Excel</div>
@@ -222,7 +232,7 @@
 
         <div class="skill">
           <div class="skillIcon">
-            <img class="skillLogo" src="assets/icons/tableau-logo.png" alt="Tableau">
+            <img src="assets/icons/tableau-logo.png" alt="Tableau" class="skillImg">
           </div>
           <div>
             <div class="skillName">Tableau</div>
@@ -232,14 +242,49 @@
 
         <div class="skill">
           <div class="skillIcon">
-            <span class="skillText">Viz</span>
+            <span class="skillTxt">Viz</span>
           </div>
           <div>
             <div class="skillName">Data Visualization</div>
             <div class="skillMeta">Design • Clarity • Executive-ready reporting</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Services</h2>
+        <p>What I can deliver for your business</p>
+      </div>
+
+      <div class="servicesGrid">
+        <article class="card glass serviceCard">
+          <div class="serviceTitle">Power BI Dashboards</div>
+          <p class="serviceText">Executive dashboards, KPI tracking, drill-through pages, and performance-optimized DAX measures.</p>
+          <div class="serviceTags">
+            <span class="tag">DAX</span><span class="tag">Modeling</span><span class="tag">Storytelling</span>
+          </div>
+        </article>
+
+        <article class="card glass serviceCard">
+          <div class="serviceTitle">Data Cleaning & Automation</div>
+          <p class="serviceText">Automate workflows using Python + Power Query, validation checks, and structured data pipelines.</p>
+          <div class="serviceTags">
+            <span class="tag">Python</span><span class="tag">ETL</span><span class="tag">QA</span>
+          </div>
+        </article>
+
+        <article class="card glass serviceCard">
+          <div class="serviceTitle">SQL Reporting & Modeling</div>
+          <p class="serviceText">Write efficient SQL, create views, stored procedures, and reliable datasets for BI reporting.</p>
+          <div class="serviceTags">
+            <span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">Performance</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -247,7 +292,6 @@
   <!-- EXPERIENCE -->
   <section id="experience" class="section">
     <div class="container">
-
       <div class="sectionHead">
         <h2>Experience</h2>
         <p>Professional roles and responsibilities</p>
@@ -258,9 +302,9 @@
           <div class="itemTitle">Business Data Analyst</div>
           <div class="itemMeta">Sunrise General Supplies Company • Nov 2024 - Jul 2025</div>
           <ul>
-            <li>Developed and maintained high-impact Power BI dashboards with advanced DAX and optimized data models.</li>
-            <li>Built end-to-end analytics workflows using SQL and Python (cleaning, validation, and automation).</li>
-            <li>Delivered KPI reporting, insights, and executive-ready data storytelling.</li>
+            <li>Led end-to-end data projects using PostgreSQL, SQL, and Python to identify <b>3+ strategic opportunities</b> with direct executive impact.</li>
+            <li>Developed and maintained high-impact Power BI dashboards, focusing on <b>advanced DAX</b> calculations and optimized data models to track key KPIs.</li>
+            <li>Delivered executive-ready insights and reporting improvements through consistent KPI definitions and structured data modeling.</li>
           </ul>
         </div>
 
@@ -268,20 +312,38 @@
           <div class="itemTitle">Information Systems & Operational Reporting Support</div>
           <div class="itemMeta">Swipe Technologies Egypt • Jan 2020 - Oct 2024</div>
           <ul>
-            <li>Designed ETL processes and advanced reporting using Power Query and Advanced Excel.</li>
-            <li>Improved data quality and reduced reporting errors through consistent definitions and checks.</li>
-            <li>Supported cross-functional reporting needs and operational analytics.</li>
+            <li>Designed and executed robust ETL processes and developed advanced reports using <b>Power Query</b> and <b>Advanced Excel</b>.</li>
+            <li>Achieved a documented <b>20% reduction in operational reporting errors</b> and ensured strong data quality and integrity for BI processes.</li>
+            <li>Managed critical operational data analysis workflows to support executive decision-making.</li>
+          </ul>
+        </div>
+
+        <div class="card glass itemCard">
+          <div class="itemTitle">Information Systems & Data Reporting Specialist</div>
+          <div class="itemMeta">TecWave Solutions • Apr 2016 - Nov 2019</div>
+          <ul>
+            <li>Managed and established data integrity and operational reporting across critical inventory and sales systems.</li>
+            <li>Built complex analytical models and periodic reports using Advanced Excel and Google Sheets for time-sensitive planning.</li>
+            <li>Provided a reliable data foundation for executive decision support and operational performance tracking.</li>
+          </ul>
+        </div>
+
+        <div class="card glass itemCard">
+          <div class="itemTitle">Freelancer • Business Data Analyst</div>
+          <div class="itemMeta">Remote • Jul 2025 - Present</div>
+          <ul>
+            <li>Led BI and data analysis projects using PostgreSQL, SQL Server, and Python (Pandas), identifying <b>3+ strategic opportunities</b> for clients.</li>
+            <li>Designed efficient database schemas using advanced SQL (DDL) and structured reporting datasets (tables, views, procedures).</li>
+            <li>Delivered KPI dashboards and automated analysis workflows for repeatable reporting.</li>
           </ul>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section id="education" class="section">
     <div class="container">
-
       <div class="sectionHead">
         <h2>Education</h2>
         <p>Academic background & activities</p>
@@ -290,13 +352,11 @@
       <div class="twoCol">
         <div class="card glass itemCard">
           <div class="itemTitle">Bachelor of Computer Science</div>
-
           <div class="itemMeta">
             <a class="eduLogoLink" href="https://hti.edu.eg/site/home_ar" target="_blank" rel="noreferrer" aria-label="Higher Technological Institute">
-              <img class="eduLogo eduLogoBig" src="assets/logos/hti-logo.png" alt="HTI Logo">
+              <img class="eduLogo" src="assets/logos/hti-logo.png" alt="HTI Logo">
             </a>
           </div>
-
           <ul>
             <li><b>Graduation Year:</b> 2014</li>
             <li><b>Overall Grade:</b> Good</li>
@@ -311,35 +371,33 @@
           </ul>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <div class="container">
-
       <div class="sectionHead">
         <h2>Projects</h2>
         <p>Selected dashboards and analytics work (13 projects)</p>
       </div>
 
-      <!-- tools -->
-      <div class="projTools">
-        <div class="projFilters">
+      <div class="projectsToolbar">
+        <div class="searchBox">
+          <span class="searchIcon" aria-hidden="true">⌕</span>
+          <input id="projectSearch" type="text" placeholder="Search projects..." autocomplete="off" />
+        </div>
+
+        <div class="filterRow" role="tablist" aria-label="Project filters">
           <button class="filterBtn isActive" data-filter="all" type="button">All</button>
           <button class="filterBtn" data-filter="powerbi" type="button">Power BI</button>
           <button class="filterBtn" data-filter="python" type="button">Python</button>
           <button class="filterBtn" data-filter="sql" type="button">SQL</button>
-        </div>
-
-        <div class="projSearch">
-          <input id="projSearch" type="search" placeholder="Search projects..." aria-label="Search projects">
+          <button class="filterBtn" data-filter="excel" type="button">Excel</button>
         </div>
       </div>
 
-      <div class="projectsGrid">
-
+      <div class="projectsGrid" id="projectsGrid">
         <!-- 1) Adidas -->
         <article class="projectCard" data-tags="powerbi python">
           <div class="projectMedia">
@@ -347,9 +405,11 @@
           </div>
           <div class="projectBody">
             <h3>Adidas Sales Performance Dashboard</h3>
-            <p>Sales, products, region, and time-based analysis in Power BI.</p>
+            <p>Sales • Products • Regional • Time-based analysis (Power BI).</p>
             <div class="badges">
-              <span class="badge">Power BI</span><span class="badge">Python</span><span class="badge">Dashboard</span>
+              <span class="badge">Power BI</span>
+              <span class="badge">Python</span>
+              <span class="badge">Dashboard</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/Adidas-Sales-Performance-Dashboard">
@@ -358,16 +418,18 @@
           </div>
         </article>
 
-        <!-- 2) Credit Customer -->
-        <article class="projectCard" data-tags="powerbi python sql">
+        <!-- 2) Credit Card Customer -->
+        <article class="projectCard" data-tags="powerbi sql python">
           <div class="projectMedia">
             <img src="assets/projects/credit-customer.jpg" alt="Credit Card Customer Report">
           </div>
           <div class="projectBody">
             <h3>Credit Card Customer Report</h3>
-            <p>Customer insights, segments, KPIs and trends using Power BI + Python.</p>
+            <p>Customer insights, segments, KPIs and trends (Power BI).</p>
             <div class="badges">
-              <span class="badge">SQL</span><span class="badge">Python</span><span class="badge">Power BI</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Python</span>
+              <span class="badge">Power BI</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/Credit-Card-Analytics-Dashboard---Power-BI-Python">
@@ -383,9 +445,11 @@
           </div>
           <div class="projectBody">
             <h3>Executive Credit Card Performance Dashboard</h3>
-            <p>Executive KPIs overview for revenue, customers, transactions & satisfaction.</p>
+            <p>Executive KPIs overview: revenue, customers, transactions & satisfaction.</p>
             <div class="badges">
-              <span class="badge">Power BI</span><span class="badge">Python</span><span class="badge">Executive</span>
+              <span class="badge">Power BI</span>
+              <span class="badge">Python</span>
+              <span class="badge">Executive</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/executive-credit-card-performance-dashboard">
@@ -395,15 +459,17 @@
         </article>
 
         <!-- 4) IMDB -->
-        <article class="projectCard" data-tags="powerbi python sql">
+        <article class="projectCard" data-tags="powerbi sql python">
           <div class="projectMedia">
             <img src="assets/projects/imdb.jpg" alt="IMDB Movies Analytics Dashboard">
           </div>
           <div class="projectBody">
             <h3>IMDB Movies Analytics Dashboard</h3>
-            <p>Movie rating trends, top titles, and KPI insights visualization.</p>
+            <p>Movies rating trends, top titles, and insights visualization.</p>
             <div class="badges">
-              <span class="badge">Power BI</span><span class="badge">SQL</span><span class="badge">Python</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Python</span>
+              <span class="badge">Power BI</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/IMDB-Movies-Analytics-Dashboard">
@@ -413,15 +479,17 @@
         </article>
 
         <!-- 5) Retail Sales & Inventory -->
-        <article class="projectCard" data-tags="powerbi python sql">
+        <article class="projectCard" data-tags="powerbi sql python">
           <div class="projectMedia">
             <img src="assets/projects/retail-sales-performance.jpg" alt="Retail Sales & Inventory Dashboard">
           </div>
           <div class="projectBody">
             <h3>Retail Sales & Inventory Dashboard</h3>
-            <p>Executive overview: revenue, margins, stockout rate & daily trend.</p>
+            <p>Executive overview for retail KPIs: revenue, margins, stockout & trends.</p>
             <div class="badges">
-              <span class="badge">Power BI</span><span class="badge">SQL</span><span class="badge">Retail</span>
+              <span class="badge">Power BI</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Retail</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/Retail-Sales-Inventory-Dashboard">
@@ -430,16 +498,17 @@
           </div>
         </article>
 
-        <!-- 6) Retail Overview -->
+        <!-- 6) Retail Overview Page -->
         <article class="projectCard" data-tags="powerbi">
           <div class="projectMedia">
-            <img src="assets/projects/overview.jpg" alt="Retail Dashboard Overview Page">
+            <img src="assets/projects/overview.jpg" alt="Retail Dashboard - Overview Page">
           </div>
           <div class="projectBody">
             <h3>Retail Dashboard — Overview Page</h3>
-            <p>Highlight page preview for the retail analytics report.</p>
+            <p>High-impact overview page for the Retail Sales & Inventory project.</p>
             <div class="badges">
-              <span class="badge">Power BI</span><span class="badge">Dashboard</span>
+              <span class="badge">Power BI</span>
+              <span class="badge">Dashboard</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/Retail-Sales-Inventory-Dashboard">
@@ -449,76 +518,82 @@
         </article>
 
         <!-- 7..13 placeholders -->
-        <article class="projectCard isPlaceholder" data-tags="powerbi">
-          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
+        <!-- NOTE: no image needed for placeholders -->
+        <article class="projectCard isPlaceholder" data-tags="all">
+          <div class="projectMedia projectMedia--ph">
+            <div class="phTitle">Coming Soon</div>
+          </div>
           <div class="projectBody">
             <h3>Project 7 (Coming Soon)</h3>
-            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
-            <div class="badges"><span class="badge">Power BI</span></div>
-            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
+            <p>Add overview image + GitHub link when ready.</p>
+            <div class="badges">
+              <span class="badge ghost">Power BI</span>
+              <span class="badge ghost">SQL</span>
+              <span class="badge ghost">Python</span>
+            </div>
+            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
-        <article class="projectCard isPlaceholder" data-tags="python">
-          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
+        <article class="projectCard isPlaceholder" data-tags="all">
+          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
           <div class="projectBody">
             <h3>Project 8 (Coming Soon)</h3>
-            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
-            <div class="badges"><span class="badge">Python</span></div>
-            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
+            <p>Add overview image + GitHub link when ready.</p>
+            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
-        <article class="projectCard isPlaceholder" data-tags="sql">
-          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
+        <article class="projectCard isPlaceholder" data-tags="all">
+          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
           <div class="projectBody">
             <h3>Project 9 (Coming Soon)</h3>
-            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
-            <div class="badges"><span class="badge">SQL</span></div>
-            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
+            <p>Add overview image + GitHub link when ready.</p>
+            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
-        <article class="projectCard isPlaceholder" data-tags="powerbi sql">
-          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
+        <article class="projectCard isPlaceholder" data-tags="all">
+          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
           <div class="projectBody">
             <h3>Project 10 (Coming Soon)</h3>
-            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
-            <div class="badges"><span class="badge">Power BI</span><span class="badge">SQL</span></div>
-            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
+            <p>Add overview image + GitHub link when ready.</p>
+            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
-        <article class="projectCard isPlaceholder" data-tags="powerbi">
-          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
+        <article class="projectCard isPlaceholder" data-tags="all">
+          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
           <div class="projectBody">
             <h3>Project 11 (Coming Soon)</h3>
-            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
-            <div class="badges"><span class="badge">Power BI</span></div>
-            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
+            <p>Add overview image + GitHub link when ready.</p>
+            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
-        <article class="projectCard isPlaceholder" data-tags="python sql">
-          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
+        <article class="projectCard isPlaceholder" data-tags="all">
+          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
           <div class="projectBody">
             <h3>Project 12 (Coming Soon)</h3>
-            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
-            <div class="badges"><span class="badge">Python</span><span class="badge">SQL</span></div>
-            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
+            <p>Add overview image + GitHub link when ready.</p>
+            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
-        <article class="projectCard isPlaceholder" data-tags="powerbi">
-          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
+        <article class="projectCard isPlaceholder" data-tags="all">
+          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
           <div class="projectBody">
             <h3>Project 13 (Coming Soon)</h3>
-            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
-            <div class="badges"><span class="badge">Power BI</span></div>
-            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
+            <p>Add overview image + GitHub link when ready.</p>
+            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
-
       </div>
     </div>
   </section>
@@ -526,147 +601,165 @@
   <!-- CERTIFICATES -->
   <section id="certificates" class="section">
     <div class="container">
-
       <div class="sectionHead">
-        <h2>Certificates & Courses</h2>
-        <p>Grouped by platform (clean and professional)</p>
+        <h2>Certificates &amp; Courses</h2>
+        <p>Grouped by platform (clean & professional)</p>
       </div>
 
       <div class="certGrid">
-
-        <!-- Google Data Analytics -->
+        <!-- Microsoft Egypt & DEPI -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="YOUR_GOOGLE_DRIVE_LINK_HERE">
-           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
-          <img class="certLogo" src="assets/logos/google.png" alt="Google">
+           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
+          <!-- ⬆️ ضع لينك شهادة Google Drive هنا -->
+          <img class="certLogo" src="assets/logos/ProAr.png" alt="Microsoft Egypt & DEPI">
           <div>
-            <div class="certTitle">Google Data Analytics Professional Certificate</div>
-            <div class="certOrg">Google</div>
+            <div class="certTitle">Data Analysis Using Power BI</div>
+            <div class="certOrg">Microsoft Egypt & DEPI</div>
           </div>
+          <span class="certArrow">↗</span>
         </a>
 
-        <!-- DataCamp -->
+        <!-- DataCamp (replaced) -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="YOUR_DATACAMP_LINK_HERE">
-           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
-          <img class="certLogo" src="assets/logos/datacamp.png" alt="DataCamp">
+           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
+          <!-- ⬆️ ضع لينك شهادة DataCamp هنا -->
+          <div class="certBadge">DC</div>
           <div>
             <div class="certTitle">Data Analyst Associate Certification</div>
             <div class="certOrg">DataCamp</div>
           </div>
+          <span class="certArrow">↗</span>
         </a>
 
         <!-- Udemy -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="YOUR_UDEMY_CERT_LINK_HERE">
-           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+           href="PASTE_UDEMY_OR_DRIVE_LINK_HERE">
+          <!-- ⬆️ ضع لينك Udemy أو Google Drive هنا -->
           <img class="certLogo" src="assets/logos/udemy.png" alt="Udemy">
           <div>
             <div class="certTitle">Data Analysis Course</div>
             <div class="certOrg">Udemy</div>
           </div>
+          <span class="certArrow">↗</span>
         </a>
 
-        <!-- EYouth Bundle (merged) -->
+        <!-- Google (Course) -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="YOUR_EYOUTH_BUNDLE_LINK_HERE">
-           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+           href="PASTE_GOOGLE_CERT_LINK_HERE">
+          <!-- ⬆️ ضع لينك شهادة Google هنا (Drive أو Coursera) -->
+          <div class="certBadge certBadge--google">G</div>
+          <div>
+            <div class="certTitle">Google Data Analytics Professional Certificate</div>
+            <div class="certOrg">Google</div>
+          </div>
+          <span class="certArrow">↗</span>
+        </a>
+
+        <!-- EYouth (integrated) -->
+        <a class="card glass certCard" target="_blank" rel="noreferrer"
+           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
+          <!-- ⬆️ ضع لينك شهادة EYouth هنا -->
           <img class="certLogo" src="assets/logos/eyouth_Logo.png" alt="EYouth">
           <div>
-            <div class="certTitle">EYouth Data Analysis Track (Power BI + Excel)</div>
-            <div class="certOrg">EYouth</div>
+            <div class="certTitle">Data Analytics & BI Diploma Specialization</div>
+            <div class="certOrg">EYouth Learning Platform</div>
           </div>
+          <span class="certArrow">↗</span>
         </a>
 
-        <!-- Power BI - Microsoft Egypt & DEPI -->
+        <!-- Egyptian Science House -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="YOUR_DEPI_CERT_LINK_HERE">
-           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
-          <img class="certLogo" src="assets/logos/ProAr.png" alt="DEPI">
+           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
+          <!-- ⬆️ ضع لينك شهادة هنا -->
+          <img class="certLogo" src="assets/logos/egyption-scince-house-logo.png" alt="Egyptian Science House">
           <div>
-            <div class="certTitle">Data Analysis Using Power BI</div>
-            <div class="certOrg">Microsoft Egypt • DEPI</div>
+            <div class="certTitle">Data Analysis Diploma</div>
+            <div class="certOrg">Egyptian Science House</div>
           </div>
+          <span class="certArrow">↗</span>
         </a>
 
-        <!-- Tableau - Data Street -->
+        <!-- Tableau -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="YOUR_TABLEAU_CERT_LINK_HERE">
-           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
+          <!-- ⬆️ ضع لينك شهادة هنا -->
           <img class="certLogo" src="assets/logos/the data street-logo.jpg" alt="The Data Street">
           <div>
             <div class="certTitle">Data Analysis Using Tableau</div>
             <div class="certOrg">The Data Street</div>
           </div>
+          <span class="certArrow">↗</span>
         </a>
 
-        <!-- Mahara Tech -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="YOUR_MAHARA_LINK_HERE">
-           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
-          <img class="certLogo" src="assets/logos/python-logo.png" alt="Mahara Tech">
+        <!-- 4 placeholders (new) -->
+        <div class="card glass certCard certCard--placeholder">
+          <div class="certBadge">+</div>
           <div>
-            <div class="certTitle">Python Programming Basics (for Data)</div>
-            <div class="certOrg">Mahara Tech</div>
+            <div class="certTitle">New Certificate (Add Soon)</div>
+            <div class="certOrg">Placeholder</div>
           </div>
-        </a>
+          <span class="certHint">Add link in code</span>
+        </div>
 
-        <!-- Egyptian Science House -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="YOUR_ESH_LINK_HERE">
-           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
-          <img class="certLogo" src="assets/logos/egyption-scince-house-logo.png" alt="Egyptian Science House">
+        <div class="card glass certCard certCard--placeholder">
+          <div class="certBadge">+</div>
           <div>
-            <div class="certTitle">Data & Programming Diplomas (Java + Python + Data Analysis)</div>
-            <div class="certOrg">Egyptian Science House</div>
+            <div class="certTitle">New Certificate (Add Soon)</div>
+            <div class="certOrg">Placeholder</div>
           </div>
-        </a>
+          <span class="certHint">Add link in code</span>
+        </div>
 
+        <div class="card glass certCard certCard--placeholder">
+          <div class="certBadge">+</div>
+          <div>
+            <div class="certTitle">New Certificate (Add Soon)</div>
+            <div class="certOrg">Placeholder</div>
+          </div>
+          <span class="certHint">Add link in code</span>
+        </div>
+
+        <div class="card glass certCard certCard--placeholder">
+          <div class="certBadge">+</div>
+          <div>
+            <div class="certTitle">New Certificate (Add Soon)</div>
+            <div class="certOrg">Placeholder</div>
+          </div>
+          <span class="certHint">Add link in code</span>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT (بدون GitHub) -->
   <section id="contact" class="section">
     <div class="container">
-
       <div class="sectionHead">
         <h2>Contact</h2>
-        <p>Let’s build something impactful with data</p>
+        <p>Let’s build something with data</p>
       </div>
 
       <div class="card glass contactCard">
-        <a class="contactItem" href="mailto:ahmedzayed551@outlook.com">
-          <span class="contactIcon">✉️</span>
-          <span>Email</span>
+        <a class="contactPill" href="mailto:ahmedzayed551@outlook.com">
+          <span class="pillDot"></span> Email
         </a>
-        <a class="contactItem" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst">
-          <span class="contactIcon">in</span>
-          <span>LinkedIn</span>
+        <a class="contactPill" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst">
+          <span class="pillDot"></span> LinkedIn
         </a>
-        <a class="contactItem" target="_blank" rel="noreferrer" href="https://github.com/Ahmed-Zayed-51">
-          <span class="contactIcon">⌂</span>
-          <span>GitHub</span>
+        <a class="contactPill" href="tel:+201017452037">
+          <span class="pillDot"></span> Call
         </a>
-        <a class="contactItem" href="tel:+201017452037">
-          <span class="contactIcon">📞</span>
-          <span>Call</span>
-        </a>
-        <a class="contactItem" target="_blank" rel="noreferrer" href="https://wa.me/201017452037">
-          <span class="contactIcon">💬</span>
-          <span>WhatsApp</span>
+        <a class="contactPill" target="_blank" rel="noreferrer" href="https://wa.me/201017452037">
+          <span class="pillDot"></span> WhatsApp
         </a>
       </div>
 
       <footer class="footer">
         <span>© <span id="year"></span> Ahmed Fathy Zayed • Built with GitHub Pages</span>
       </footer>
-
     </div>
   </section>
 
-  <button id="toTop" class="toTop" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
