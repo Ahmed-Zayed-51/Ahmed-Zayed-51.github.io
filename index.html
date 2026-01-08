@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ahmed Fathy Zayed | Data Analyst & BI Specialist</title>
-  <meta name="description" content="Ahmed Fathy Zayed - Data Analyst & BI Specialist. SQL, Python, Power BI, Dashboards, Analytics Projects." />
+  <title>Ahmed Fathy Zayed | Data Analyst | BI Specialist</title>
+  <meta name="description" content="Ahmed Fathy Zayed - Data Analyst & BI Specialist. SQL, Python, Power BI. Executive dashboards, KPI tracking, automation, and business insights." />
+  <meta name="theme-color" content="#070A12" />
 
-  <!-- Font -->
+  <!-- Fonts (Amazon-like fallback + modern) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -15,28 +16,45 @@
 </head>
 
 <body>
+
   <!-- Top Nav -->
-  <header class="topbar">
+  <header class="topbar" id="top">
     <div class="container topbar__inner">
+
       <a class="brand" href="#home" aria-label="Go to Home">
         <span class="brandName">Ahmed Fathy Zayed</span>
         <span class="brandRole">Data Analyst | BI Specialist</span>
       </a>
 
-      <button class="navToggle" aria-label="Open menu" aria-expanded="false">
+      <nav class="nav" aria-label="Primary Navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav">
-        <a href="#home" class="navLink">Home</a>
-        <a href="#about" class="navLink">About</a>
-        <a href="#skills" class="navLink">Skills</a>
-        <a href="#experience" class="navLink">Experience</a>
-        <a href="#education" class="navLink">Education</a>
-        <a href="#projects" class="navLink">Projects</a>
-        <a href="#certificates" class="navLink">Certificates</a>
-        <a href="#contact" class="navLink">Contact</a>
-      </nav>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
 
@@ -45,82 +63,103 @@
     <div class="hero__bg"></div>
 
     <div class="container hero__grid">
-      <!-- Left -->
       <div class="hero__left">
-        <div class="pill">
+
+        <div class="statusPill">
           <span class="dot"></span>
-          Available for Data Analytics &amp; BI Projects
+          Available for Data Analytics & BI Projects
         </div>
 
-        <h1 class="hero__title">
-          Ahmed <span>Fathy</span> Zayed
-        </h1>
+        <h1 class="hero__title">Ahmed Fathy Zayed</h1>
+
+        <!-- ✅ تحت الاسم: مسمّى وظيفي فقط -->
+        <div class="heroRole">Data Analyst | BI Specialist</div>
 
         <p class="hero__subtitle">
-          I’m a <b>Data Analyst & Business Intelligence Specialist</b> focused on building reliable analytics systems,
-          turning messy data into clean models, and delivering dashboards that help leaders make faster decisions.
-          I work with <b>SQL</b>, <b>Python</b>, and <b>Power BI</b> to produce measurable business impact.
+          I build <b>executive-ready dashboards</b>, reliable <b>reporting systems</b>, and clean <b>data models</b>
+          that turn operational data into measurable decisions using <b>SQL</b>, <b>Python</b>, and <b>Power BI</b>.
         </p>
 
         <div class="hero__cta">
           <a class="btn btnPrimary" href="#projects">Explore Projects</a>
-          <a class="btn btnGhost" href="#certificates">View Certificates</a>
+          <a class="btn btnSoft" href="#certificates">View Certificates</a>
           <a class="btn btnGhost" href="#services">Services</a>
           <a class="btn btnGhost" href="#contact">Contact Me</a>
         </div>
 
-        <div class="hero__cta hero__cta--cv">
-          <!-- ⬇️ ضع لينك Google Drive الخاص بالـ CV هنا (Preview) -->
-          <a class="btn btnSmall btnGlass" target="_blank" rel="noreferrer"
-             href="PASTE_CV_PREVIEW_LINK_HERE">
+        <div class="hero__cta hero__cta--small">
+          <!-- =========================================================
+               👉 ضع لينك Preview CV (Google Drive) هنا
+               مثال: https://drive.google.com/file/d/XXXX/view
+          ========================================================== -->
+          <a class="btn btnMini btnGlass" target="_blank" rel="noreferrer"
+             href="PUT_PREVIEW_CV_GOOGLE_DRIVE_LINK_HERE">
             Preview CV
           </a>
 
-          <!-- ⬇️ ضع لينك Google Drive للتحميل المباشر هنا (Download) -->
-          <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
-             href="PASTE_CV_DOWNLOAD_LINK_HERE">
+          <!-- =========================================================
+               👉 ضع لينك Download CV (Google Drive direct / أو نفس اللينك)
+          ========================================================== -->
+          <a class="btn btnMini btnPrimary" target="_blank" rel="noreferrer"
+             href="PUT_DOWNLOAD_CV_GOOGLE_DRIVE_LINK_HERE">
             Download CV
           </a>
         </div>
 
         <!-- Social (GitHub هنا فقط) -->
-        <div class="socialRow">
+        <div class="socialRow" aria-label="Social links">
           <a class="iconBtn" href="mailto:ahmedzayed551@outlook.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
           </a>
 
           <a class="iconBtn" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M6.5 9.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6.5 6.8h0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M10.5 20v-6.3c0-2.2 1.2-3.2 2.8-3.2 1.6 0 2.7 1 2.7 3.2V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M6.5 9.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M6.5 6.8h0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M10.5 20v-6.3c0-2.2 1.2-3.2 2.8-3.2 1.6 0 2.7 1 2.7 3.2V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
           </a>
 
           <a class="iconBtn" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.4-1-.9-1.3-.9-1.3-.8-.5.1-.5.1-.5.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.7.8.1-.6.3-1 .5-1.2-2.2-.2-4.4-1.1-4.4-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.7 9.7 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .4.9.2 2 .1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.2 4.8-4.4 5 .3.3.6.8.6 1.6v2.6c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.4-1-.9-1.3-.9-1.3-.8-.5.1-.5.1-.5.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.7.8.1-.6.3-1 .5-1.2-2.2-.2-4.4-1.1-4.4-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.7 9.7 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .4.9.2 2 .1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.2 4.8-4.4 5 .3.3.6.8.6 1.6v2.6c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
           </a>
 
           <a class="iconBtn" href="tel:+201017452037" aria-label="Phone">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M7 3h2l1 5-2 1c1 3 3 5 6 6l1-2 5 1v2c0 1-1 2-2 2-8 0-14-6-14-14 0-1 1-2 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M7 3h2l1 5-2 1c1 3 3 5 6 6l1-2 5 1v2c0 1-1 2-2 2-8 0-14-6-14-14 0-1 1-2 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
           </a>
 
           <a class="iconBtn" href="https://wa.me/201017452037" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M12 3a8 8 0 0 0-6.9 12l-.6 3.5 3.6-.6A8 8 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9.3 8.8c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.5l.7 1.6c.1.3.1.6-.1.8l-.5.6c.6 1.1 1.6 2 2.7 2.6l.6-.4c.3-.2.6-.2.9 0l1.5.7c.5.2.5.5.5.7v.6c0 .3 0 .6-.6.9-.6.3-1.8.5-3.7-.4-1.9-.9-3.5-2.6-4.4-4.5-.9-1.9-.7-3.1-.4-3.7Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M12 3a8 8 0 0 0-6.9 12l-.6 3.5 3.6-.6A8 8 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M9.3 8.8c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.5l.7 1.6c.1.3.1.6-.1.8l-.5.6c.6 1.1 1.6 2 2.7 2.6l.6-.4c.3-.2.6-.2.9 0l1.5.7c.5.2.5.5.5.7v.6c0 .3 0 .6-.6.9-.6.3-1.8.5-3.7-.4-1.9-.9-3.5-2.6-4.4-4.5-.9-1.9-.7-3.1-.4-3.7Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
           </a>
         </div>
 
-        <div class="heroBadges">
+        <div class="heroCards">
           <div class="miniCard">
             <div class="miniTitle">SQL • Python • Power BI</div>
-            <div class="miniSub">Analytics • Modeling • Dashboards</div>
+            <div class="miniMeta">Analytics • Modeling • Dashboards</div>
           </div>
+
           <div class="miniCard">
             <div class="miniTitle">Business Impact</div>
-            <div class="miniSub">KPI Tracking • Automation • Insights</div>
+            <div class="miniMeta">KPI Tracking • Automation • Insights</div>
           </div>
         </div>
+
       </div>
 
-      <!-- Right -->
       <div class="hero__right">
         <div class="avatarWrap">
+          <!-- ✅ لا يوجد تكبير وجه -->
           <img src="assets/profile.jpg" alt="Ahmed Fathy Zayed" />
         </div>
 
@@ -139,6 +178,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </main>
 
@@ -147,35 +187,25 @@
     <div class="container">
       <div class="sectionHead">
         <h2>About</h2>
-        <p>Who I am and how I create value with data</p>
+        <p>Short, clear, and executive-ready</p>
       </div>
 
-      <div class="card glass aboutCard aboutCard--pro">
+      <div class="card glass aboutCard">
         <p>
-          My name is <b>Ahmed Fathy Zayed</b>. I’m a <b>Data Analyst & Business Intelligence Specialist</b> with strong experience in
-          information systems, operational reporting, and building analytics solutions that connect business goals to measurable outcomes.
-          I help teams move from <b>“data noise”</b> to <b>clarity</b> by designing structured datasets, defining KPIs, and creating dashboards
-          that are accurate, fast, and easy to understand.
+          I’m <b>Ahmed Fathy Zayed</b> — a <b>Data Analyst | BI Specialist</b> with strong roots in
+          <b>Information Systems & Operational Reporting (8+ years)</b> and hands-on experience delivering
+          <b>data analytics & BI solutions (2+ years)</b>.
+          I help teams move from messy operational data to <b>trusted KPIs</b> by building clean datasets,
+          reliable reporting pipelines, and <b>Power BI dashboards</b> that executives can use daily.
+          My work focuses on speed, consistency, and measurable business impact using <b>SQL</b>, <b>Python</b>, and <b>Power BI</b>.
         </p>
 
-        <p>
-          I work end-to-end: starting from data extraction with <b>SQL</b>, cleaning and transforming data using <b>Python</b> and <b>Power Query</b>,
-          building strong models, then delivering executive-ready dashboards with <b>Power BI</b> and data storytelling.
-          I care about quality: clean logic, consistent definitions, and performance optimization. My work usually includes automation and validation checks
-          to reduce manual errors, improve refresh reliability, and ensure stakeholders can trust every number in the report.
-        </p>
-
-        <p>
-          If you need KPI tracking, operational reporting, or modern BI dashboards, I can help you design a clean analytics workflow and deliver
-          a practical solution that your team can actually use—daily.
-        </p>
-
-        <div class="chips chips--pro">
-          <span class="chip">KPI Dashboards</span>
+        <div class="chips">
+          <span class="chip">Executive Dashboards</span>
+          <span class="chip">KPI Definition</span>
           <span class="chip">Data Modeling</span>
           <span class="chip">ETL & Automation</span>
-          <span class="chip">Insight Storytelling</span>
-          <span class="chip">Stakeholder Communication</span>
+          <span class="chip">Operational Reporting</span>
         </div>
       </div>
     </div>
@@ -191,9 +221,7 @@
 
       <div class="skillsGrid">
         <div class="skill">
-          <div class="skillIcon">
-            <img src="assets/icons/sql-logo.jpg" alt="SQL" class="skillImg">
-          </div>
+          <div class="skillIcon"><img src="assets/icons/sql-logo.jpg" alt="SQL"></div>
           <div>
             <div class="skillName">SQL (PostgreSQL, SQL Server)</div>
             <div class="skillMeta">Joins • CTE • Window Functions • Performance</div>
@@ -201,9 +229,7 @@
         </div>
 
         <div class="skill">
-          <div class="skillIcon">
-            <img src="assets/icons/python-logo.png" alt="Python" class="skillImg">
-          </div>
+          <div class="skillIcon"><img src="assets/icons/python-logo.png" alt="Python"></div>
           <div>
             <div class="skillName">Python (Pandas, NumPy)</div>
             <div class="skillMeta">Cleaning • EDA • Automation • Validation</div>
@@ -211,9 +237,7 @@
         </div>
 
         <div class="skill">
-          <div class="skillIcon">
-            <img src="assets/icons/Power-Bi-logo.png" alt="Power BI" class="skillImg">
-          </div>
+          <div class="skillIcon"><img src="assets/icons/Power-Bi-logo.png" alt="Power BI"></div>
           <div>
             <div class="skillName">Power BI</div>
             <div class="skillMeta">DAX • Data Models • Power Query • Publishing</div>
@@ -221,9 +245,7 @@
         </div>
 
         <div class="skill">
-          <div class="skillIcon">
-            <img src="assets/icons/excel-logo.png" alt="Excel" class="skillImg">
-          </div>
+          <div class="skillIcon"><img src="assets/icons/excel-logo.png" alt="Excel"></div>
           <div>
             <div class="skillName">Advanced Excel</div>
             <div class="skillMeta">Pivot • Power Pivot • Modeling • Automation</div>
@@ -231,9 +253,7 @@
         </div>
 
         <div class="skill">
-          <div class="skillIcon">
-            <img src="assets/icons/tableau-logo.png" alt="Tableau" class="skillImg">
-          </div>
+          <div class="skillIcon"><img src="assets/icons/tableau-logo.png" alt="Tableau"></div>
           <div>
             <div class="skillName">Tableau</div>
             <div class="skillMeta">Dashboards • Storytelling • Insights</div>
@@ -241,9 +261,7 @@
         </div>
 
         <div class="skill">
-          <div class="skillIcon">
-            <span class="skillTxt">Viz</span>
-          </div>
+          <div class="skillIcon"><span>Viz</span></div>
           <div>
             <div class="skillName">Data Visualization</div>
             <div class="skillMeta">Design • Clarity • Executive-ready reporting</div>
@@ -262,34 +280,34 @@
       </div>
 
       <div class="servicesGrid">
-        <article class="card glass serviceCard">
-          <div class="serviceTitle">Power BI Dashboards</div>
-          <p class="serviceText">Executive dashboards, KPI tracking, drill-through pages, and performance-optimized DAX measures.</p>
-          <div class="serviceTags">
+        <div class="card glass serviceCard">
+          <h3>Power BI Dashboards</h3>
+          <p>Executive dashboards, KPI tracking, drill-through pages, and performance-optimized DAX measures.</p>
+          <div class="tags">
             <span class="tag">DAX</span><span class="tag">Modeling</span><span class="tag">Storytelling</span>
           </div>
-        </article>
+        </div>
 
-        <article class="card glass serviceCard">
-          <div class="serviceTitle">Data Cleaning & Automation</div>
-          <p class="serviceText">Automate workflows using Python + Power Query, validation checks, and structured data pipelines.</p>
-          <div class="serviceTags">
+        <div class="card glass serviceCard">
+          <h3>Data Cleaning & Automation</h3>
+          <p>Automate workflows using Python + Power Query, validation checks, and structured data pipelines.</p>
+          <div class="tags">
             <span class="tag">Python</span><span class="tag">ETL</span><span class="tag">QA</span>
           </div>
-        </article>
+        </div>
 
-        <article class="card glass serviceCard">
-          <div class="serviceTitle">SQL Reporting & Modeling</div>
-          <p class="serviceText">Write efficient SQL, create views, stored procedures, and reliable datasets for BI reporting.</p>
-          <div class="serviceTags">
+        <div class="card glass serviceCard">
+          <h3>SQL Reporting & Modeling</h3>
+          <p>Write efficient SQL, create views, stored procedures, and reliable datasets for BI reporting.</p>
+          <div class="tags">
             <span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">Performance</span>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
+  <!-- EXPERIENCE (الأحدث للأقدم) -->
   <section id="experience" class="section">
     <div class="container">
       <div class="sectionHead">
@@ -298,13 +316,24 @@
       </div>
 
       <div class="stack">
+
+        <div class="card glass itemCard">
+          <div class="itemTitle">Freelancer • Business Data Analyst</div>
+          <div class="itemMeta">Remote • Jul 2025 - Present</div>
+          <ul>
+            <li>Deliver BI and analytics projects using PostgreSQL, SQL Server, and Python (Pandas) to solve client business questions.</li>
+            <li>Design structured reporting datasets (tables, views, procedures) to support dashboard scalability.</li>
+            <li>Build KPI dashboards and automated analysis workflows for repeatable, reliable reporting.</li>
+          </ul>
+        </div>
+
         <div class="card glass itemCard">
           <div class="itemTitle">Business Data Analyst</div>
           <div class="itemMeta">Sunrise General Supplies Company • Nov 2024 - Jul 2025</div>
           <ul>
-            <li>Led end-to-end data projects using PostgreSQL, SQL, and Python to identify <b>3+ strategic opportunities</b> with direct executive impact.</li>
-            <li>Developed and maintained high-impact Power BI dashboards, focusing on <b>advanced DAX</b> calculations and optimized data models to track key KPIs.</li>
-            <li>Delivered executive-ready insights and reporting improvements through consistent KPI definitions and structured data modeling.</li>
+            <li>Led end-to-end data projects using PostgreSQL, SQL, and Python to identify 3+ strategic opportunities with executive impact.</li>
+            <li>Developed and maintained high-impact Power BI dashboards with advanced DAX and optimized data models to track KPIs.</li>
+            <li>Delivered executive-ready insights through consistent KPI definitions and structured data modeling.</li>
           </ul>
         </div>
 
@@ -312,9 +341,9 @@
           <div class="itemTitle">Information Systems & Operational Reporting Support</div>
           <div class="itemMeta">Swipe Technologies Egypt • Jan 2020 - Oct 2024</div>
           <ul>
-            <li>Designed and executed robust ETL processes and developed advanced reports using <b>Power Query</b> and <b>Advanced Excel</b>.</li>
-            <li>Achieved a documented <b>20% reduction in operational reporting errors</b> and ensured strong data quality and integrity for BI processes.</li>
-            <li>Managed critical operational data analysis workflows to support executive decision-making.</li>
+            <li>Designed and executed robust ETL processes and advanced reports using Power Query and Advanced Excel.</li>
+            <li>Achieved a documented 20% reduction in operational reporting errors and ensured strong data quality for BI processes.</li>
+            <li>Supported cross-functional reporting needs and operational analytics with reliable data foundations.</li>
           </ul>
         </div>
 
@@ -322,21 +351,12 @@
           <div class="itemTitle">Information Systems & Data Reporting Specialist</div>
           <div class="itemMeta">TecWave Solutions • Apr 2016 - Nov 2019</div>
           <ul>
-            <li>Managed and established data integrity and operational reporting across critical inventory and sales systems.</li>
+            <li>Managed data integrity and operational reporting across inventory and sales systems.</li>
             <li>Built complex analytical models and periodic reports using Advanced Excel and Google Sheets for time-sensitive planning.</li>
             <li>Provided a reliable data foundation for executive decision support and operational performance tracking.</li>
           </ul>
         </div>
 
-        <div class="card glass itemCard">
-          <div class="itemTitle">Freelancer • Business Data Analyst</div>
-          <div class="itemMeta">Remote • Jul 2025 - Present</div>
-          <ul>
-            <li>Led BI and data analysis projects using PostgreSQL, SQL Server, and Python (Pandas), identifying <b>3+ strategic opportunities</b> for clients.</li>
-            <li>Designed efficient database schemas using advanced SQL (DDL) and structured reporting datasets (tables, views, procedures).</li>
-            <li>Delivered KPI dashboards and automated analysis workflows for repeatable reporting.</li>
-          </ul>
-        </div>
       </div>
     </div>
   </section>
@@ -353,8 +373,8 @@
         <div class="card glass itemCard">
           <div class="itemTitle">Bachelor of Computer Science</div>
           <div class="itemMeta">
-            <a class="eduLogoLink" href="https://hti.edu.eg/site/home_ar" target="_blank" rel="noreferrer" aria-label="Higher Technological Institute">
-              <img class="eduLogo" src="assets/logos/hti-logo.png" alt="HTI Logo">
+            <a class="eduLogoLink" href="https://hti.edu.eg/site/home_ar" target="_blank" rel="noreferrer">
+              <img class="eduLogo" src="assets/logos/hti-logo.png" alt="HTI">
             </a>
           </div>
           <ul>
@@ -377,27 +397,30 @@
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <div class="container">
-      <div class="sectionHead">
-        <h2>Projects</h2>
-        <p>Selected dashboards and analytics work (13 projects)</p>
-      </div>
-
-      <div class="projectsToolbar">
-        <div class="searchBox">
-          <span class="searchIcon" aria-hidden="true">⌕</span>
-          <input id="projectSearch" type="text" placeholder="Search projects..." autocomplete="off" />
+      <div class="sectionHead sectionHeadRow">
+        <div>
+          <h2>Projects</h2>
+          <p>Selected dashboards and analytics work (13 projects)</p>
         </div>
 
-        <div class="filterRow" role="tablist" aria-label="Project filters">
-          <button class="filterBtn isActive" data-filter="all" type="button">All</button>
-          <button class="filterBtn" data-filter="powerbi" type="button">Power BI</button>
-          <button class="filterBtn" data-filter="python" type="button">Python</button>
-          <button class="filterBtn" data-filter="sql" type="button">SQL</button>
-          <button class="filterBtn" data-filter="excel" type="button">Excel</button>
+        <div class="projectToolbar">
+          <div class="searchBox">
+            <svg viewBox="0 0 24 24" class="icon"><path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16.5 16.5 21 21" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <input id="projectSearch" type="text" placeholder="Search projects..." aria-label="Search projects">
+          </div>
+
+          <div class="filters" role="tablist" aria-label="Project filters">
+            <button class="filterBtn isActive" data-filter="all" type="button">All</button>
+            <button class="filterBtn" data-filter="powerbi" type="button">Power BI</button>
+            <button class="filterBtn" data-filter="python" type="button">Python</button>
+            <button class="filterBtn" data-filter="sql" type="button">SQL</button>
+            <button class="filterBtn" data-filter="excel" type="button">Excel</button>
+          </div>
         </div>
       </div>
 
       <div class="projectsGrid" id="projectsGrid">
+
         <!-- 1) Adidas -->
         <article class="projectCard" data-tags="powerbi python">
           <div class="projectMedia">
@@ -418,7 +441,7 @@
           </div>
         </article>
 
-        <!-- 2) Credit Card Customer -->
+        <!-- 2) Credit Customer -->
         <article class="projectCard" data-tags="powerbi sql python">
           <div class="projectMedia">
             <img src="assets/projects/credit-customer.jpg" alt="Credit Card Customer Report">
@@ -445,7 +468,7 @@
           </div>
           <div class="projectBody">
             <h3>Executive Credit Card Performance Dashboard</h3>
-            <p>Executive KPIs overview: revenue, customers, transactions & satisfaction.</p>
+            <p>Executive KPIs: revenue, customers, transactions & satisfaction.</p>
             <div class="badges">
               <span class="badge">Power BI</span>
               <span class="badge">Python</span>
@@ -465,7 +488,7 @@
           </div>
           <div class="projectBody">
             <h3>IMDB Movies Analytics Dashboard</h3>
-            <p>Movies rating trends, top titles, and insights visualization.</p>
+            <p>Ratings trends, top titles, and insight visualization.</p>
             <div class="badges">
               <span class="badge">SQL</span>
               <span class="badge">Python</span>
@@ -478,14 +501,14 @@
           </div>
         </article>
 
-        <!-- 5) Retail Sales & Inventory -->
-        <article class="projectCard" data-tags="powerbi sql python">
+        <!-- 5) Retail Performance -->
+        <article class="projectCard" data-tags="powerbi sql">
           <div class="projectMedia">
             <img src="assets/projects/retail-sales-performance.jpg" alt="Retail Sales & Inventory Dashboard">
           </div>
           <div class="projectBody">
             <h3>Retail Sales & Inventory Dashboard</h3>
-            <p>Executive overview for retail KPIs: revenue, margins, stockout & trends.</p>
+            <p>Revenue, margins, stockout rate, and daily trend insights.</p>
             <div class="badges">
               <span class="badge">Power BI</span>
               <span class="badge">SQL</span>
@@ -505,7 +528,7 @@
           </div>
           <div class="projectBody">
             <h3>Retail Dashboard — Overview Page</h3>
-            <p>High-impact overview page for the Retail Sales & Inventory project.</p>
+            <p>High-impact overview page for the retail dashboard (preview).</p>
             <div class="badges">
               <span class="badge">Power BI</span>
               <span class="badge">Dashboard</span>
@@ -517,83 +540,77 @@
           </div>
         </article>
 
-        <!-- 7..13 placeholders -->
-        <!-- NOTE: no image needed for placeholders -->
+        <!-- 7-13 Placeholders -->
         <article class="projectCard isPlaceholder" data-tags="all">
-          <div class="projectMedia projectMedia--ph">
-            <div class="phTitle">Coming Soon</div>
-          </div>
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 7 (Coming Soon)</h3>
             <p>Add overview image + GitHub link when ready.</p>
-            <div class="badges">
-              <span class="badge ghost">Power BI</span>
-              <span class="badge ghost">SQL</span>
-              <span class="badge ghost">Python</span>
-            </div>
+            <div class="badges"><span class="badge">Coming Soon</span></div>
             <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
         <article class="projectCard isPlaceholder" data-tags="all">
-          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 8 (Coming Soon)</h3>
             <p>Add overview image + GitHub link when ready.</p>
-            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <div class="badges"><span class="badge">Coming Soon</span></div>
             <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
         <article class="projectCard isPlaceholder" data-tags="all">
-          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 9 (Coming Soon)</h3>
             <p>Add overview image + GitHub link when ready.</p>
-            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <div class="badges"><span class="badge">Coming Soon</span></div>
             <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
         <article class="projectCard isPlaceholder" data-tags="all">
-          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 10 (Coming Soon)</h3>
             <p>Add overview image + GitHub link when ready.</p>
-            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <div class="badges"><span class="badge">Coming Soon</span></div>
             <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
         <article class="projectCard isPlaceholder" data-tags="all">
-          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 11 (Coming Soon)</h3>
             <p>Add overview image + GitHub link when ready.</p>
-            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <div class="badges"><span class="badge">Coming Soon</span></div>
             <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
         <article class="projectCard isPlaceholder" data-tags="all">
-          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 12 (Coming Soon)</h3>
             <p>Add overview image + GitHub link when ready.</p>
-            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <div class="badges"><span class="badge">Coming Soon</span></div>
             <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
 
         <article class="projectCard isPlaceholder" data-tags="all">
-          <div class="projectMedia projectMedia--ph"><div class="phTitle">Coming Soon</div></div>
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 13 (Coming Soon)</h3>
             <p>Add overview image + GitHub link when ready.</p>
-            <div class="badges"><span class="badge ghost">Coming Soon</span></div>
+            <div class="badges"><span class="badge">Coming Soon</span></div>
             <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
           </div>
         </article>
+
       </div>
     </div>
   </section>
@@ -602,28 +619,27 @@
   <section id="certificates" class="section">
     <div class="container">
       <div class="sectionHead">
-        <h2>Certificates &amp; Courses</h2>
+        <h2>Certificates & Courses</h2>
         <p>Grouped by platform (clean & professional)</p>
       </div>
 
       <div class="certGrid">
-        <!-- Microsoft Egypt & DEPI -->
+
+        <!-- Google -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
-          <!-- ⬆️ ضع لينك شهادة Google Drive هنا -->
-          <img class="certLogo" src="assets/logos/ProAr.png" alt="Microsoft Egypt & DEPI">
+           href="PUT_GOOGLE_CERT_LINK_HERE">
+          <div class="certIcon certIcon--google">G</div>
           <div>
-            <div class="certTitle">Data Analysis Using Power BI</div>
-            <div class="certOrg">Microsoft Egypt & DEPI</div>
+            <div class="certTitle">Google Data Analytics Professional Certificate</div>
+            <div class="certOrg">Google</div>
           </div>
           <span class="certArrow">↗</span>
         </a>
 
-        <!-- DataCamp (replaced) -->
+        <!-- DataCamp (موحّد) -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
-          <!-- ⬆️ ضع لينك شهادة DataCamp هنا -->
-          <div class="certBadge">DC</div>
+           href="PUT_DATACAMP_CERT_LINK_HERE">
+          <div class="certIcon certIcon--dc">DC</div>
           <div>
             <div class="certTitle">Data Analyst Associate Certification</div>
             <div class="certOrg">DataCamp</div>
@@ -633,9 +649,8 @@
 
         <!-- Udemy -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="PASTE_UDEMY_OR_DRIVE_LINK_HERE">
-          <!-- ⬆️ ضع لينك Udemy أو Google Drive هنا -->
-          <img class="certLogo" src="assets/logos/udemy.png" alt="Udemy">
+           href="PUT_UDEMY_COURSE_LINK_HERE">
+          <div class="certIcon certIcon--udemy">U</div>
           <div>
             <div class="certTitle">Data Analysis Course</div>
             <div class="certOrg">Udemy</div>
@@ -643,22 +658,9 @@
           <span class="certArrow">↗</span>
         </a>
 
-        <!-- Google (Course) -->
+        <!-- EYouth (مدمجة) -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="PASTE_GOOGLE_CERT_LINK_HERE">
-          <!-- ⬆️ ضع لينك شهادة Google هنا (Drive أو Coursera) -->
-          <div class="certBadge certBadge--google">G</div>
-          <div>
-            <div class="certTitle">Google Data Analytics Professional Certificate</div>
-            <div class="certOrg">Google</div>
-          </div>
-          <span class="certArrow">↗</span>
-        </a>
-
-        <!-- EYouth (integrated) -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
-          <!-- ⬆️ ضع لينك شهادة EYouth هنا -->
+           href="PUT_EYOUTH_LINK_HERE">
           <img class="certLogo" src="assets/logos/eyouth_Logo.png" alt="EYouth">
           <div>
             <div class="certTitle">Data Analytics & BI Diploma Specialization</div>
@@ -667,23 +669,21 @@
           <span class="certArrow">↗</span>
         </a>
 
-        <!-- Egyptian Science House -->
+        <!-- Microsoft / DEPI -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
-          <!-- ⬆️ ضع لينك شهادة هنا -->
-          <img class="certLogo" src="assets/logos/egyption-scince-house-logo.png" alt="Egyptian Science House">
+           href="PUT_MICROSOFT_DEPI_LINK_HERE">
+          <div class="certIcon certIcon--ms">M</div>
           <div>
-            <div class="certTitle">Data Analysis Diploma</div>
-            <div class="certOrg">Egyptian Science House</div>
+            <div class="certTitle">Data Analysis Using Power BI</div>
+            <div class="certOrg">Microsoft Egypt & DEPI</div>
           </div>
           <span class="certArrow">↗</span>
         </a>
 
         <!-- Tableau -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="PASTE_GOOGLE_DRIVE_LINK_HERE">
-          <!-- ⬆️ ضع لينك شهادة هنا -->
-          <img class="certLogo" src="assets/logos/the data street-logo.jpg" alt="The Data Street">
+           href="PUT_TABLEAU_LINK_HERE">
+          <div class="certIcon certIcon--tb">T</div>
           <div>
             <div class="certTitle">Data Analysis Using Tableau</div>
             <div class="certOrg">The Data Street</div>
@@ -691,42 +691,47 @@
           <span class="certArrow">↗</span>
         </a>
 
-        <!-- 4 placeholders (new) -->
-        <div class="card glass certCard certCard--placeholder">
-          <div class="certBadge">+</div>
-          <div>
-            <div class="certTitle">New Certificate (Add Soon)</div>
-            <div class="certOrg">Placeholder</div>
-          </div>
-          <span class="certHint">Add link in code</span>
-        </div>
+        <!-- =========================================================
+             ✅ 4 شهادات Placeholder — أنت هتضيفهم
+             👉 ضع لينك Google Drive هنا لكل شهادة
+        ========================================================== -->
 
-        <div class="card glass certCard certCard--placeholder">
-          <div class="certBadge">+</div>
+        <a class="card glass certCard certAdd" target="_blank" rel="noreferrer"
+           href="PUT_NEW_CERT_1_LINK_HERE">
+          <div class="certAddIcon">+</div>
           <div>
             <div class="certTitle">New Certificate (Add Soon)</div>
-            <div class="certOrg">Placeholder</div>
+            <div class="certOrg">Placeholder — add link in code</div>
           </div>
-          <span class="certHint">Add link in code</span>
-        </div>
+        </a>
 
-        <div class="card glass certCard certCard--placeholder">
-          <div class="certBadge">+</div>
+        <a class="card glass certCard certAdd" target="_blank" rel="noreferrer"
+           href="PUT_NEW_CERT_2_LINK_HERE">
+          <div class="certAddIcon">+</div>
           <div>
             <div class="certTitle">New Certificate (Add Soon)</div>
-            <div class="certOrg">Placeholder</div>
+            <div class="certOrg">Placeholder — add link in code</div>
           </div>
-          <span class="certHint">Add link in code</span>
-        </div>
+        </a>
 
-        <div class="card glass certCard certCard--placeholder">
-          <div class="certBadge">+</div>
+        <a class="card glass certCard certAdd" target="_blank" rel="noreferrer"
+           href="PUT_NEW_CERT_3_LINK_HERE">
+          <div class="certAddIcon">+</div>
           <div>
             <div class="certTitle">New Certificate (Add Soon)</div>
-            <div class="certOrg">Placeholder</div>
+            <div class="certOrg">Placeholder — add link in code</div>
           </div>
-          <span class="certHint">Add link in code</span>
-        </div>
+        </a>
+
+        <a class="card glass certCard certAdd" target="_blank" rel="noreferrer"
+           href="PUT_NEW_CERT_4_LINK_HERE">
+          <div class="certAddIcon">+</div>
+          <div>
+            <div class="certTitle">New Certificate (Add Soon)</div>
+            <div class="certOrg">Placeholder — add link in code</div>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -741,16 +746,19 @@
 
       <div class="card glass contactCard">
         <a class="contactPill" href="mailto:ahmedzayed551@outlook.com">
-          <span class="pillDot"></span> Email
+          <span class="dot"></span> Email
         </a>
-        <a class="contactPill" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst">
-          <span class="pillDot"></span> LinkedIn
+
+        <a class="contactPill" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer">
+          <span class="dot"></span> LinkedIn
         </a>
+
         <a class="contactPill" href="tel:+201017452037">
-          <span class="pillDot"></span> Call
+          <span class="dot"></span> Call
         </a>
-        <a class="contactPill" target="_blank" rel="noreferrer" href="https://wa.me/201017452037">
-          <span class="pillDot"></span> WhatsApp
+
+        <a class="contactPill" href="https://wa.me/201017452037" target="_blank" rel="noreferrer">
+          <span class="dot"></span> WhatsApp
         </a>
       </div>
 
@@ -759,6 +767,8 @@
       </footer>
     </div>
   </section>
+
+  <a class="toTop" href="#top" aria-label="Back to top">↑</a>
 
   <script src="script.js"></script>
 </body>
