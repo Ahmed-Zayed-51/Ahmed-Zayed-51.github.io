@@ -22,17 +22,12 @@ if (nav && navToggle) {
     document.body.classList.toggle("noScroll", isOpen);
   });
 
-  // Close on click any nav link
-  nav.querySelectorAll("a").forEach(a => {
-    a.addEventListener("click", () => closeMenu());
-  });
+  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
 
-  // Close on ESC
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
   });
 
-  // Close on outside click (mobile)
   document.addEventListener("click", (e) => {
     const clickedInside = nav.contains(e.target) || navToggle.contains(e.target);
     if (!clickedInside && nav.classList.contains("isOpen")) closeMenu();
@@ -46,7 +41,7 @@ const sections = [...document.querySelectorAll("section, main.hero")];
 const navLinks = [...document.querySelectorAll(".nav a")];
 
 function setActive() {
-  const y = window.scrollY + 140;
+  const y = window.scrollY + 150;
   let currentId = "home";
 
   for (const s of sections) {
@@ -60,8 +55,7 @@ function setActive() {
 
   navLinks.forEach(a => {
     const href = a.getAttribute("href")?.replace("#", "");
-    if (href === currentId) a.classList.add("isActive");
-    else a.classList.remove("isActive");
+    a.classList.toggle("isActive", href === currentId);
   });
 }
 window.addEventListener("scroll", setActive, { passive: true });
@@ -80,13 +74,11 @@ let searchTerm = "";
 function normalize(s) {
   return (s || "").toLowerCase().trim();
 }
-
 function matchesFilter(card) {
   if (activeFilter === "all") return true;
   const tags = normalize(card.getAttribute("data-tags"));
   return tags.split(/\s+/).includes(activeFilter);
 }
-
 function matchesSearch(card) {
   if (!searchTerm) return true;
   const title = normalize(card.querySelector("h3")?.textContent);
@@ -94,14 +86,12 @@ function matchesSearch(card) {
   const tags = normalize(card.getAttribute("data-tags"));
   return (title + " " + desc + " " + tags).includes(searchTerm);
 }
-
 function applyProjectsView() {
   projectCards.forEach(card => {
     const show = matchesFilter(card) && matchesSearch(card);
     card.classList.toggle("isHidden", !show);
   });
 }
-
 if (filterBtns.length) {
   filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -112,13 +102,27 @@ if (filterBtns.length) {
     });
   });
 }
-
 if (searchInput) {
   searchInput.addEventListener("input", (e) => {
     searchTerm = normalize(e.target.value);
     applyProjectsView();
   });
 }
-
-// initial
 applyProjectsView();
+
+/* =========================
+   Back to top
+========================= */
+const toTop = document.getElementById("toTop");
+function onScrollTopBtn(){
+  if(!toTop) return;
+  toTop.classList.toggle("isVisible", window.scrollY > 500);
+}
+window.addEventListener("scroll", onScrollTopBtn, { passive: true });
+onScrollTopBtn();
+
+if (toTop) {
+  toTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
