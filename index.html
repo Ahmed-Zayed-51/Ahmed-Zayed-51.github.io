@@ -3,31 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ahmed Fathy Zayed | Data Analyst & BI Expert</title>
-  <meta name="description" content="Ahmed Zayed - Data Analyst & Business Intelligence Expert. SQL, Python, Power BI. Dashboards and analytics projects." />
+  <title>Ahmed Fathy Zayed | Data Analyst & BI Specialist</title>
+  <meta name="description" content="Ahmed Fathy Zayed - Data Analyst & Business Intelligence Specialist. SQL, Python, Power BI. Dashboards and analytics projects." />
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <a class="skipLink" href="#main">Skip to content</a>
 
   <!-- Top Nav -->
   <header class="topbar">
     <div class="container topbar__inner">
 
-      <!-- ✅ Brand updated -->
-      <a class="brand" href="#home">
-        Ahmed Fathy Zayed
-        <span class="brandRole">Data Analyst</span>
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <span class="brandName">Ahmed Fathy Zayed</span>
+        <span class="brandRole">Data Analyst • BI Specialist</span>
       </a>
 
-      <nav class="nav">
+      <button id="navToggle" class="navToggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav" class="nav" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
@@ -38,66 +44,75 @@
   </header>
 
   <!-- HERO -->
-  <main id="home" class="hero">
+  <main id="home" class="hero" aria-label="Hero">
     <div class="hero__bg"></div>
-    <div class="container hero__grid">
 
+    <div class="container hero__grid" id="main">
       <div class="hero__left">
-        <div class="pill">Data Analyst • BI Expert</div>
+        <div class="heroPill">
+          <span class="dot"></span>
+          Available for Data Analytics & BI Projects
+        </div>
 
         <h1 class="hero__title">
-          Ahmed Fathy <span>Zayed</span>
+          Ahmed <span>Fathy Zayed</span>
         </h1>
 
         <p class="hero__subtitle">
-          Transforming complex data into actionable insights using <b>SQL</b>, <b>Python</b>, and
-          <b>Power BI</b> dashboards.
+          I’m a <b>Data Analyst & Business Intelligence Specialist</b> focused on building reliable analytics systems,
+          turning messy data into clean models, and delivering dashboards that help leaders make faster decisions.
+          I work with <b>SQL</b>, <b>Python</b>, and <b>Power BI</b> to produce measurable business impact.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btnPrimary" href="#projects">View Projects</a>
-          <a class="btn btnGhost" href="#contact">Get in Touch</a>
+          <a class="btn btnPrimary" href="#projects">Explore Projects</a>
+          <a class="btn btnGhost" href="#certificates">View Certificates</a>
+          <a class="btn btnGhost" href="#contact">Contact Me</a>
         </div>
 
-        <!-- ✅ Social icons (fixed GitHub + LinkedIn) -->
         <div class="socialRow">
-          <!-- Email -->
           <a class="iconBtn" href="mailto:ahmedzayed551@outlook.com" aria-label="Email">
             <svg viewBox="0 0 24 24" class="icon"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           </a>
 
-          <!-- LinkedIn -->
           <a class="iconBtn" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" class="icon"><path d="M6.5 9.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6.5 6.8h0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M10.5 20v-6.3c0-2.2 1.2-3.2 2.8-3.2 1.6 0 2.7 1 2.7 3.2V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           </a>
 
-          <!-- ✅ GitHub (FIXED) -->
           <a class="iconBtn" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 24 24" class="icon"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.4-1-.9-1.3-.9-1.3-.8-.5.1-.5.1-.5.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.7.8.1-.6.3-1 .5-1.2-2.2-.2-4.4-1.1-4.4-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.7 9.7 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .4.9.2 2 .1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.2 4.8-4.4 5 .3.3.6.8.6 1.6v2.6c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
 
-          <!-- Phone -->
           <a class="iconBtn" href="tel:+201017452037" aria-label="Phone">
             <svg viewBox="0 0 24 24" class="icon"><path d="M7 3h2l1 5-2 1c1 3 3 5 6 6l1-2 5 1v2c0 1-1 2-2 2-8 0-14-6-14-14 0-1 1-2 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
           </a>
 
-          <!-- WhatsApp -->
           <a class="iconBtn" href="https://wa.me/201017452037" target="_blank" rel="noreferrer" aria-label="WhatsApp">
             <svg viewBox="0 0 24 24" class="icon"><path d="M12 3a8 8 0 0 0-6.9 12l-.6 3.5 3.6-.6A8 8 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9.3 8.8c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.5l.7 1.6c.1.3.1.6-.1.8l-.5.6c.6 1.1 1.6 2 2.7 2.6l.6-.4c.3-.2.6-.2.9 0l1.5.7c.5.2.5.5.5.7v.6c0 .3 0 .6-.6.9-.6.3-1.8.5-3.7-.4-1.9-.9-3.5-2.6-4.4-4.5-.9-1.9-.7-3.1-.4-3.7Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
+        </div>
+
+        <div class="heroHighlights">
+          <div class="miniCard">
+            <div class="miniTop">SQL • Python • Power BI</div>
+            <div class="miniSub">Analytics • Modeling • Dashboards</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniTop">Business Impact</div>
+            <div class="miniSub">KPI Tracking • Automation • Insights</div>
+          </div>
         </div>
       </div>
 
       <div class="hero__right">
         <div class="avatarWrap">
-          <!-- ✅ Profile -->
-          <img src="assets/profile.jpg" alt="Ahmed Zayed" />
+          <img src="assets/profile.jpg" alt="Ahmed Fathy Zayed" />
         </div>
 
         <div class="heroStats">
           <div class="statCard">
             <div class="statTop">8+ Years</div>
-            <div class="statSub">Info Systems & Data</div>
+            <div class="statSub">Information Systems & Reporting</div>
           </div>
           <div class="statCard">
             <div class="statTop">2+ Years</div>
@@ -105,7 +120,7 @@
           </div>
           <div class="statCard">
             <div class="statTop">Power BI</div>
-            <div class="statSub">DAX • Power Query</div>
+            <div class="statSub">DAX • Power Query • Modeling</div>
           </div>
         </div>
       </div>
@@ -113,113 +128,129 @@
     </div>
   </main>
 
- <div class="card aboutCard">
-  <p>
-    I’m <b>Ahmed Fathy Zayed</b>, a <b>Data Analyst & Business Intelligence (BI) Specialist</b> based in Cairo, Egypt,
-    with a strong <b>8-year foundation in Information Systems & Data Management</b> and a focused track record in
-    <b>end-to-end data solutions, advanced analytics, and visualization</b>.
-    I build reliable, executive-ready BI systems that convert complex, scattered data into <b>clear, actionable insights</b>
-    that drive measurable business impact.
-  </p>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
 
-  <p>
-    I work across the full BI lifecycle: <b>data extraction (SQL)</b>, <b>ETL & automation (Python / Power Query)</b>,
-    <b>data modeling</b>, and <b>dashboarding (Power BI + DAX)</b>.
-    I’m highly committed to data quality—my work achieved a <b>20% reduction in operational reporting errors</b>—and I’ve
-    delivered insights that helped identify <b>3+ strategic opportunities</b> with direct executive impact across
-    functions like <b>Sales, HR, and Procurement</b>.
-  </p>
-
-  <div class="aboutBullets">
-    <div class="chip">✔ Python (Pandas, NumPy) • Automation • ETL</div>
-    <div class="chip">✔ SQL (PostgreSQL, SQL Server) • Data Modeling</div>
-    <div class="chip">✔ Power BI (DAX, Power Query) • KPI Dashboards</div>
-    <div class="chip">✔ Data Quality • Validation • Governance Mindset</div>
-    <div class="chip">✔ Executive Storytelling • Insights • Decision Support</div>
-  </div>
-</div>
-
-
-      <!-- SKILLS -->
-      <div class="sectionHead sectionHead--sm">
-        <h3>Skills</h3>
-        <p>Tools & technologies I use to deliver measurable business value</p>
+      <div class="sectionHead">
+        <h2>About</h2>
+        <p>Who I am and how I create value with data</p>
       </div>
 
-      <!-- ✅ Skills with logos -->
+      <div class="card glass aboutCard">
+        <p>
+          My name is <b>Ahmed Fathy Zayed</b>. I am a <b>Data Analyst & Business Intelligence Specialist</b> with strong
+          experience in <b>information systems</b>, operational reporting, and building analytics solutions that connect
+          business goals to measurable outcomes.
+        </p>
+
+        <p>
+          I help organizations move from “data noise” to <b>clarity</b> by designing structured datasets, defining KPIs,
+          and creating dashboards that are accurate, fast, and easy to understand. I work end-to-end—starting from data
+          extraction with <b>SQL</b>, cleaning and transforming data using <b>Python</b> and Power Query, building strong
+          models, then delivering executive dashboards with <b>Power BI</b> and data storytelling.
+        </p>
+
+        <p>
+          I care about quality: clean logic, consistent definitions, and performance optimization. My work usually includes
+          automation and validation checks to reduce manual errors, improve refresh reliability, and ensure stakeholders
+          can trust every number in the report.
+        </p>
+
+        <div class="chips">
+          <span class="chip">KPI Dashboards</span>
+          <span class="chip">Data Modeling</span>
+          <span class="chip">ETL & Automation</span>
+          <span class="chip">Insight Storytelling</span>
+          <span class="chip">Stakeholder Communication</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+
+      <div class="sectionHead">
+        <h2>Skills</h2>
+        <p>Tools & technologies used to build analytics solutions</p>
+      </div>
+
       <div class="skillsGrid">
 
         <div class="skill">
           <div class="skillIcon">
-            <img src="assets/icons/sql-logo.jpg" alt="SQL" style="width:28px;height:28px;object-fit:contain;">
+            <img class="skillLogo" src="assets/icons/sql-logo.jpg" alt="SQL">
           </div>
           <div>
             <div class="skillName">SQL (PostgreSQL, SQL Server)</div>
-            <div class="skillMeta">Querying • Joins • CTE • Optimization</div>
+            <div class="skillMeta">Joins • CTE • Window Functions • Performance</div>
           </div>
         </div>
 
         <div class="skill">
           <div class="skillIcon">
-            <img src="assets/icons/python-logo.png" alt="Python" style="width:28px;height:28px;object-fit:contain;">
+            <img class="skillLogo" src="assets/icons/python-logo.png" alt="Python">
           </div>
           <div>
             <div class="skillName">Python (Pandas, NumPy)</div>
-            <div class="skillMeta">Cleaning • EDA • Automation</div>
+            <div class="skillMeta">Cleaning • EDA • Automation • Validation</div>
           </div>
         </div>
 
         <div class="skill">
           <div class="skillIcon">
-            <img src="assets/icons/Power-Bi-logo.png" alt="Power BI" style="width:28px;height:28px;object-fit:contain;">
+            <img class="skillLogo" src="assets/icons/Power-Bi-logo.png" alt="Power BI">
           </div>
           <div>
             <div class="skillName">Power BI</div>
-            <div class="skillMeta">DAX • Data Model • Power Query</div>
+            <div class="skillMeta">DAX • Data Models • Power Query • Publishing</div>
           </div>
         </div>
 
         <div class="skill">
           <div class="skillIcon">
-            <img src="assets/icons/excel-logo.png" alt="Excel" style="width:28px;height:28px;object-fit:contain;">
+            <img class="skillLogo" src="assets/icons/excel-logo.png" alt="Excel">
           </div>
           <div>
             <div class="skillName">Advanced Excel</div>
-            <div class="skillMeta">Pivot • Power Pivot • Modeling</div>
+            <div class="skillMeta">Pivot • Power Pivot • Modeling • Automation</div>
           </div>
         </div>
 
         <div class="skill">
           <div class="skillIcon">
-            <img src="assets/icons/tableau-logo.png" alt="Tableau" style="width:28px;height:28px;object-fit:contain;">
+            <img class="skillLogo" src="assets/icons/tableau-logo.png" alt="Tableau">
           </div>
           <div>
             <div class="skillName">Tableau</div>
-            <div class="skillMeta">Dashboards • Storytelling</div>
+            <div class="skillMeta">Dashboards • Storytelling • Insights</div>
           </div>
         </div>
 
         <div class="skill">
           <div class="skillIcon">
-            <span style="font-weight:900;">Viz</span>
+            <span class="skillText">Viz</span>
           </div>
           <div>
             <div class="skillName">Data Visualization</div>
-            <div class="skillMeta">Dashboards • Storytelling</div>
+            <div class="skillMeta">Design • Clarity • Executive-ready reporting</div>
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section id="experience" class="section">
     <div class="container">
+
       <div class="sectionHead">
         <h2>Experience</h2>
-        <p>Professional roles</p>
+        <p>Professional roles and responsibilities</p>
       </div>
 
       <div class="stack">
@@ -228,7 +259,8 @@
           <div class="itemMeta">Sunrise General Supplies Company • Nov 2024 - Jul 2025</div>
           <ul>
             <li>Developed and maintained high-impact Power BI dashboards with advanced DAX and optimized data models.</li>
-            <li>Built end-to-end analytics workflows using SQL and Python.</li>
+            <li>Built end-to-end analytics workflows using SQL and Python (cleaning, validation, and automation).</li>
+            <li>Delivered KPI reporting, insights, and executive-ready data storytelling.</li>
           </ul>
         </div>
 
@@ -237,29 +269,31 @@
           <div class="itemMeta">Swipe Technologies Egypt • Jan 2020 - Oct 2024</div>
           <ul>
             <li>Designed ETL processes and advanced reporting using Power Query and Advanced Excel.</li>
-            <li>Improved data quality and reduced reporting errors.</li>
+            <li>Improved data quality and reduced reporting errors through consistent definitions and checks.</li>
+            <li>Supported cross-functional reporting needs and operational analytics.</li>
           </ul>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section id="education" class="section">
     <div class="container">
+
       <div class="sectionHead">
-        <h2>Education & Activities</h2>
-        <p>Academic background</p>
+        <h2>Education</h2>
+        <p>Academic background & activities</p>
       </div>
 
       <div class="twoCol">
         <div class="card glass itemCard">
           <div class="itemTitle">Bachelor of Computer Science</div>
 
-          <!-- ✅ HTI Logo only (bigger) -->
           <div class="itemMeta">
             <a class="eduLogoLink" href="https://hti.edu.eg/site/home_ar" target="_blank" rel="noreferrer" aria-label="Higher Technological Institute">
-              <img class="eduLogo" src="assets/logos/hti-logo.png" alt="HTI Logo" style="height:56px;width:auto;">
+              <img class="eduLogo eduLogoBig" src="assets/logos/hti-logo.png" alt="HTI Logo">
             </a>
           </div>
 
@@ -272,35 +306,50 @@
         <div class="card glass itemCard">
           <div class="itemTitle">Activities</div>
           <ul>
-            <li><b>Programming Competitions & Challenges:</b> University-level contests using Java & Python.</li>
-            <li><b>IT Students Club:</b> Organized & attended workshops on software development, databases, and desktop applications.</li>
+            <li><b>Programming Competitions:</b> University-level contests using Java & Python.</li>
+            <li><b>IT Students Club:</b> Workshops on software development, databases, and desktop applications.</li>
           </ul>
         </div>
       </div>
+
     </div>
   </section>
 
-   <!-- PROJECTS (✅ 13 Projects) -->
+  <!-- PROJECTS -->
   <section id="projects" class="section">
     <div class="container">
+
       <div class="sectionHead">
         <h2>Projects</h2>
-        </div> 
+        <p>Selected dashboards and analytics work (13 projects)</p>
+      </div>
+
+      <!-- tools -->
+      <div class="projTools">
+        <div class="projFilters">
+          <button class="filterBtn isActive" data-filter="all" type="button">All</button>
+          <button class="filterBtn" data-filter="powerbi" type="button">Power BI</button>
+          <button class="filterBtn" data-filter="python" type="button">Python</button>
+          <button class="filterBtn" data-filter="sql" type="button">SQL</button>
+        </div>
+
+        <div class="projSearch">
+          <input id="projSearch" type="search" placeholder="Search projects..." aria-label="Search projects">
+        </div>
+      </div>
 
       <div class="projectsGrid">
 
         <!-- 1) Adidas -->
-        <article class="projectCard">
+        <article class="projectCard" data-tags="powerbi python">
           <div class="projectMedia">
             <img src="assets/projects/adidas.jpg" alt="Adidas Sales Performance Dashboard">
           </div>
           <div class="projectBody">
             <h3>Adidas Sales Performance Dashboard</h3>
-            <p>Sales • Products • Regional • Time-based analysis (Power BI).</p>
+            <p>Sales, products, region, and time-based analysis in Power BI.</p>
             <div class="badges">
-              <span class="badge">python</span>
-              <span class="badge">Power BI</span>
-              <span class="badge">Dashboard</span>
+              <span class="badge">Power BI</span><span class="badge">Python</span><span class="badge">Dashboard</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/Adidas-Sales-Performance-Dashboard">
@@ -308,19 +357,17 @@
             </a>
           </div>
         </article>
-  <!-- 2) Credit Card Customer Report -->
-        <article class="projectCard">
+
+        <!-- 2) Credit Customer -->
+        <article class="projectCard" data-tags="powerbi python sql">
           <div class="projectMedia">
             <img src="assets/projects/credit-customer.jpg" alt="Credit Card Customer Report">
           </div>
           <div class="projectBody">
             <h3>Credit Card Customer Report</h3>
-            <p>Customer insights, segments, KPIs and trends (Power BI).</p>
+            <p>Customer insights, segments, KPIs and trends using Power BI + Python.</p>
             <div class="badges">
-              <span class="badge">SQL</span>
-              <span class="badge">python</span>
-              <span class="badge">Power BI</span>
-              <span class="badge">Analytics</span>
+              <span class="badge">SQL</span><span class="badge">Python</span><span class="badge">Power BI</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/Credit-Card-Analytics-Dashboard---Power-BI-Python">
@@ -328,18 +375,17 @@
             </a>
           </div>
         </article>
-        <!-- 3) Executive Credit Card Performance -->
-        <article class="projectCard">
+
+        <!-- 3) Executive Credit Card -->
+        <article class="projectCard" data-tags="powerbi python">
           <div class="projectMedia">
             <img src="assets/projects/exec-cover.jpg" alt="Executive Credit Card Performance Dashboard">
           </div>
           <div class="projectBody">
             <h3>Executive Credit Card Performance Dashboard</h3>
-            <p>Executive KPIs overview: revenue, customers, transactions & satisfaction.</p>
+            <p>Executive KPIs overview for revenue, customers, transactions & satisfaction.</p>
             <div class="badges">
-              <span class="badge">python</span>
-              <span class="badge">Power BI</span>
-              <span class="badge">Executive</span>
+              <span class="badge">Power BI</span><span class="badge">Python</span><span class="badge">Executive</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/executive-credit-card-performance-dashboard">
@@ -348,19 +394,16 @@
           </div>
         </article>
 
-        <!-- 4) IMDB Movies -->
-        <article class="projectCard">
+        <!-- 4) IMDB -->
+        <article class="projectCard" data-tags="powerbi python sql">
           <div class="projectMedia">
             <img src="assets/projects/imdb.jpg" alt="IMDB Movies Analytics Dashboard">
           </div>
           <div class="projectBody">
             <h3>IMDB Movies Analytics Dashboard</h3>
-            <p>Movies rating trends, top titles, and insights visualization.</p>
+            <p>Movie rating trends, top titles, and KPI insights visualization.</p>
             <div class="badges">
-              <span class="badge">SQL</span>
-              <span class="badge">python</span>
-              <span class="badge">Power BI</span>
-              <span class="badge">Visualization</span>
+              <span class="badge">Power BI</span><span class="badge">SQL</span><span class="badge">Python</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/IMDB-Movies-Analytics-Dashboard">
@@ -368,19 +411,17 @@
             </a>
           </div>
         </article>
+
         <!-- 5) Retail Sales & Inventory -->
-        <article class="projectCard">
+        <article class="projectCard" data-tags="powerbi python sql">
           <div class="projectMedia">
             <img src="assets/projects/retail-sales-performance.jpg" alt="Retail Sales & Inventory Dashboard">
           </div>
           <div class="projectBody">
             <h3>Retail Sales & Inventory Dashboard</h3>
-            <p>Executive overview for retail KPIs: revenue, margins, stockout & trends.</p>
+            <p>Executive overview: revenue, margins, stockout rate & daily trend.</p>
             <div class="badges">
-              <span class="badge">SQL</span>
-              <span class="badge">python</span>
-              <span class="badge">Power BI</span>
-              <span class="badge">Retail</span>
+              <span class="badge">Power BI</span><span class="badge">SQL</span><span class="badge">Retail</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/Retail-Sales-Inventory-Dashboard">
@@ -389,18 +430,16 @@
           </div>
         </article>
 
-        <!-- 6) Retail-Sales-Inventory-Dashboard -->
-        <article class="projectCard">
+        <!-- 6) Retail Overview -->
+        <article class="projectCard" data-tags="powerbi">
           <div class="projectMedia">
-            <img src="assets/projects/overview.jpg" alt="Retail-Sales-Inventory-Dashboard">
+            <img src="assets/projects/overview.jpg" alt="Retail Dashboard Overview Page">
           </div>
           <div class="projectBody">
-            <h3>Retail-Sales-Inventory-Dashboard</h3>
-            <p>Detailed overview page screenshot for the Retail dashboard.</p>
+            <h3>Retail Dashboard — Overview Page</h3>
+            <p>Highlight page preview for the retail analytics report.</p>
             <div class="badges">
-              <span class="badge">python</span>
-              <span class="badge">Power BI</span>
-              <span class="badge">Retail</span>
+              <span class="badge">Power BI</span><span class="badge">Dashboard</span>
             </div>
             <a class="btn btnSmall btnPrimary" target="_blank" rel="noreferrer"
                href="https://github.com/Ahmed-Zayed-51/Retail-Sales-Inventory-Dashboard">
@@ -408,107 +447,75 @@
             </a>
           </div>
         </article>
- <!-- 7) Placeholder -->
-        <article class="projectCard isPlaceholder">
-          <div class="projectMedia">
-            <img src="assets/projects/placeholder.jpg" alt="Coming Soon Project">
-          </div>
+
+        <!-- 7..13 placeholders -->
+        <article class="projectCard isPlaceholder" data-tags="powerbi">
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 7 (Coming Soon)</h3>
-            <p>Placeholder — add overview image + GitHub link when ready.</p>
-            <div class="badges">
-              <span class="badge">SQL</span>
-              <span class="badge">python</span>
-              <span class="badge">Power BI</span>
-            </div>
-            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
+            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
+            <div class="badges"><span class="badge">Power BI</span></div>
+            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
           </div>
         </article>
 
-        <!-- 8) Placeholder -->
-        <article class="projectCard isPlaceholder">
-          <div class="projectMedia">
-            <img src="assets/projects/placeholder.jpg" alt="Coming Soon Project">
-          </div>
+        <article class="projectCard isPlaceholder" data-tags="python">
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 8 (Coming Soon)</h3>
-            <p>Placeholder — add overview image + GitHub link when ready.</p>
-            <div class="badges">
-              <span class="badge">Coming Soon</span>
-            </div>
-            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
+            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
+            <div class="badges"><span class="badge">Python</span></div>
+            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
           </div>
         </article>
-                <!-- 9) Placeholder -->
-        <article class="projectCard isPlaceholder">
-          <div class="projectMedia">
-            <img src="assets/projects/placeholder.jpg" alt="Coming Soon Project">
-          </div>
+
+        <article class="projectCard isPlaceholder" data-tags="sql">
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 9 (Coming Soon)</h3>
-            <p>Placeholder — add overview image + GitHub link when ready.</p>
-            <div class="badges">
-              <span class="badge">Coming Soon</span>
-            </div>
-            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
+            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
+            <div class="badges"><span class="badge">SQL</span></div>
+            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
           </div>
         </article>
 
-        <!-- 10) Placeholder -->
-        <article class="projectCard isPlaceholder">
-          <div class="projectMedia">
-            <img src="assets/projects/placeholder.jpg" alt="Coming Soon Project">
-          </div>
+        <article class="projectCard isPlaceholder" data-tags="powerbi sql">
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 10 (Coming Soon)</h3>
-            <p>Placeholder — add overview image + GitHub link when ready.</p>
-            <div class="badges">
-              <span class="badge">Coming Soon</span>
-            </div>
-            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
-          </div>
-        </article>
-        <!-- 11) Placeholder -->
-        <article class="projectCard isPlaceholder">
-          <div class="projectMedia">
-            <img src="assets/projects/placeholder.jpg" alt="Coming Soon Project">
-          </div>
-          <div class="projectBody">
-            <h3>Project 11 (Coming Soon)</h3>
-            <p>Placeholder — add overview image + GitHub link when ready.</p>
-            <div class="badges">
-              <span class="badge">Coming Soon</span>
-            </div>
-            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
+            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
+            <div class="badges"><span class="badge">Power BI</span><span class="badge">SQL</span></div>
+            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
           </div>
         </article>
 
-        <!-- 12) Placeholder -->
-        <article class="projectCard isPlaceholder">
-          <div class="projectMedia">
-            <img src="assets/projects/placeholder.jpg" alt="Coming Soon Project">
-          </div>
+        <article class="projectCard isPlaceholder" data-tags="powerbi">
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
-            <h3>Project 12 (Coming Soon)</h3>
-            <p>Placeholder — add overview image + GitHub link when ready.</p>
-            <div class="badges">
-              <span class="badge">Coming Soon</span>
-            </div>
-            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
+            <h3>Project 11 (Coming Soon)</h3>
+            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
+            <div class="badges"><span class="badge">Power BI</span></div>
+            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
           </div>
         </article>
-        <!-- 13) Placeholder -->
-        <article class="projectCard isPlaceholder">
-          <div class="projectMedia">
-            <img src="assets/projects/placeholder.jpg" alt="Coming Soon Project">
+
+        <article class="projectCard isPlaceholder" data-tags="python sql">
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
+          <div class="projectBody">
+            <h3>Project 12 (Coming Soon)</h3>
+            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
+            <div class="badges"><span class="badge">Python</span><span class="badge">SQL</span></div>
+            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
           </div>
+        </article>
+
+        <article class="projectCard isPlaceholder" data-tags="powerbi">
+          <div class="projectMedia"><img src="assets/projects/placeholder.jpg" alt="Coming soon"></div>
           <div class="projectBody">
             <h3>Project 13 (Coming Soon)</h3>
-            <p>Placeholder — add overview image + GitHub link when ready.</p>
-            <div class="badges">
-              <span class="badge">Coming Soon</span>
-            </div>
-            <span class="btn btnSmall btnGhost btnDisabled">Coming Soon</span>
+            <p>⬅️ Replace image + add GitHub/Drive link when ready.</p>
+            <div class="badges"><span class="badge">Power BI</span></div>
+            <a class="btn btnSmall btnGhost" href="#" aria-disabled="true">Coming Soon</a>
           </div>
         </article>
 
@@ -516,202 +523,150 @@
     </div>
   </section>
 
-   <!-- Certificates (FULL from your Google Sites page) -->
+  <!-- CERTIFICATES -->
   <section id="certificates" class="section">
     <div class="container">
+
       <div class="sectionHead">
-        <h2>Certificates</h2>
-        <p>Courses & certifications</p>
+        <h2>Certificates & Courses</h2>
+        <p>Grouped by platform (clean and professional)</p>
       </div>
 
       <div class="certGrid">
-        <!-- 1 -->
+
+        <!-- Google Data Analytics -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1Yyi3FhW6t_LdahGLGqP4kYiPuvtPZ47g/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/ProAr.png" alt="Power BI">
+           href="YOUR_GOOGLE_DRIVE_LINK_HERE">
+           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+          <img class="certLogo" src="assets/logos/google.png" alt="Google">
           <div>
-            <div class="certTitle">Data Analysis Using Power BI</div>
-            <div class="certOrg">Microsoft Egypt & DEPI</div>
+            <div class="certTitle">Google Data Analytics Professional Certificate</div>
+            <div class="certOrg">Google</div>
           </div>
         </a>
 
-        <!-- 2 -->
+        <!-- DataCamp -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1kV9DIzy_qq9KhwTPRdqj84b35cIlVY8E/view?usp=sharing">
-          <div class="certBadge">CISCO</div>
+           href="YOUR_DATACAMP_LINK_HERE">
+           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+          <img class="certLogo" src="assets/logos/datacamp.png" alt="DataCamp">
           <div>
-            <div class="certTitle">Data Analytics Essential</div>
-            <div class="certOrg">CISCO Networking Academy</div>
-          </div>
-        </a>
-
- <!-- 4 -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://www.datacamp.com/completed/statement-of-accomplishment/course/be735272411db1c80aa51bd6bd9e769e126a5bc2">
-          <div class="certBadge">DC</div>
-          <div>
-            <div class="certTitle">Intermediate Python</div>
+            <div class="certTitle">Data Analyst Associate Certification</div>
             <div class="certOrg">DataCamp</div>
           </div>
         </a>
 
-        <!-- 5 -->
+        <!-- Udemy -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1DH-15xYduIHeMY4ZdJai9qxRAKj2j1S4/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/egyption-scince-house-logo.png" alt="Egyptian Science House">
+           href="YOUR_UDEMY_CERT_LINK_HERE">
+           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+          <img class="certLogo" src="assets/logos/udemy.png" alt="Udemy">
           <div>
-            <div class="certTitle">Programming Diploma (JAVA)</div>
-            <div class="certOrg">Egyptian Science House</div>
+            <div class="certTitle">Data Analysis Course</div>
+            <div class="certOrg">Udemy</div>
           </div>
         </a>
 
-        <!-- 6 -->
+        <!-- EYouth Bundle (merged) -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1Q-1PCG5eM9TW7KB3vyhmzztQ40bqRX7k/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/egyption-scince-house-logo.png" alt="Egyptian Science House">
-          <div>
-            <div class="certTitle">Programming Diploma (Python)</div>
-            <div class="certOrg">Egyptian Science House</div>
-          </div>
-        </a>
-         <!-- 7 -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1N-cNDCtJ7uKjii1w4I6aoPfh4Jx1TwVl/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/egyption-scince-house-logo.png" alt="Egyptian Science House">
-          <div>
-            <div class="certTitle">Data Analysis Diploma</div>
-            <div class="certOrg">Egyptian Science House</div>
-          </div>
-        </a>
-
-        <!-- 8 -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1lNalG7_sAt7gtSQ8ds2iTw1nLyvWZ_-6/view?usp=sharing">
+           href="YOUR_EYOUTH_BUNDLE_LINK_HERE">
+           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
           <img class="certLogo" src="assets/logos/eyouth_Logo.png" alt="EYouth">
+          <div>
+            <div class="certTitle">EYouth Data Analysis Track (Power BI + Excel)</div>
+            <div class="certOrg">EYouth</div>
+          </div>
+        </a>
+
+        <!-- Power BI - Microsoft Egypt & DEPI -->
+        <a class="card glass certCard" target="_blank" rel="noreferrer"
+           href="YOUR_DEPI_CERT_LINK_HERE">
+           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+          <img class="certLogo" src="assets/logos/ProAr.png" alt="DEPI">
           <div>
             <div class="certTitle">Data Analysis Using Power BI</div>
-            <div class="certOrg">EYouth</div>
+            <div class="certOrg">Microsoft Egypt • DEPI</div>
           </div>
         </a>
 
-        <!-- 9 -->
+        <!-- Tableau - Data Street -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1MyA1Kbq7f5yo_9d7vaXb-ACtT4iJbfn8/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/eyouth_Logo.png" alt="EYouth">
+           href="YOUR_TABLEAU_CERT_LINK_HERE">
+           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+          <img class="certLogo" src="assets/logos/the data street-logo.jpg" alt="The Data Street">
           <div>
-            <div class="certTitle">Data Analysis Using Excel</div>
-            <div class="certOrg">EYouth</div>
-          </div>
-        </a>
-         <!-- 10 -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1_2dYHFP7FHzArO3OT0n3oRqX9jys3sVc/view?usp=sharing">
-          <div class="certBadge">PI</div>
-          <div>
-            <div class="certTitle">Dashboard Using Power BI</div>
-            <div class="certOrg">Powerful Insights</div>
-          </div>
-        </a>
-
-        <!-- 11 -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1D4aP9FQK6pVvcR3BtUZ7xqBkqWTHPkiY/view?usp=sharing">
-          <div class="certBadge">MA</div>
-          <div>
-            <div class="certTitle">Power BI Desktop</div>
-            <div class="certOrg">Maven Analytics</div>
-          </div>
-        </a>
-
-        <!-- 12 -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1l8H7tZyGCRVKeu5VLqGxLl2tWQHVf4sh/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/the data street-logo.jpg" alt="Tableau">
-          <div>
-            <div class="certTitle">Data Analysis Using TABLEAU</div>
+            <div class="certTitle">Data Analysis Using Tableau</div>
             <div class="certOrg">The Data Street</div>
           </div>
         </a>
-                <!-- 13 -->
+
+        <!-- Mahara Tech -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1f4b-yhyVyr1nd0VBFr5hvgG5Yqgwp_wa/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/python-logo.png" alt="Python">
+           href="YOUR_MAHARA_LINK_HERE">
+           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+          <img class="certLogo" src="assets/logos/python-logo.png" alt="Mahara Tech">
           <div>
-            <div class="certTitle">Python Programming Basics</div>
+            <div class="certTitle">Python Programming Basics (for Data)</div>
             <div class="certOrg">Mahara Tech</div>
           </div>
         </a>
 
-        <!-- 14 -->
+        <!-- Egyptian Science House -->
         <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/11gJKytmmOz2gpN2O1-hCWrW6-fILfwVb/view?usp=sharing">
-          <div class="certBadge">MT</div>
+           href="YOUR_ESH_LINK_HERE">
+           <!-- ⬅️ PUT GOOGLE DRIVE LINK HERE -->
+          <img class="certLogo" src="assets/logos/egyption-scince-house-logo.png" alt="Egyptian Science House">
           <div>
-            <div class="certTitle">Database Fundamentals</div>
-            <div class="certOrg">Mahara Tech</div>
-          </div>
-        </a>
-
-        <!-- 15 -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1u9xkQETLVejHO-L8Vgo2AB8WCrQ5E3UU/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/python-logo.png" alt="Python">
-          <div>
-            <div class="certTitle">Data Analysis Journey in Python</div>
-            <div class="certOrg">ENGINEERING TRACKS</div>
-          </div>
-        </a>
-
-        <!-- (Optional) extra file from your page -->
-        <a class="card glass certCard" target="_blank" rel="noreferrer"
-           href="https://drive.google.com/file/d/1KofBzJD-esXEicOWqIO_5YEARdI9ALs2/view?usp=sharing">
-          <img class="certLogo" src="assets/logos/eyouth_Logo.png" alt="EYouth">
-          <div>
-            <div class="certTitle">Additional Certificate File</div>
-            <div class="certOrg">Uploaded File</div>
+            <div class="certTitle">Data & Programming Diplomas (Java + Python + Data Analysis)</div>
+            <div class="certOrg">Egyptian Science House</div>
           </div>
         </a>
 
       </div>
+
     </div>
   </section>
+
   <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
+
       <div class="sectionHead">
         <h2>Contact</h2>
-        <p>Let’s connect</p>
+        <p>Let’s build something impactful with data</p>
       </div>
 
-      <!-- ✅ Icons only -->
       <div class="card glass contactCard">
-        <a class="iconBtn" href="mailto:ahmedzayed551@outlook.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <a class="contactItem" href="mailto:ahmedzayed551@outlook.com">
+          <span class="contactIcon">✉️</span>
+          <span>Email</span>
         </a>
-
-        <a class="iconBtn" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M6.5 9.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6.5 6.8h0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M10.5 20v-6.3c0-2.2 1.2-3.2 2.8-3.2 1.6 0 2.7 1 2.7 3.2V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <a class="contactItem" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst">
+          <span class="contactIcon">in</span>
+          <span>LinkedIn</span>
         </a>
-
-        <a class="iconBtn" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.4-1-.9-1.3-.9-1.3-.8-.5.1-.5.1-.5.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.7.8.1-.6.3-1 .5-1.2-2.2-.2-4.4-1.1-4.4-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.7 9.7 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .4.9.2 2 .1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.2 4.8-4.4 5 .3.3.6.8.6 1.6v2.6c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <a class="contactItem" target="_blank" rel="noreferrer" href="https://github.com/Ahmed-Zayed-51">
+          <span class="contactIcon">⌂</span>
+          <span>GitHub</span>
         </a>
-
-        <a class="iconBtn" href="tel:+201017452037" aria-label="Phone">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M7 3h2l1 5-2 1c1 3 3 5 6 6l1-2 5 1v2c0 1-1 2-2 2-8 0-14-6-14-14 0-1 1-2 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <a class="contactItem" href="tel:+201017452037">
+          <span class="contactIcon">📞</span>
+          <span>Call</span>
         </a>
-
-        <a class="iconBtn" href="https://wa.me/201017452037" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 3a8 8 0 0 0-6.9 12l-.6 3.5 3.6-.6A8 8 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9.3 8.8c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.5l.7 1.6c.1.3.1.6-.1.8l-.5.6c.6 1.1 1.6 2 2.7 2.6l.6-.4c.3-.2.6-.2.9 0l1.5.7c.5.2.5.5.5.7v.6c0 .3 0 .6-.6.9-.6.3-1.8.5-3.7-.4-1.9-.9-3.5-2.6-4.4-4.5-.9-1.9-.7-3.1-.4-3.7Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <a class="contactItem" target="_blank" rel="noreferrer" href="https://wa.me/201017452037">
+          <span class="contactIcon">💬</span>
+          <span>WhatsApp</span>
         </a>
       </div>
 
       <footer class="footer">
-        <span>© <span id="year"></span> Ahmed Zayed • Built with GitHub Pages</span>
+        <span>© <span id="year"></span> Ahmed Fathy Zayed • Built with GitHub Pages</span>
       </footer>
+
     </div>
   </section>
 
+  <button id="toTop" class="toTop" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
 </body>
-</html> 
+</html>
