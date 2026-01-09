@@ -483,6 +483,12 @@ body{
   color: rgba(255,255,255,.92);
 }
 .isPlaceholder .badge{border-color: rgba(255,255,255,.14); background: rgba(255,255,255,.06)}
+/* ✅ ADD under .badges{} */
+.projectLinks{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
 
 /* Certificates */
 .certGrid{
