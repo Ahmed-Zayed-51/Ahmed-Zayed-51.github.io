@@ -548,112 +548,181 @@ body{
 .certAdd{opacity:.95}
 .certAdd:hover{opacity:1}
 
-/* Contact */
-.contactCard{
-  padding: 16px;
+/* =========================
+   CONTACT (Calm Premium Bar)
+========================= */
+.contactSection{
+  padding-bottom: 56px;
+}
+
+.contactBar{
+  padding: 18px;
+  display:grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.035));
+  border: 1px solid rgba(255,255,255,.10);
+  overflow:hidden;
+  position:relative;
+}
+
+.contactBar::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:
+    radial-gradient(650px 300px at 12% 18%, rgba(255,153,0,.12), transparent 60%),
+    radial-gradient(720px 320px at 72% 70%, rgba(34,231,194,.10), transparent 62%),
+    radial-gradient(520px 240px at 90% 20%, rgba(77,124,255,.08), transparent 60%);
+  opacity:.85;
+  pointer-events:none;
+}
+.contactBar > *{position:relative}
+
+.contactBar__left{
+  padding: 8px;
+}
+
+.contactBadge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding: 9px 12px;
+  border-radius:999px;
+  border:1px solid rgba(34,231,194,.20);
+  background: rgba(34,231,194,.08);
+  font-weight: 950;
+  font-size: 12px;
+  width: fit-content;
+}
+.contactBadgeDot{
+  width:10px;height:10px;border-radius:999px;
+  background: var(--a2);
+  box-shadow: 0 0 18px rgba(34,231,194,.45);
+}
+
+.contactTitle{
+  margin: 12px 0 6px;
+  font-size: 22px;
+  letter-spacing: -.4px;
+  font-weight: 950;
+}
+.contactDesc{
+  margin:0;
+  color: rgba(255,255,255,.72);
+  font-weight: 800;
+  max-width: 70ch;
+}
+
+.contactActions{
+  margin-top: 14px;
   display:flex;
   gap: 10px;
   flex-wrap:wrap;
-  justify-content:center;
 }
-.contactPill{
-  display:inline-flex; align-items:center; gap:10px;
+
+.contactBtnLarge{
   padding: 12px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.10);
-  background: rgba(255,255,255,.05);
-  color: rgba(255,255,255,.88);
-  text-decoration:none;
-  font-weight: 950;
-  font-size: 13px;
-  transition: transform .18s ease, background .18s ease, border-color .18s ease;
-}
-.contactPill:hover{
-  background: rgba(255,255,255,.08);
-  transform: translateY(-1px);
-  border-color: rgba(255,153,0,.22);
-}
-.pillDot{
-  width: 10px; height:10px;
-  border-radius: 999px;
-  background: var(--a1);
-  box-shadow: 0 0 18px rgba(255,153,0,.45);
+  border-radius: 16px;
 }
 
-.footer{
-  margin-top: 18px;
-  text-align:center;
-  color: rgba(255,255,255,.55);
-  font-weight:900;
-  font-size: 12px;
+.contactIconWrap{
+  width: 36px; height: 36px;
+  border-radius: 14px;
+  display:grid; place-items:center;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
 }
 
-/* Back to top */
-.toTop{
-  position:fixed;
-  right: 16px;
-  bottom: 16px;
-  width: 44px; height:44px;
+.contactInfo{
+  margin-top: 14px;
+  display:flex;
+  gap: 12px;
+  flex-wrap:wrap;
+}
+.contactInfoItem{
+  padding: 10px 12px;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,.10);
-  background: rgba(255,255,255,.06);
-  color:#fff;
+  background: rgba(255,255,255,.035);
+  display:flex;
+  gap: 10px;
+  align-items:center;
+}
+.contactInfoLabel{
+  font-weight: 950;
+  color: rgba(255,255,255,.72);
+}
+.contactInfoValue{
+  font-weight: 950;
+  color: rgba(255,255,255,.92);
+  opacity:.92;
+}
+
+/* Right side social */
+.contactBar__right{
+  padding: 8px;
+  display:grid;
+  align-content:start;
+  gap: 10px;
+}
+
+.contactSocial{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  padding: 12px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.92);
   text-decoration:none;
-  display:grid; place-items:center;
-  opacity:.85;
-  transition: transform .18s ease, opacity .18s ease, background .18s ease, border-color .18s ease;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
 }
-.toTop:hover{
+.contactSocial:hover{
   transform: translateY(-2px);
-  opacity:1;
-  background: rgba(255,255,255,.10);
+  background: rgba(255,255,255,.06);
   border-color: rgba(255,153,0,.22);
+  box-shadow: 0 14px 46px rgba(0,0,0,.35);
 }
 
-/* Focus */
-a:focus-visible, button:focus-visible, input:focus-visible{
-  outline: 2px solid rgba(255,153,0,.55);
-  outline-offset: 3px;
-  border-radius: 12px;
+.socialIcon{
+  width: 44px; height:44px;
+  border-radius: 16px;
+  display:grid; place-items:center;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+}
+.socialTitle{
+  font-weight: 950;
+  letter-spacing: -.1px;
+}
+.socialMeta{
+  margin-top:4px;
+  color: rgba(255,255,255,.66);
+  font-weight: 900;
+  font-size: 12px;
+}
+.socialArrow{
+  margin-left:auto;
+  font-weight: 950;
+  opacity:.85;
 }
 
-/* Responsive */
-@media (max-width: 980px){
-  .nav{display:none}
-  .burger{display:inline-block}
-  .mobileNav.isOpen{display:block}
-  .hero__grid{grid-template-columns: 1fr; padding-top: 54px}
-  .hero__right{align-items:flex-start}
-  .avatarWrap{width: 240px; height: 240px}
-  .skillsGrid{grid-template-columns: 1fr 1fr}
-  .servicesGrid{grid-template-columns: 1fr}
-  .projectsGrid{grid-template-columns: 1fr 1fr}
-  .certGrid{grid-template-columns: 1fr 1fr}
-  .twoCol{grid-template-columns: 1fr}
-  .heroCards{grid-template-columns: 1fr}
-}
-@media (max-width: 580px){
-  .projectsGrid{grid-template-columns: 1fr}
-  .certGrid{grid-template-columns: 1fr}
-  .searchBox{min-width: 100%}
-  .searchBox input{width: 100%}
-}
-/* ===== Contact Links Fix ===== */
-#contact a{
-  color: inherit;
-  text-decoration: none;
-}
-
+/* ===== hard reset for contact links (fix purple/blue issue) ===== */
+#contact a,
 #contact a:visited{
-  color: inherit;
-}
-
-.contactLinks a{
   color: inherit !important;
   text-decoration: none !important;
 }
 
-.contactBtn svg,
-.contactCta svg{
-  color: currentColor;
+/* Responsive */
+@media (max-width: 980px){
+  .contactBar{
+    grid-template-columns: 1fr;
+  }
+  .contactActions{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
 }
