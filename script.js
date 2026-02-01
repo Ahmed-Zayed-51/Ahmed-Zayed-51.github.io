@@ -25,6 +25,7 @@ function setActive() {
     else a.classList.remove("isActive");
   });
 }
+
 window.addEventListener("scroll", setActive);
 setActive();
 
