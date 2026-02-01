@@ -1,6 +1,5 @@
 :root{
   --bg0:#070A12;
-  --bg1:#070A12;
   --glass: rgba(255,255,255,.06);
   --glass2: rgba(255,255,255,.08);
   --stroke: rgba(255,255,255,.10);
@@ -8,10 +7,8 @@
   --text: rgba(255,255,255,.92);
   --muted: rgba(255,255,255,.68);
 
-  --a1:#22E7C2;     /* accent mint */
-  --a2:#4D7CFF;     /* accent blue */
-  --a3:#9B5CFF;     /* subtle purple */
-
+  --a1:#22E7C2;
+  --a2:#4D7CFF;
   --shadow: 0 22px 70px rgba(0,0,0,.55);
   --radius: 18px;
 }
@@ -20,7 +17,7 @@
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  font-family: "Amazon Ember","Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: var(--bg0);
   color: var(--text);
   line-height: 1.7;
@@ -62,7 +59,6 @@ body{
   border: 1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.05);
 }
-
 .nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
 .nav a{
   color: rgba(255,255,255,.74);
@@ -116,8 +112,7 @@ body{
   position:absolute; inset:0;
   background:
     radial-gradient(900px 520px at 18% 30%, rgba(34,231,194,.18), transparent 60%),
-    radial-gradient(900px 520px at 65% 30%, rgba(155,92,255,.15), transparent 60%),
-    radial-gradient(900px 520px at 75% 75%, rgba(77,124,255,.14), transparent 62%),
+    radial-gradient(900px 520px at 65% 30%, rgba(77,124,255,.14), transparent 60%),
     linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.80));
 }
 .hero__grid{
@@ -170,6 +165,7 @@ body{
   color: var(--muted);
   font-size: 15.5px;
 }
+.hero__subtitle b{color: rgba(255,255,255,.92)}
 
 .hero__cta{
   display:flex;
@@ -189,39 +185,22 @@ body{
   text-decoration:none;
   font-weight: 900;
   color:#fff;
-  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
 }
-.btn:hover{transform: translateY(-1px)}
+.btn:hover{transform: translateY(-1px); box-shadow: 0 10px 30px rgba(0,0,0,.35)}
 .btnPrimary{
   background: linear-gradient(135deg, rgba(34,231,194,.95), rgba(77,124,255,.78));
   border-color: rgba(34,231,194,.26);
   color:#051018;
 }
-.btnSoft{
-  background: rgba(255,255,255,.06);
-}
-.btnGhost{
-  background: rgba(255,255,255,.04);
-}
-.btnGlass{
-  background: rgba(255,255,255,.05);
-}
-.btnMini{
-  padding: 10px 14px;
-  border-radius: 14px;
-  font-size: 13px;
-}
-.btnSmall{
-  padding: 10px 12px;
-  border-radius: 14px;
-  font-size: 13px;
-}
-.btnDisabled{
-  opacity:.55;
-  cursor:not-allowed;
-  box-shadow:none;
-}
+.btnSoft{background: rgba(255,255,255,.06)}
+.btnGhost{background: rgba(255,255,255,.04)}
+.btnGlass{background: rgba(255,255,255,.05)}
+.btnMini{padding: 10px 14px; border-radius: 14px; font-size: 13px}
+.btnSmall{padding: 10px 12px; border-radius: 14px; font-size: 13px}
+.btnDisabled{opacity:.55; cursor:not-allowed; box-shadow:none}
 
+/* Social */
 .socialRow{
   display:flex;
   gap:10px;
@@ -236,11 +215,18 @@ body{
   background: rgba(255,255,255,.05);
   color: rgba(255,255,255,.92);
   text-decoration:none;
-  transition: transform .18s ease, background .18s ease;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
 }
-.iconBtn:hover{background: rgba(255,255,255,.08); transform: translateY(-1px)}
+.iconBtn:hover{
+  background: rgba(255,255,255,.08);
+  transform: translateY(-1px);
+  border-color: rgba(34,231,194,.22);
+}
 .icon{width:20px; height:20px}
+.iconBtn:hover .icon{color: var(--a1); transform: scale(1.06)}
+.iconBtn .icon{transition: transform .18s ease, color .18s ease}
 
+/* Hero cards */
 .heroCards{
   margin-top: 18px;
   display:grid;
@@ -272,7 +258,6 @@ body{
   object-position: 50% 20%;
   display:block;
 }
-
 .heroStats{
   margin-top: 18px;
   display:grid;
@@ -326,7 +311,7 @@ body{
 
 /* About */
 .aboutCard{padding: 18px 18px}
-.aboutCard p{margin:0; color: rgba(255,255,255,.80)}
+.aboutCard p{margin:0; color: rgba(255,255,255,.80); font-size: 15.5px}
 .chips{display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px}
 .chip{
   border: 1px solid rgba(34,231,194,.20);
@@ -360,7 +345,6 @@ body{
   border: 1px solid rgba(34,231,194,.22);
 }
 .skillIcon img{width:28px; height:28px; object-fit:contain; display:block}
-.skillIcon span{font-weight: 950}
 .skillName{font-weight: 950}
 .skillMeta{color: rgba(255,255,255,.65); font-size: 13px; font-weight:800}
 
@@ -390,17 +374,9 @@ body{
 .itemTitle{font-weight: 950; font-size: 16px}
 .itemMeta{color: rgba(255,255,255,.62); font-weight:850; font-size: 12.5px; margin-top: 6px}
 .itemCard ul{margin: 12px 0 0 18px; color: rgba(255,255,255,.78)}
+.itemCard ul li{margin-bottom: 8px}
+.itemCard ul li:last-child{margin-bottom: 0}
 .twoCol{display:grid; grid-template-columns: 1fr 1fr; gap: 14px}
-
-/* Education logo */
-.eduLogoLink{display:inline-flex; align-items:center; margin-top: 10px}
-.eduLogo{
-  height: 40px;
-  width:auto;
-  filter: drop-shadow(0 12px 18px rgba(0,0,0,.35));
-  transition: transform .22s ease, filter .22s ease;
-}
-.eduLogoLink:hover .eduLogo{transform: scale(1.04); filter: brightness(1.15)}
 
 /* Projects */
 .projectToolbar{display:flex; gap: 12px; flex-wrap:wrap; align-items:center}
@@ -482,8 +458,13 @@ body{
   background: rgba(34,231,194,.10);
   color: rgba(255,255,255,.92);
 }
-.isPlaceholder .badge{border-color: rgba(255,255,255,.14); background: rgba(255,255,255,.06)}
-
+.isPlaceholder{
+  border-style: dashed;
+  opacity: .92;
+}
+.isPlaceholder:hover{
+  transform: translateY(-4px);
+}
 
 /* Certificates */
 .certGrid{
@@ -499,21 +480,15 @@ body{
   text-decoration:none;
   color: rgba(255,255,255,.92);
   transition: transform .2s ease, background .2s ease, border-color .2s ease;
-  position:relative;
 }
 .certCard:hover{
   transform: translateY(-4px);
   background: rgba(255,255,255,.07);
   border-color: rgba(34,231,194,.22);
 }
-.certLogo{width:34px; height:34px; flex:0 0 34px; opacity:.95}
 .certTitle{font-weight:950; font-size:13px; line-height:1.2}
 .certOrg{margin-top:4px; color: rgba(255,255,255,.60); font-weight:850; font-size:12px}
-.certArrow{
-  margin-left:auto;
-  font-weight: 950;
-  opacity:.8;
-}
+.certArrow{margin-left:auto; font-weight: 950; opacity:.8}
 .certIcon{
   width: 36px; height:36px;
   border-radius: 14px;
@@ -522,22 +497,8 @@ body{
   border: 1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.06);
 }
-.certIcon--google{background: rgba(77,124,255,.12); border-color: rgba(77,124,255,.22)}
 .certIcon--dc{background: rgba(34,231,194,.12); border-color: rgba(34,231,194,.22)}
-.certIcon--udemy{background: rgba(155,92,255,.12); border-color: rgba(155,92,255,.22)}
 .certIcon--ms{background: rgba(255,255,255,.08)}
-.certIcon--tb{background: rgba(255,255,255,.08)}
-
-.certAddIcon{
-  width: 36px; height:36px;
-  border-radius: 14px;
-  display:grid; place-items:center;
-  font-weight: 950;
-  background: rgba(255,255,255,.06);
-  border: 1px dashed rgba(255,255,255,.18);
-}
-.certAdd{opacity:.95}
-.certAdd:hover{opacity:1}
 
 /* Contact */
 .contactCard{
@@ -557,9 +518,19 @@ body{
   text-decoration:none;
   font-weight: 950;
   font-size: 13px;
-  transition: transform .18s ease, background .18s ease;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
 }
-.contactPill:hover{background: rgba(255,255,255,.08); transform: translateY(-1px)}
+.contactPill:hover{
+  background: rgba(255,255,255,.08);
+  transform: translateY(-1px);
+  border-color: rgba(34,231,194,.22);
+}
+.pillDot{
+  width: 10px; height:10px;
+  border-radius: 999px;
+  background: var(--a1);
+  box-shadow: 0 0 18px rgba(34,231,194,.45);
+}
 
 .footer{
   margin-top: 18px;
@@ -585,6 +556,18 @@ body{
   transition: transform .18s ease, opacity .18s ease, background .18s ease;
 }
 .toTop:hover{transform: translateY(-2px); opacity:1; background: rgba(255,255,255,.10)}
+
+/* Focus states */
+a:focus-visible, button:focus-visible, input:focus-visible{
+  outline: 2px solid rgba(34,231,194,.55);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce){
+  * { scroll-behavior: auto !important; transition: none !important; }
+}
 
 /* Responsive */
 @media (max-width: 980px){
