@@ -1,7 +1,12 @@
+// ===============================
 // Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+// ===============================
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// ===============================
 // Active nav on scroll
+// ===============================
 const sections = [...document.querySelectorAll("section, main.hero")];
 const navLinks = [...document.querySelectorAll(".nav a")];
 
@@ -12,6 +17,7 @@ function setActive() {
   for (const s of sections) {
     const top = s.offsetTop;
     const bottom = top + s.offsetHeight;
+
     if (y >= top && y < bottom) {
       currentId = s.id || "home";
       break;
@@ -19,7 +25,7 @@ function setActive() {
   }
 
   navLinks.forEach(a => {
-    const href = a.getAttribute("href")?.replace("#", "");
+    const href = (a.getAttribute("href") || "").replace("#", "");
     if (href === currentId) a.classList.add("isActive");
     else a.classList.remove("isActive");
   });
@@ -27,7 +33,9 @@ function setActive() {
 window.addEventListener("scroll", setActive);
 setActive();
 
+// ===============================
 // Mobile menu
+// ===============================
 const burger = document.getElementById("burger");
 const mobileNav = document.getElementById("mobileNav");
 
@@ -48,7 +56,9 @@ if (burger && mobileNav) {
   });
 }
 
+// ===============================
 // Projects filter + search
+// ===============================
 const filterButtons = [...document.querySelectorAll(".filterBtn")];
 const projectCards = [...document.querySelectorAll(".projectCard")];
 const projectSearch = document.getElementById("projectSearch");
@@ -73,6 +83,7 @@ filterButtons.forEach(btn => {
   btn.addEventListener("click", () => {
     filterButtons.forEach(b => b.classList.remove("isActive"));
     btn.classList.add("isActive");
+
     activeFilter = (btn.getAttribute("data-filter") || "all").toLowerCase();
     applyProjectsFilter();
   });
