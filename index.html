@@ -759,43 +759,141 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="sectionHead">
-        <h2>Contact</h2>
-        <p>Let’s build something with data</p>
-      </div>
-
-      <div class="card glass contactCard">
-        <a class="contactPill" href="mailto:ahmedzayed551@outlook.com">
-          <span class="pillDot"></span> Email
-        </a>
-
-        <a class="contactPill" href="https://www.linkedin.com/in/ahmed-zayed-data-analyst" target="_blank" rel="noreferrer">
-          <span class="pillDot"></span> LinkedIn
-        </a>
-
-        <a class="contactPill" href="https://github.com/Ahmed-Zayed-51" target="_blank" rel="noreferrer">
-          <span class="pillDot"></span> GitHub
-        </a>
-
-        <a class="contactPill" href="tel:+201017452037">
-          <span class="pillDot"></span> Call
-        </a>
-
-        <a class="contactPill" href="https://wa.me/201017452037" target="_blank" rel="noreferrer">
-          <span class="pillDot"></span> WhatsApp
-        </a>
-      </div>
-
-      <footer class="footer">
-        <span>© <span id="year"></span> Ahmed Fathy Zayed • Built with GitHub Pages</span>
-      </footer>
+<section id="contact" class="section">
+  <div class="container">
+    <div class="sectionHead">
+      <h2>Contact</h2>
+      <p>Let’s build something with data</p>
     </div>
-  </section>
 
-  <a class="toTop" href="#top" aria-label="Back to top">↑</a>
+    <div class="contactGrid">
 
-  <script src="script.js"></script>
-</body>
-</html>
+      <!-- Left: CTA Card -->
+      <div class="card glass contactCta">
+        <div class="contactCta__top">
+          <div class="contactBadge">
+            <span class="contactBadgeDot"></span>
+            Available for projects
+          </div>
+          <h3>Let’s Talk</h3>
+          <p>
+            Want a dashboard, KPI tracking system, or data automation workflow?
+            Send a message — I reply fast.
+          </p>
+        </div>
+
+        <div class="contactQuick">
+          <a class="btn btnPrimary btnWide" href="mailto:ahmedzayed551@outlook.com">
+            <span class="btnIcon">
+              <!-- mail icon -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+            Email Me
+          </a>
+
+          <a class="btn btnSoft btnWide" target="_blank" rel="noreferrer"
+             href="https://wa.me/201017452037">
+            <span class="btnIcon">
+              <!-- whatsapp icon -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <path d="M12 3a8 8 0 0 0-6.9 12l-.6 3.5 3.6-.6A8 8 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M9.3 8.8c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.5l.7 1.6c.1.3.1.6-.1.8l-.5.6c.6 1.1 1.6 2 2.7 2.6l.6-.4c.3-.2.6-.2.9 0l1.5.7c.5.2.5.5.5.7v.6c0 .3 0 .6-.6.9-.6.3-1.8.5-3.7-.4-1.9-.9-3.5-2.6-4.4-4.5-.9-1.9-.7-3.1-.4-3.7Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </span>
+            WhatsApp
+          </a>
+        </div>
+
+        <div class="contactMini">
+          <div class="contactMiniItem">
+            <span class="miniLabel">Email</span>
+            <span class="miniValue">ahmedzayed551@outlook.com</span>
+          </div>
+          <div class="contactMiniItem">
+            <span class="miniLabel">Phone</span>
+            <span class="miniValue">+20 101 745 2037</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Links Card -->
+      <div class="card glass contactLinks">
+        <h3 class="contactLinks__title">Social & Links</h3>
+        <p class="contactLinks__sub">Choose your preferred channel.</p>
+
+        <div class="contactBtns">
+          <a class="contactBtn" target="_blank" rel="noreferrer"
+             href="https://www.linkedin.com/in/ahmed-zayed-data-analyst">
+            <span class="contactBtnIcon">
+              <!-- linkedin -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <path d="M6.5 9.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M6.5 6.8h0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M10.5 20v-6.3c0-2.2 1.2-3.2 2.8-3.2 1.6 0 2.7 1 2.7 3.2V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div>
+              <div class="contactBtnTitle">LinkedIn</div>
+              <div class="contactBtnMeta">Professional profile</div>
+            </div>
+            <span class="contactBtnArrow">↗</span>
+          </a>
+
+          <a class="contactBtn" target="_blank" rel="noreferrer"
+             href="https://github.com/Ahmed-Zayed-51">
+            <span class="contactBtnIcon">
+              <!-- github -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.4-1-.9-1.3-.9-1.3-.8-.5.1-.5.1-.5.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.7.8.1-.6.3-1 .5-1.2-2.2-.2-4.4-1.1-4.4-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.7 9.7 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .4.9.2 2 .1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.2 4.8-4.4 5 .3.3.6.8.6 1.6v2.6c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z"
+                      fill="none" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </span>
+            <div>
+              <div class="contactBtnTitle">GitHub</div>
+              <div class="contactBtnMeta">Projects & code</div>
+            </div>
+            <span class="contactBtnArrow">↗</span>
+          </a>
+
+          <a class="contactBtn" href="tel:+201017452037">
+            <span class="contactBtnIcon">
+              <!-- phone -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <path d="M7 3h2l1 5-2 1c1 3 3 5 6 6l1-2 5 1v2c0 1-1 2-2 2-8 0-14-6-14-14 0-1 1-2 2-2Z"
+                      fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div>
+              <div class="contactBtnTitle">Call</div>
+              <div class="contactBtnMeta">Quick discussion</div>
+            </div>
+            <span class="contactBtnArrow">→</span>
+          </a>
+
+          <a class="contactBtn" href="mailto:ahmedzayed551@outlook.com">
+            <span class="contactBtnIcon">
+              <!-- mail -->
+              <svg viewBox="0 0 24 24" class="icon">
+                <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div>
+              <div class="contactBtnTitle">Email</div>
+              <div class="contactBtnMeta">Best for details</div>
+            </div>
+            <span class="contactBtnArrow">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Ahmed Fathy Zayed • Built with GitHub Pages</span>
+    </footer>
+  </div>
+</section>
