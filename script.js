@@ -1,5 +1,6 @@
 // Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Active nav on scroll
 const sections = [...document.querySelectorAll("section, main.hero")];
@@ -24,20 +25,12 @@ function setActive() {
     else a.classList.remove("isActive");
   });
 }
-
 window.addEventListener("scroll", setActive, { passive: true });
 setActive();
 
 // Mobile menu
 const burger = document.getElementById("burger");
 const mobileNav = document.getElementById("mobileNav");
-
-function closeMobileNav() {
-  if (!mobileNav || !burger) return;
-  mobileNav.classList.remove("isOpen");
-  burger.setAttribute("aria-expanded", "false");
-  mobileNav.setAttribute("aria-hidden", "true");
-}
 
 if (burger && mobileNav) {
   burger.addEventListener("click", () => {
@@ -46,14 +39,13 @@ if (burger && mobileNav) {
     mobileNav.setAttribute("aria-hidden", String(!isOpen));
   });
 
-  // Close on click (mobile links)
+  // Close on click
   [...mobileNav.querySelectorAll("a")].forEach(a => {
-    a.addEventListener("click", closeMobileNav);
-  });
-
-  // Close on ESC
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeMobileNav();
+    a.addEventListener("click", () => {
+      mobileNav.classList.remove("isOpen");
+      burger.setAttribute("aria-expanded", "false");
+      mobileNav.setAttribute("aria-hidden", "true");
+    });
   });
 }
 
