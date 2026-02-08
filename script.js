@@ -87,3 +87,32 @@ if (projectSearch) {
 }
 
 applyProjectsFilter();
+
+// Smooth anchor scroll (nice like Bolt)
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener("click",(e)=>{
+    const id = a.getAttribute("href");
+    const target = document.querySelector(id);
+    if(!target) return;
+    e.preventDefault();
+    target.scrollIntoView({behavior:"smooth", block:"start"});
+    history.pushState(null, "", id);
+  });
+});
+
+// Scroll reveal (Bolt-like)
+const revealEls = document.querySelectorAll(
+  ".card,.projectCard,.serviceCard,.aboutCard,.contactCard,.certCard,.statCard,.itemCard,.miniCard"
+);
+
+revealEls.forEach(el => el.classList.add("reveal"));
+
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.classList.add("isVisible");
+  });
+},{ threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
+
+revealEls.forEach(el => io.observe(el));
+
+
