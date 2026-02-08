@@ -51,8 +51,30 @@ if (burger && mobileNav) {
 
 // Projects filter + search
 const filterButtons = [...document.querySelectorAll(".filterBtn")];
-const projectCards = [...document.querySelectorAll(".projectCard")];
 const projectSearch = document.getElementById("projectSearch");
+
+// ✅ Keep only real projects that have a working link (remove empty/placeholder cards)
+function isValidProjectCard(card) {
+  if (!card) return false;
+  if (card.classList.contains('isPlaceholder')) return false;
+  const link = card.querySelector('a[href]');
+  if (!link) return false;
+  const href = (link.getAttribute('href') || '').trim();
+  if (!href || href === '#' || href.startsWith('javascript:')) return false;
+  // Disabled link pattern
+  if (link.classList.contains('btnDisabled') || link.getAttribute('aria-disabled') === 'true') return false;
+  return true;
+}
+
+const projectsGrid = document.getElementById('projectsGrid');
+if (projectsGrid) {
+  [...projectsGrid.querySelectorAll('.projectCard')].forEach(card => {
+    if (!isValidProjectCard(card)) card.remove();
+  });
+}
+
+// Rebuild list after removals
+let projectCards = [...document.querySelectorAll(".projectCard")];
 
 let activeFilter = "all";
 let searchTerm = "";
@@ -95,9 +117,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     const id=a.getAttribute('href');
     const target=document.querySelector(id);
     if(!target) return;
-    // allow normal behavior for external anchors in some cases
     e.preventDefault();
-    target.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'start'});
+    target.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block:'start'
+    });
     history.pushState(null,'',id);
   });
 });
@@ -106,7 +130,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
 (function(){
   const grid = document.getElementById('projectsGrid');
   if(!grid) return;
-  const cards = [...grid.querySelectorAll('.projectCard')].filter(c => c.style.display !== 'none');
+  // Only valid cards (already cleaned) + that have real links
+  const cards = [...grid.querySelectorAll('.projectCard')].filter(isValidProjectCard);
   if(cards.length < 2) return;
 
   const featured = cards.slice(0,3).map(c => c.cloneNode(true));
@@ -124,7 +149,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     c.classList.add('isFeatured');
     fg.appendChild(c);
   });
-  // Insert featured section before filters (above grid)
   grid.parentElement.insertBefore(wrap, grid);
 })();
 
