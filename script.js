@@ -88,31 +88,59 @@ if (projectSearch) {
 
 applyProjectsFilter();
 
-// Smooth anchor scroll (nice like Bolt)
+
+// Smooth anchor scroll (Bolt-like)
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener("click",(e)=>{
-    const id = a.getAttribute("href");
-    const target = document.querySelector(id);
+  a.addEventListener('click',(e)=>{
+    const id=a.getAttribute('href');
+    const target=document.querySelector(id);
     if(!target) return;
+    // allow normal behavior for external anchors in some cases
     e.preventDefault();
-    target.scrollIntoView({behavior:"smooth", block:"start"});
-    history.pushState(null, "", id);
+    target.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'start'});
+    history.pushState(null,'',id);
   });
 });
 
-// Scroll reveal (Bolt-like)
-const revealEls = document.querySelectorAll(
-  ".card,.projectCard,.serviceCard,.aboutCard,.contactCard,.certCard,.statCard,.itemCard,.miniCard"
-);
+// Featured Projects (auto-generate from first 3 project cards)
+(function(){
+  const grid = document.getElementById('projectsGrid');
+  if(!grid) return;
+  const cards = [...grid.querySelectorAll('.projectCard')].filter(c => c.style.display !== 'none');
+  if(cards.length < 2) return;
 
-revealEls.forEach(el => el.classList.add("reveal"));
-
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting) e.target.classList.add("isVisible");
+  const featured = cards.slice(0,3).map(c => c.cloneNode(true));
+  const wrap = document.createElement('div');
+  wrap.className = 'featuredWrap';
+  wrap.innerHTML = `
+    <div class="featuredHeader">
+      <h3>Featured Projects</h3>
+      <span class="muted">Case-study style highlights</span>
+    </div>
+    <div class="featuredGrid"></div>
+  `;
+  const fg = wrap.querySelector('.featuredGrid');
+  featured.forEach(c => {
+    c.classList.add('isFeatured');
+    fg.appendChild(c);
   });
-},{ threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
+  // Insert featured section before filters (above grid)
+  grid.parentElement.insertBefore(wrap, grid);
+})();
 
-revealEls.forEach(el => io.observe(el));
+// Scroll reveal (Bolt-like)
+(function(){
+  const revealEls = document.querySelectorAll('.card,.miniCard,.statCard,.projectCard,.serviceCard,.certCard,.aboutCard,.contactCard,.itemCard');
+  revealEls.forEach(el => el.classList.add('reveal'));
 
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealEls.forEach(el => el.classList.add('isVisible'));
+    return;
+  }
 
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('isVisible'); });
+  },{ threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+
+  revealEls.forEach(el => io.observe(el));
+})();
