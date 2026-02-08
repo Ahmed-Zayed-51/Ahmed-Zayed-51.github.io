@@ -33,8 +33,25 @@ body{
   line-height: 1.7;
 }
 
+/* =========================================
+   ✅ HARD FIX: prevent HUGE stray SVGs
+   - لو فيه SVG اتكتب بالغلط خارج زر/لينك
+   - ده كان سبب الأيقونات العملاقة عندك
+========================================= */
+svg{
+  max-width:100%;
+  height:auto;
+}
+svg:not(.icon):not(.brandIcon){
+  /* أي SVG بدون كلاس واضح */
+  width: 22px;
+  height: 22px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
 /* Safety: prevent huge media overflow */
-img, svg {max-width:100%; height:auto}
+img{max-width:100%; height:auto}
 
 .container{width:min(1160px, 92%); margin-inline:auto}
 
@@ -227,7 +244,7 @@ img, svg {max-width:100%; height:auto}
   flex-wrap:wrap;
 }
 .iconBtn{
-  width: 36px; height:36px;          /* ✅ أصغر */
+  width: 36px; height:36px;
   border-radius: 14px;
   display:grid; place-items:center;
   border: 1px solid rgba(255,255,255,.10);
@@ -242,7 +259,7 @@ img, svg {max-width:100%; height:auto}
   transform: translateY(-1px);
   box-shadow: 0 12px 34px rgba(0,0,0,.40);
 }
-.icon{width:16px; height:16px}       /* ✅ أصغر */
+.icon{width:16px; height:16px}
 
 /* Hero mini cards */
 .heroCards{
@@ -541,7 +558,6 @@ img, svg {max-width:100%; height:auto}
 }
 #contact a:visited{color: inherit}
 
-/* Contact card container */
 .contactCard{
   padding: 18px;
   display:flex;
@@ -551,7 +567,6 @@ img, svg {max-width:100%; height:auto}
   align-items:center;
 }
 
-/* Pills */
 .contactPill{
   display:inline-flex;
   align-items:center;
@@ -579,12 +594,6 @@ img, svg {max-width:100%; height:auto}
   height: 16px !important;
   display:block;
 }
-.contactPill .pillDot{
-  width: 8px; height:8px;
-  border-radius: 999px;
-  background: var(--a1);
-  box-shadow: 0 0 14px rgba(255,153,0,.40);
-}
 
 /* Footer */
 .footer{
@@ -600,7 +609,7 @@ img, svg {max-width:100%; height:auto}
   position:fixed;
   right: 16px;
   bottom: 16px;
-  width: 40px; height:40px;          /* أصغر */
+  width: 40px; height:40px;
   border-radius: 14px;
   border: 1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.06);
