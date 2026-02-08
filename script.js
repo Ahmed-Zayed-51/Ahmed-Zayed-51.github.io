@@ -126,31 +126,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
-// Featured Projects (auto-generate from first 3 project cards)
-(function(){
-  const grid = document.getElementById('projectsGrid');
-  if(!grid) return;
-  // Only valid cards (already cleaned) + that have real links
-  const cards = [...grid.querySelectorAll('.projectCard')].filter(isValidProjectCard);
-  if(cards.length < 2) return;
 
-  const featured = cards.slice(0,3).map(c => c.cloneNode(true));
-  const wrap = document.createElement('div');
-  wrap.className = 'featuredWrap';
-  wrap.innerHTML = `
-    <div class="featuredHeader">
-      <h3>Featured Projects</h3>
-      <span class="muted">Case-study style highlights</span>
-    </div>
-    <div class="featuredGrid"></div>
-  `;
-  const fg = wrap.querySelector('.featuredGrid');
-  featured.forEach(c => {
-    c.classList.add('isFeatured');
-    fg.appendChild(c);
-  });
-  grid.parentElement.insertBefore(wrap, grid);
-})();
 
 // Scroll reveal (Bolt-like)
 (function(){
@@ -168,3 +144,4 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
 
   revealEls.forEach(el => io.observe(el));
 })();
+
