@@ -654,3 +654,153 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   .searchBox{min-width: 100%}
   .searchBox input{width: 100%}
 }
+
+/* =========================
+   Bolt-like Premium Finish
+   Paste at END of styles.css
+========================= */
+
+/* 1) Typography scale + spacing like Bolt */
+:root{
+  --radiusXL: 26px;
+  --radiusL: 20px;
+  --radiusM: 16px;
+
+  --ease: cubic-bezier(.2,.8,.2,1);
+
+  --h1: clamp(38px, 5vw, 64px);
+  --h2: clamp(22px, 2.6vw, 34px);
+  --p:  clamp(15px, 1.2vw, 18px);
+}
+
+/* If your body font already set, leave it.
+   This just improves readability */
+body{
+  letter-spacing: .2px;
+  line-height: 1.65;
+}
+
+.hero__title{
+  font-size: var(--h1);
+  line-height: 1.05;
+  letter-spacing: -0.6px;
+}
+
+/* subtle gradient text (bolt vibe) */
+.hero__title{
+  background: linear-gradient(90deg, rgba(255,255,255,.92), rgba(34,231,194,.90), rgba(77,124,255,.92));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero__subtitle{
+  font-size: var(--p);
+}
+
+/* 2) Animated ambient background blobs (Bolt feel) */
+.hero__bg::before,
+.hero__bg::after{
+  content:"";
+  position:absolute;
+  inset:-140px;
+  background:
+    radial-gradient(520px 420px at 20% 20%, rgba(77,124,255,.16), transparent 60%),
+    radial-gradient(520px 420px at 80% 25%, rgba(34,231,194,.14), transparent 60%),
+    radial-gradient(520px 420px at 60% 80%, rgba(255,153,0,.12), transparent 60%);
+  filter: blur(0px);
+  opacity:.9;
+  animation: floatBlobs 10s var(--ease) infinite alternate;
+  pointer-events:none;
+}
+@keyframes floatBlobs{
+  from{ transform: translate3d(0,0,0) scale(1); }
+  to{ transform: translate3d(0,-14px,0) scale(1.03); }
+}
+
+/* 3) Bolt-like "bento cards": gradient border + glow */
+.card,
+.projectCard,
+.serviceCard,
+.aboutCard,
+.contactCard,
+.certCard,
+.statCard,
+.itemCard,
+.miniCard{
+  border-radius: var(--radiusXL);
+  position: relative;
+  overflow: hidden;
+}
+
+/* gradient stroke using pseudo-element */
+.card::before,
+.projectCard::before,
+.serviceCard::before,
+.aboutCard::before,
+.contactCard::before,
+.certCard::before,
+.statCard::before,
+.itemCard::before,
+.miniCard::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  padding:1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg,
+    rgba(255,255,255,.18),
+    rgba(34,231,194,.14),
+    rgba(77,124,255,.14),
+    rgba(255,153,0,.10)
+  );
+  -webkit-mask:
+     linear-gradient(#000 0 0) content-box,
+     linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events:none;
+  opacity:.65;
+}
+
+.card:hover,
+.projectCard:hover,
+.serviceCard:hover,
+.certCard:hover,
+.statCard:hover,
+.itemCard:hover,
+.miniCard:hover{
+  transform: translateY(-3px);
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+  box-shadow: 0 24px 80px rgba(0,0,0,.55);
+}
+
+/* 4) Buttons: Bolt-like softness */
+.btn{
+  border-radius: 16px;
+  transition: transform .2s var(--ease), filter .2s var(--ease), background .2s var(--ease);
+}
+.btn:hover{ transform: translateY(-2px); filter: brightness(1.06); }
+
+/* 5) Section titles look more “product” */
+.sectionTitle{
+  font-size: var(--h2);
+  letter-spacing: -0.3px;
+}
+
+/* 6) Scroll reveal base */
+.reveal{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .55s var(--ease), transform .55s var(--ease);
+}
+.reveal.isVisible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{ animation: none !important; transition: none !important; scroll-behavior:auto !important; }
+}
+
